@@ -1,0 +1,639 @@
+12:47:18.530 [INFO] [org.gradle.launcher.daemon.server.Daemon] start() called on daemon - DefaultDaemonContext[uid=3b2a96da-527d-4264-9bcf-e5b0b0d2c381,javaHome=/media/jack/home-partition/tool/jdk1.6.0_45,daemonRegistryDir=/home/jack/.gradle/daemon,pid=5482,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8]
+12:47:18.535 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] updating lastActivityAt to 1409460438535
+12:47:18.550 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding IP addresses for network interface wlan0
+12:47:18.551 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Is this a loopback interface? false
+12:47:18.552 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding non-loopback address /fe80:0:0:0:626c:66ff:fe37:276a%3
+12:47:18.553 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding non-loopback address /192.168.10.104
+12:47:18.554 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding IP addresses for network interface lo
+12:47:18.556 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Is this a loopback interface? true
+12:47:18.556 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding loopback address /0:0:0:0:0:0:0:1%1
+12:47:18.557 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding loopback address /127.0.0.1
+12:47:18.559 [DEBUG] [org.gradle.messaging.remote.internal.inet.TcpIncomingConnector] Listening on [8f5c4f7c-33b0-41a4-b7e4-2e5f487ff3f2 port:58259, addresses:[/0:0:0:0:0:0:0:1%1, /127.0.0.1]].
+12:47:18.563 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] Daemon starting at: Sun Aug 31 12:47:18 CST 2014, with address: [8f5c4f7c-33b0-41a4-b7e4-2e5f487ff3f2 port:58259, addresses:[/0:0:0:0:0:0:0:1%1, /127.0.0.1]]
+12:47:18.564 [INFO] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Advertising the daemon address to the clients: [8f5c4f7c-33b0-41a4-b7e4-2e5f487ff3f2 port:58259, addresses:[/0:0:0:0:0:0:0:1%1, /127.0.0.1]]
+12:47:18.564 [DEBUG] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Advertised daemon context: DefaultDaemonContext[uid=3b2a96da-527d-4264-9bcf-e5b0b0d2c381,javaHome=/media/jack/home-partition/tool/jdk1.6.0_45,daemonRegistryDir=/home/jack/.gradle/daemon,pid=5482,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8]
+12:47:18.565 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Storing daemon address: [8f5c4f7c-33b0-41a4-b7e4-2e5f487ff3f2 port:58259, addresses:[/0:0:0:0:0:0:0:1%1, /127.0.0.1]], context: DefaultDaemonContext[uid=3b2a96da-527d-4264-9bcf-e5b0b0d2c381,javaHome=/media/jack/home-partition/tool/jdk1.6.0_45,daemonRegistryDir=/home/jack/.gradle/daemon,pid=5482,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8]
+12:47:18.572 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+12:47:18.576 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+12:47:18.577 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+12:47:18.579 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+12:47:18.580 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+12:47:18.602 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+12:47:18.603 [LIFECYCLE] [org.gradle.launcher.daemon.bootstrap.DaemonMain] Daemon server started. Pid: 5482.
+12:47:18.604 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonStartupCommunication] Completed writing the daemon greeting. Closing streams...
+12:47:18.605 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] requestStopOnIdleTimeout(10800000 MILLISECONDS) called on daemon
+12:47:18.606 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] waiting for daemon to stop or be idle for 10800000ms
+12:47:18.613 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is idle, sleeping until state change or idle timeout at Sun Aug 31 15:47:18 CST 2014
+12:47:18.643 [DEBUG] [org.gradle.messaging.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:52462 to /127.0.0.1:58259.
+12:47:18.719 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 14: received class org.gradle.launcher.daemon.protocol.Build
+12:47:18.720 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received non-IO message from client: Build{id=caa949a9-44ed-4465-8fd0-963556e43317.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication}
+12:47:18.721 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=caa949a9-44ed-4465-8fd0-963556e43317.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication}.
+12:47:18.722 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=caa949a9-44ed-4465-8fd0-963556e43317.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication} with connection: socket connection at /127.0.0.1:58259 with /127.0.0.1:52462.
+12:47:18.735 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] onStartCommand(DaemonCommandExecution[command = Build{id=caa949a9-44ed-4465-8fd0-963556e43317.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication}, connection = org.gradle.launcher.daemon.server.DefaultDaemonConnection@6b9cd75a]) called after 0.0 minutes of idle
+12:47:18.736 [INFO] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Marking the daemon as busy, address: [8f5c4f7c-33b0-41a4-b7e4-2e5f487ff3f2 port:58259, addresses:[/0:0:0:0:0:0:0:1%1, /127.0.0.1]]
+12:47:18.736 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [8f5c4f7c-33b0-41a4-b7e4-2e5f487ff3f2 port:58259, addresses:[/0:0:0:0:0:0:0:1%1, /127.0.0.1]]
+12:47:18.737 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+12:47:18.738 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+12:47:18.742 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+12:47:18.742 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] updating lastActivityAt to 1409460438742
+12:47:18.743 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is busy, sleeping until state changes.
+12:47:18.743 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building: Build{id=caa949a9-44ed-4465-8fd0-963556e43317.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication}. Dispatching build started information...
+12:47:18.744 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 13: dispatching class org.gradle.launcher.daemon.protocol.BuildStarted
+12:47:18.750 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: {TERM=xterm, XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0, SSH_AGENT_PID=1896, JAVA_HOME=/media/jack/home-partition/tool/jdk1.6.0_45, SSH_AGENT_LAUNCHER=upstart, LESSCLOSE=/usr/bin/lesspipe %s %s, UPSTART_SESSION=unix:abstract=/com/ubuntu/upstart-session/1000/1812, SESSION_MANAGER=local/jack-ThinkPad-S430:@/tmp/.ICE-unix/1950,unix/jack-ThinkPad-S430:/tmp/.ICE-unix/1950, GNOME_DESKTOP_SESSION_ID=this-is-deprecated, COMPIZ_CONFIG_PROFILE=ubuntu, IM_CONFIG_PHASE=1, GDMSESSION=ubuntu, MANDATORY_PATH=/usr/share/gconf/ubuntu.mandatory.path, PWD=/home/jack, SESSIONTYPE=gnome-session, GTK_IM_MODULE=ibus, XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/jack, NLSPATH=/usr/dt/lib/nls/msg/%L/%N.cat, TEXTDOMAIN=im-config, XDG_MENU_PREFIX=gnome-, SELINUX_INIT=YES, PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/media/jack/home-partition/tool/jdk1.6.0_45/bin, XDG_CURRENT_DESKTOP=Unity, XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg, GDM_LANG=zh_CN, XAUTHORITY=/home/jack/.Xauthority, XDG_SEAT=seat0, XDG_SESSION_ID=c1, XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0, XDG_VTNR=7, GTK_MODULES=overlay-scrollbar:unity-gtk-module, GNOME_KEYRING_CONTROL=/run/user/1000/keyring-PHTm2z, SHLVL=1, TEXTDOMAINDIR=/usr/share/locale/, XFILESEARCHPATH=/usr/dt/app-defaults/%L/Dt, COMPIZ_BIN_PATH=/usr/bin/, COLORTERM=gnome-terminal, JOB=dbus, XDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/, QT_QPA_PLATFORMTHEME=appmenu-qt5, QT_IM_MODULE=ibus, LOGNAME=jack, WINDOWID=77594635, SESSION=ubuntu, GPG_AGENT_INFO=/run/user/1000/keyring-PHTm2z/gpg:0:1, _=./studio.sh, XMODIFIERS=@im=ibus, SSH_AUTH_SOCK=/run/user/1000/keyring-PHTm2z/ssh, LD_LIBRARY_PATH=/media/jack/home-partition/tool/jdk1.6.0_45/jre/lib/amd64/server:/media/jack/home-partition/tool/jdk1.6.0_45/jre/lib/amd64:/media/jack/home-partition/tool/jdk1.6.0_45/jre/../lib/amd64:/media/jack/home-partition/tool/android-studio/bin:, OLDPWD=/media/jack/home-partition/tool/jdk1.6.0_45, DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-7fBenTRGb1, SHELL=/bin/bash, LANGUAGE=zh_CN:zh, CLASSPATH=/media/jack/home-partition/tool/android-studio/bin/../lib/bootstrap.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/extensions.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/util.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/jdom.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/log4j.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/trove4j.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/jna.jar:/media/jack/home-partition/tool/jdk1.6.0_45/lib/tools.jar, DESKTOP_SESSION=ubuntu, INSTANCE=, DISPLAY=:0, CLUTTER_IM_MODULE=xim, USER=jack, UBUNTU_MENUPROXY=1, HOME=/home/jack, VTE_VERSION=3409, LESSOPEN=| /usr/bin/lesspipe %s, QT4_IM_MODULE=xim, DEFAULTS_PATH=/usr/share/gconf/ubuntu.default.path, LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:, XDG_RUNTIME_DIR=/run/user/1000, LANG=zh_CN.UTF-8}
+12:47:18.771 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 14: received class org.gradle.launcher.daemon.protocol.CloseInput
+12:47:18.772 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received IO message from client: CloseInput[id=caa949a9-44ed-4465-8fd0-963556e43317.2]
+12:47:18.774 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+12:47:18.774 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 5482). The daemon log file: /home/jack/.gradle/daemon/1.12/daemon-5482.out.log
+12:47:18.776 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] Closing daemon's stdin at end of input.
+12:47:18.776 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] The daemon will no longer process any standard input.
+12:47:18.780 [INFO] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=3b2a96da-527d-4264-9bcf-e5b0b0d2c381,javaHome=/media/jack/home-partition/tool/jdk1.6.0_45,daemonRegistryDir=/home/jack/.gradle/daemon,pid=5482,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8]
+12:47:19.340 [INFO] [org.gradle.tooling.internal.provider.DefaultPayloadClassLoaderRegistry] Creating ClassLoader 14c94275-c19d-4e0b-b9bb-ffca02ce4f9a from org.gradle.internal.classloader.MutableURLClassLoader$Spec@d6b18376 and [org.gradle.internal.classloader.FilteringClassLoader@c4e21db].
+Download http://jcenter.bintray.com/com/android/tools/build/gradle/0.12.2/gradle-0.12.2.pom
+Download http://jcenter.bintray.com/net/sf/proguard/proguard-gradle/4.11/proguard-gradle-4.11.pom
+Download http://jcenter.bintray.com/net/sf/proguard/proguard-parent/4.11/proguard-parent-4.11.pom
+Download http://jcenter.bintray.com/com/android/tools/lint/lint/23.0.2/lint-23.0.2.pom
+Download http://jcenter.bintray.com/com/android/tools/build/builder/0.12.2/builder-0.12.2.pom
+Download http://jcenter.bintray.com/net/sf/proguard/proguard-base/4.11/proguard-base-4.11.pom
+Download http://jcenter.bintray.com/org/eclipse/jdt/core/compiler/ecj/4.2.2/ecj-4.2.2.pom
+Download http://jcenter.bintray.com/com/android/tools/lint/lint-checks/23.0.2/lint-checks-23.0.2.pom
+Download http://jcenter.bintray.com/com/android/tools/sdk-common/23.0.2/sdk-common-23.0.2.pom
+Download http://jcenter.bintray.com/com/android/tools/build/builder-model/0.12.2/builder-model-0.12.2.pom
+Download http://jcenter.bintray.com/com/android/tools/ddms/ddmlib/23.0.2/ddmlib-23.0.2.pom
+Download http://jcenter.bintray.com/com/android/tools/build/manifest-merger/23.0.2/manifest-merger-23.0.2.pom
+Download http://jcenter.bintray.com/com/android/tools/sdklib/23.0.2/sdklib-23.0.2.pom
+Download http://jcenter.bintray.com/com/android/tools/common/23.0.2/common-23.0.2.pom
+Download http://jcenter.bintray.com/com/android/tools/build/builder-test-api/0.12.2/builder-test-api-0.12.2.pom
+Download http://jcenter.bintray.com/com/squareup/javawriter/2.5.0/javawriter-2.5.0.pom
+Download http://jcenter.bintray.com/org/sonatype/oss/oss-parent/7/oss-parent-7.pom
+Download http://jcenter.bintray.com/org/bouncycastle/bcpkix-jdk15on/1.48/bcpkix-jdk15on-1.48.pom
+Download http://jcenter.bintray.com/com/android/tools/lint/lint-api/23.0.2/lint-api-23.0.2.pom
+Download http://jcenter.bintray.com/org/ow2/asm/asm-analysis/4.0/asm-analysis-4.0.pom
+Download http://jcenter.bintray.com/org/ow2/asm/asm-parent/4.0/asm-parent-4.0.pom
+Download http://jcenter.bintray.com/org/ow2/ow2/1.3/ow2-1.3.pom
+Download http://jcenter.bintray.com/net/sf/kxml/kxml2/2.3.0/kxml2-2.3.0.pom
+Download http://jcenter.bintray.com/kxml2/kxml2/2.3.0/kxml2-2.3.0.pom
+Download http://jcenter.bintray.com/org/apache/httpcomponents/httpclient/4.1.1/httpclient-4.1.1.pom
+Download http://jcenter.bintray.com/org/apache/httpcomponents/httpcomponents-client/4.1.1/httpcomponents-client-4.1.1.pom
+Download http://jcenter.bintray.com/org/apache/httpcomponents/project/4.1.1/project-4.1.1.pom
+Download http://jcenter.bintray.com/com/android/tools/layoutlib/layoutlib-api/23.0.2/layoutlib-api-23.0.2.pom
+Download http://jcenter.bintray.com/org/apache/httpcomponents/httpmime/4.1/httpmime-4.1.pom
+Download http://jcenter.bintray.com/org/apache/httpcomponents/httpcomponents-client/4.1/httpcomponents-client-4.1.pom
+Download http://jcenter.bintray.com/com/android/tools/dvlib/23.0.2/dvlib-23.0.2.pom
+Download http://jcenter.bintray.com/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.pom
+Download http://jcenter.bintray.com/org/apache/commons/commons-parent/33/commons-parent-33.pom
+Download http://jcenter.bintray.com/org/apache/apache/13/apache-13.pom
+Download http://jcenter.bintray.com/com/google/guava/guava/15.0/guava-15.0.pom
+Download http://jcenter.bintray.com/com/google/guava/guava-parent/15.0/guava-parent-15.0.pom
+Download http://jcenter.bintray.com/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48.pom
+Download http://jcenter.bintray.com/org/ow2/asm/asm/4.0/asm-4.0.pom
+Download http://jcenter.bintray.com/com/android/tools/external/lombok/lombok-ast/0.2.2/lombok-ast-0.2.2.pom
+Download http://jcenter.bintray.com/org/ow2/asm/asm-tree/4.0/asm-tree-4.0.pom
+Download http://jcenter.bintray.com/org/apache/httpcomponents/httpcore/4.1/httpcore-4.1.pom
+Download http://jcenter.bintray.com/org/apache/httpcomponents/httpcomponents-core/4.1/httpcomponents-core-4.1.pom
+Download http://jcenter.bintray.com/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom
+Download http://jcenter.bintray.com/org/apache/commons/commons-parent/5/commons-parent-5.pom
+Download http://jcenter.bintray.com/org/apache/apache/4/apache-4.pom
+Download http://jcenter.bintray.com/commons-codec/commons-codec/1.4/commons-codec-1.4.pom
+Download http://jcenter.bintray.com/org/apache/commons/commons-parent/11/commons-parent-11.pom
+Download http://jcenter.bintray.com/com/android/tools/build/gradle/0.12.2/gradle-0.12.2.jar
+Download http://jcenter.bintray.com/net/sf/proguard/proguard-gradle/4.11/proguard-gradle-4.11.jar
+Download http://jcenter.bintray.com/com/android/tools/lint/lint/23.0.2/lint-23.0.2.jar
+Download http://jcenter.bintray.com/com/android/tools/build/builder/0.12.2/builder-0.12.2.jar
+Download http://jcenter.bintray.com/net/sf/proguard/proguard-base/4.11/proguard-base-4.11.jar
+Download http://jcenter.bintray.com/org/eclipse/jdt/core/compiler/ecj/4.2.2/ecj-4.2.2.jar
+Download http://jcenter.bintray.com/com/android/tools/lint/lint-checks/23.0.2/lint-checks-23.0.2.jar
+Download http://jcenter.bintray.com/com/android/tools/sdk-common/23.0.2/sdk-common-23.0.2.jar
+Download http://jcenter.bintray.com/com/android/tools/build/builder-model/0.12.2/builder-model-0.12.2.jar
+Download http://jcenter.bintray.com/com/android/tools/ddms/ddmlib/23.0.2/ddmlib-23.0.2.jar
+Download http://jcenter.bintray.com/com/android/tools/build/manifest-merger/23.0.2/manifest-merger-23.0.2.jar
+Download http://jcenter.bintray.com/com/android/tools/sdklib/23.0.2/sdklib-23.0.2.jar
+Download http://jcenter.bintray.com/com/android/tools/common/23.0.2/common-23.0.2.jar
+Download http://jcenter.bintray.com/com/android/tools/build/builder-test-api/0.12.2/builder-test-api-0.12.2.jar
+Download http://jcenter.bintray.com/com/squareup/javawriter/2.5.0/javawriter-2.5.0.jar
+Download http://jcenter.bintray.com/org/bouncycastle/bcpkix-jdk15on/1.48/bcpkix-jdk15on-1.48.jar
+Download http://jcenter.bintray.com/com/android/tools/lint/lint-api/23.0.2/lint-api-23.0.2.jar
+Download http://jcenter.bintray.com/org/ow2/asm/asm-analysis/4.0/asm-analysis-4.0.jar
+Download http://jcenter.bintray.com/net/sf/kxml/kxml2/2.3.0/kxml2-2.3.0.jar
+Download http://jcenter.bintray.com/org/apache/httpcomponents/httpclient/4.1.1/httpclient-4.1.1.jar
+Download http://jcenter.bintray.com/com/android/tools/layoutlib/layoutlib-api/23.0.2/layoutlib-api-23.0.2.jar
+Download http://jcenter.bintray.com/org/apache/httpcomponents/httpmime/4.1/httpmime-4.1.jar
+Download http://jcenter.bintray.com/com/android/tools/dvlib/23.0.2/dvlib-23.0.2.jar
+Download http://jcenter.bintray.com/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar
+Download http://jcenter.bintray.com/com/google/guava/guava/15.0/guava-15.0.jar
+Download http://jcenter.bintray.com/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48.jar
+Download http://jcenter.bintray.com/org/ow2/asm/asm/4.0/asm-4.0.jar
+Download http://jcenter.bintray.com/com/android/tools/external/lombok/lombok-ast/0.2.2/lombok-ast-0.2.2.jar
+Download http://jcenter.bintray.com/org/ow2/asm/asm-tree/4.0/asm-tree-4.0.jar
+Download http://jcenter.bintray.com/org/apache/httpcomponents/httpcore/4.1/httpcore-4.1.jar
+Download http://jcenter.bintray.com/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar
+Download http://jcenter.bintray.com/commons-codec/commons-codec/1.4/commons-codec-1.4.jar
+Relying on packaging to define the extension of the main artifact has been deprecated and is scheduled to be removed in Gradle 2.0
+Download http://jcenter.bintray.com/com/android/tools/build/gradle/0.12.2/gradle-0.12.2-sources.jar
+Download http://jcenter.bintray.com/net/sf/proguard/proguard-base/4.11/proguard-base-4.11-sources.jar
+Download http://jcenter.bintray.com/net/sf/proguard/proguard-gradle/4.11/proguard-gradle-4.11-sources.jar
+Download http://jcenter.bintray.com/org/eclipse/jdt/core/compiler/ecj/4.2.2/ecj-4.2.2-sources.jar
+Download http://jcenter.bintray.com/org/apache/httpcomponents/httpcore/4.1/httpcore-4.1-sources.jar
+Download http://jcenter.bintray.com/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1-sources.jar
+Download http://jcenter.bintray.com/commons-codec/commons-codec/1.4/commons-codec-1.4-sources.jar
+Download http://jcenter.bintray.com/org/apache/httpcomponents/httpclient/4.1.1/httpclient-4.1.1-sources.jar
+Download http://jcenter.bintray.com/com/google/guava/guava/15.0/guava-15.0-sources.jar
+Download http://jcenter.bintray.com/com/android/tools/common/23.0.2/common-23.0.2-sources.jar
+Download http://jcenter.bintray.com/net/sf/kxml/kxml2/2.3.0/kxml2-2.3.0-sources.jar
+Download http://jcenter.bintray.com/com/android/tools/layoutlib/layoutlib-api/23.0.2/layoutlib-api-23.0.2-sources.jar
+Download http://jcenter.bintray.com/org/apache/httpcomponents/httpmime/4.1/httpmime-4.1-sources.jar
+Download http://jcenter.bintray.com/com/android/tools/dvlib/23.0.2/dvlib-23.0.2-sources.jar
+Download http://jcenter.bintray.com/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1-sources.jar
+Download http://jcenter.bintray.com/com/android/tools/sdklib/23.0.2/sdklib-23.0.2-sources.jar
+Download http://jcenter.bintray.com/com/android/tools/sdk-common/23.0.2/sdk-common-23.0.2-sources.jar
+Download http://jcenter.bintray.com/com/android/tools/build/builder-model/0.12.2/builder-model-0.12.2-sources.jar
+Download http://jcenter.bintray.com/org/ow2/asm/asm/4.0/asm-4.0-sources.jar
+Download http://jcenter.bintray.com/com/android/tools/external/lombok/lombok-ast/0.2.2/lombok-ast-0.2.2-sources.jar
+Download http://jcenter.bintray.com/org/ow2/asm/asm-tree/4.0/asm-tree-4.0-sources.jar
+Download http://jcenter.bintray.com/com/android/tools/lint/lint-api/23.0.2/lint-api-23.0.2-sources.jar
+Download http://jcenter.bintray.com/org/ow2/asm/asm-analysis/4.0/asm-analysis-4.0-sources.jar
+Download http://jcenter.bintray.com/com/android/tools/lint/lint-checks/23.0.2/lint-checks-23.0.2-sources.jar
+Download http://jcenter.bintray.com/com/android/tools/lint/lint/23.0.2/lint-23.0.2-sources.jar
+Download http://jcenter.bintray.com/com/android/tools/ddms/ddmlib/23.0.2/ddmlib-23.0.2-sources.jar
+Download http://jcenter.bintray.com/com/android/tools/build/manifest-merger/23.0.2/manifest-merger-23.0.2-sources.jar
+Download http://jcenter.bintray.com/com/android/tools/build/builder-test-api/0.12.2/builder-test-api-0.12.2-sources.jar
+Download http://jcenter.bintray.com/com/squareup/javawriter/2.5.0/javawriter-2.5.0-sources.jar
+Download http://jcenter.bintray.com/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48-sources.jar
+Download http://jcenter.bintray.com/org/bouncycastle/bcpkix-jdk15on/1.48/bcpkix-jdk15on-1.48-sources.jar
+Download http://jcenter.bintray.com/com/android/tools/build/builder/0.12.2/builder-0.12.2-sources.jar
+
+BUILD SUCCESSFUL
+
+Total time: 15 mins 54.609 secs
+12:58:33.653 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+12:58:33.654 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: DaemonCommandResult[type=Success, value=org.gradle.tooling.internal.provider.BuildActionResult@1d63b3ec]
+12:58:33.654 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 13: dispatching class org.gradle.launcher.daemon.protocol.Success
+12:58:33.665 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] onFinishCommand() called while execution = DaemonCommandExecution[command = Build{id=caa949a9-44ed-4465-8fd0-963556e43317.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication}, connection = org.gradle.launcher.daemon.server.DefaultDaemonConnection@6b9cd75a]
+12:58:33.665 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] updating lastActivityAt to 1409461113665
+12:58:33.666 [INFO] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Marking the daemon as idle, address: [8f5c4f7c-33b0-41a4-b7e4-2e5f487ff3f2 port:58259, addresses:[/0:0:0:0:0:0:0:1%1, /127.0.0.1]]
+12:58:33.666 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking idle by address: [8f5c4f7c-33b0-41a4-b7e4-2e5f487ff3f2 port:58259, addresses:[/0:0:0:0:0:0:0:1%1, /127.0.0.1]]
+12:58:33.667 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+12:58:33.668 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+12:58:33.678 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+12:58:33.871 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=caa949a9-44ed-4465-8fd0-963556e43317.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication}
+12:58:33.872 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is idle, sleeping until state change or idle timeout at Sun Aug 31 15:58:33 CST 2014
+12:58:33.873 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 14: received class org.gradle.launcher.daemon.protocol.Finished
+12:58:33.873 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@49c384c5
+12:58:33.874 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 14: received null
+12:58:33.874 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received end-of-input from client.
+12:58:33.875 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: null
+12:58:33.875 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 13: stopping connection
+12:58:33.877 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 13: stopping connection
+12:58:33.881 [DEBUG] [org.apache.http.impl.conn.PoolingClientConnectionManager] Connection manager is shutting down
+12:58:33.882 [DEBUG] [org.apache.http.impl.conn.DefaultClientConnection] Connection 0.0.0.0:54622<->108.168.194.92:80 closed
+12:58:33.882 [DEBUG] [org.apache.http.impl.conn.DefaultClientConnection] Connection 0.0.0.0:50122<->205.251.215.73:80 closed
+12:58:33.883 [DEBUG] [org.apache.http.impl.conn.DefaultClientConnection] Connection 0.0.0.0:54622<->108.168.194.92:80 closed
+12:58:33.883 [DEBUG] [org.apache.http.impl.conn.DefaultClientConnection] Connection 0.0.0.0:50122<->205.251.215.73:80 closed
+12:58:33.884 [DEBUG] [org.apache.http.impl.conn.PoolingClientConnectionManager] Connection manager shut down
+13:00:17.082 [DEBUG] [org.gradle.messaging.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:52589 to /127.0.0.1:58259.
+13:00:17.131 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 19: received class org.gradle.launcher.daemon.protocol.Build
+13:00:17.131 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received non-IO message from client: Build{id=9cac8aa8-a9d7-40b3-965a-9c7a6c0461ea.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication}
+13:00:17.132 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=9cac8aa8-a9d7-40b3-965a-9c7a6c0461ea.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication}.
+13:00:17.132 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=9cac8aa8-a9d7-40b3-965a-9c7a6c0461ea.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication} with connection: socket connection at /127.0.0.1:58259 with /127.0.0.1:52589.
+13:00:17.133 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] onStartCommand(DaemonCommandExecution[command = Build{id=9cac8aa8-a9d7-40b3-965a-9c7a6c0461ea.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication}, connection = org.gradle.launcher.daemon.server.DefaultDaemonConnection@118eb9f]) called after 1.0 minutes of idle
+13:00:17.134 [INFO] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Marking the daemon as busy, address: [8f5c4f7c-33b0-41a4-b7e4-2e5f487ff3f2 port:58259, addresses:[/0:0:0:0:0:0:0:1%1, /127.0.0.1]]
+13:00:17.134 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [8f5c4f7c-33b0-41a4-b7e4-2e5f487ff3f2 port:58259, addresses:[/0:0:0:0:0:0:0:1%1, /127.0.0.1]]
+13:00:17.135 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+13:00:17.136 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+13:00:17.139 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+13:00:17.140 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] updating lastActivityAt to 1409461217140
+13:00:17.140 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building: Build{id=9cac8aa8-a9d7-40b3-965a-9c7a6c0461ea.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication}. Dispatching build started information...
+13:00:17.140 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is busy, sleeping until state changes.
+13:00:17.141 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: dispatching class org.gradle.launcher.daemon.protocol.BuildStarted
+13:00:17.145 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: {TERM=xterm, XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0, SSH_AGENT_PID=1896, JAVA_HOME=/media/jack/home-partition/tool/jdk1.6.0_45, SSH_AGENT_LAUNCHER=upstart, LESSCLOSE=/usr/bin/lesspipe %s %s, UPSTART_SESSION=unix:abstract=/com/ubuntu/upstart-session/1000/1812, SESSION_MANAGER=local/jack-ThinkPad-S430:@/tmp/.ICE-unix/1950,unix/jack-ThinkPad-S430:/tmp/.ICE-unix/1950, GNOME_DESKTOP_SESSION_ID=this-is-deprecated, COMPIZ_CONFIG_PROFILE=ubuntu, IM_CONFIG_PHASE=1, GDMSESSION=ubuntu, MANDATORY_PATH=/usr/share/gconf/ubuntu.mandatory.path, PWD=/home/jack, SESSIONTYPE=gnome-session, GTK_IM_MODULE=ibus, XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/jack, NLSPATH=/usr/dt/lib/nls/msg/%L/%N.cat, TEXTDOMAIN=im-config, XDG_MENU_PREFIX=gnome-, SELINUX_INIT=YES, PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/media/jack/home-partition/tool/jdk1.6.0_45/bin, XDG_CURRENT_DESKTOP=Unity, XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg, GDM_LANG=zh_CN, XAUTHORITY=/home/jack/.Xauthority, XDG_SEAT=seat0, XDG_SESSION_ID=c1, XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0, XDG_VTNR=7, GTK_MODULES=overlay-scrollbar:unity-gtk-module, GNOME_KEYRING_CONTROL=/run/user/1000/keyring-PHTm2z, SHLVL=1, TEXTDOMAINDIR=/usr/share/locale/, XFILESEARCHPATH=/usr/dt/app-defaults/%L/Dt, COMPIZ_BIN_PATH=/usr/bin/, COLORTERM=gnome-terminal, JOB=dbus, XDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/, QT_QPA_PLATFORMTHEME=appmenu-qt5, QT_IM_MODULE=ibus, LOGNAME=jack, WINDOWID=77594635, SESSION=ubuntu, GPG_AGENT_INFO=/run/user/1000/keyring-PHTm2z/gpg:0:1, _=./studio.sh, XMODIFIERS=@im=ibus, SSH_AUTH_SOCK=/run/user/1000/keyring-PHTm2z/ssh, LD_LIBRARY_PATH=/media/jack/home-partition/tool/jdk1.6.0_45/jre/lib/amd64/server:/media/jack/home-partition/tool/jdk1.6.0_45/jre/lib/amd64:/media/jack/home-partition/tool/jdk1.6.0_45/jre/../lib/amd64:/media/jack/home-partition/tool/android-studio/bin:, OLDPWD=/media/jack/home-partition/tool/jdk1.6.0_45, DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-7fBenTRGb1, SHELL=/bin/bash, LANGUAGE=zh_CN:zh, CLASSPATH=/media/jack/home-partition/tool/android-studio/bin/../lib/bootstrap.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/extensions.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/util.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/jdom.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/log4j.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/trove4j.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/jna.jar:/media/jack/home-partition/tool/jdk1.6.0_45/lib/tools.jar, DESKTOP_SESSION=ubuntu, INSTANCE=, DISPLAY=:0, CLUTTER_IM_MODULE=xim, USER=jack, UBUNTU_MENUPROXY=1, HOME=/home/jack, VTE_VERSION=3409, LESSOPEN=| /usr/bin/lesspipe %s, QT4_IM_MODULE=xim, DEFAULTS_PATH=/usr/share/gconf/ubuntu.default.path, LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:, XDG_RUNTIME_DIR=/run/user/1000, LANG=zh_CN.UTF-8}
+13:00:17.148 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+13:00:17.149 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 5482). The daemon log file: /home/jack/.gradle/daemon/1.12/daemon-5482.out.log
+13:00:17.153 [INFO] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=3b2a96da-527d-4264-9bcf-e5b0b0d2c381,javaHome=/media/jack/home-partition/tool/jdk1.6.0_45,daemonRegistryDir=/home/jack/.gradle/daemon,pid=5482,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8]
+13:00:17.172 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 19: received class org.gradle.launcher.daemon.protocol.CloseInput
+13:00:17.173 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received IO message from client: CloseInput[id=9cac8aa8-a9d7-40b3-965a-9c7a6c0461ea.2]
+13:00:17.174 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] Closing daemon's stdin at end of input.
+13:00:17.176 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] The daemon will no longer process any standard input.
+Configuration on demand is an incubating feature.
+Relying on packaging to define the extension of the main artifact has been deprecated and is scheduled to be removed in Gradle 2.0
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+A problem occurred configuring project ':app'.
+> Could not resolve all dependencies for configuration ':app:_debugCompile'.
+   > Could not find com.google.android.gms:play-services:4.2.42.
+     Required by:
+         MyApplication:app:unspecified
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 8.008 secs
+13:00:24.802 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+13:00:24.802 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: DaemonCommandResult[type=CommandFailure, value=org.gradle.launcher.exec.ReportedException: org.gradle.internal.exceptions.LocationAwareException: A problem occurred configuring project ':app'.]
+13:00:24.803 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: dispatching class org.gradle.launcher.daemon.protocol.CommandFailure
+13:00:24.831 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] onFinishCommand() called while execution = DaemonCommandExecution[command = Build{id=9cac8aa8-a9d7-40b3-965a-9c7a6c0461ea.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication}, connection = org.gradle.launcher.daemon.server.DefaultDaemonConnection@118eb9f]
+13:00:24.832 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] updating lastActivityAt to 1409461224832
+13:00:24.832 [INFO] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Marking the daemon as idle, address: [8f5c4f7c-33b0-41a4-b7e4-2e5f487ff3f2 port:58259, addresses:[/0:0:0:0:0:0:0:1%1, /127.0.0.1]]
+13:00:24.833 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking idle by address: [8f5c4f7c-33b0-41a4-b7e4-2e5f487ff3f2 port:58259, addresses:[/0:0:0:0:0:0:0:1%1, /127.0.0.1]]
+13:00:24.833 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+13:00:24.834 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+13:00:24.837 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+13:00:24.837 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=9cac8aa8-a9d7-40b3-965a-9c7a6c0461ea.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication}
+13:00:24.837 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is idle, sleeping until state change or idle timeout at Sun Aug 31 16:00:24 CST 2014
+13:00:24.888 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 19: received class org.gradle.launcher.daemon.protocol.Finished
+13:00:24.889 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@e12dab2
+13:00:24.889 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: org.gradle.launcher.daemon.protocol.Finished@e12dab2
+13:00:24.890 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 19: received null
+13:00:24.890 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: stopping connection
+13:00:24.890 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received end-of-input from client.
+13:00:24.891 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: stopping connection
+13:01:03.310 [DEBUG] [org.gradle.messaging.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:52596 to /127.0.0.1:58259.
+13:01:03.351 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 21: received class org.gradle.launcher.daemon.protocol.Build
+13:01:03.352 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received non-IO message from client: Build{id=285abcb7-3ec8-4a82-9c64-6c93047d2cb7.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1}
+13:01:03.352 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=285abcb7-3ec8-4a82-9c64-6c93047d2cb7.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1}.
+13:01:03.353 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=285abcb7-3ec8-4a82-9c64-6c93047d2cb7.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1} with connection: socket connection at /127.0.0.1:58259 with /127.0.0.1:52596.
+13:01:03.353 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] onStartCommand(DaemonCommandExecution[command = Build{id=285abcb7-3ec8-4a82-9c64-6c93047d2cb7.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1}, connection = org.gradle.launcher.daemon.server.DefaultDaemonConnection@4694bc86]) called after 0.0 minutes of idle
+13:01:03.354 [INFO] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Marking the daemon as busy, address: [8f5c4f7c-33b0-41a4-b7e4-2e5f487ff3f2 port:58259, addresses:[/0:0:0:0:0:0:0:1%1, /127.0.0.1]]
+13:01:03.354 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [8f5c4f7c-33b0-41a4-b7e4-2e5f487ff3f2 port:58259, addresses:[/0:0:0:0:0:0:0:1%1, /127.0.0.1]]
+13:01:03.355 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+13:01:03.355 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+13:01:03.359 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+13:01:03.359 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] updating lastActivityAt to 1409461263359
+13:01:03.360 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is busy, sleeping until state changes.
+13:01:03.360 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building: Build{id=285abcb7-3ec8-4a82-9c64-6c93047d2cb7.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1}. Dispatching build started information...
+13:01:03.361 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: dispatching class org.gradle.launcher.daemon.protocol.BuildStarted
+13:01:03.363 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: {TERM=xterm, XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0, SSH_AGENT_PID=1896, JAVA_HOME=/media/jack/home-partition/tool/jdk1.6.0_45, SSH_AGENT_LAUNCHER=upstart, LESSCLOSE=/usr/bin/lesspipe %s %s, UPSTART_SESSION=unix:abstract=/com/ubuntu/upstart-session/1000/1812, SESSION_MANAGER=local/jack-ThinkPad-S430:@/tmp/.ICE-unix/1950,unix/jack-ThinkPad-S430:/tmp/.ICE-unix/1950, GNOME_DESKTOP_SESSION_ID=this-is-deprecated, COMPIZ_CONFIG_PROFILE=ubuntu, IM_CONFIG_PHASE=1, GDMSESSION=ubuntu, MANDATORY_PATH=/usr/share/gconf/ubuntu.mandatory.path, PWD=/home/jack, SESSIONTYPE=gnome-session, GTK_IM_MODULE=ibus, XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/jack, NLSPATH=/usr/dt/lib/nls/msg/%L/%N.cat, TEXTDOMAIN=im-config, XDG_MENU_PREFIX=gnome-, SELINUX_INIT=YES, PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/media/jack/home-partition/tool/jdk1.6.0_45/bin, XDG_CURRENT_DESKTOP=Unity, XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg, GDM_LANG=zh_CN, XAUTHORITY=/home/jack/.Xauthority, XDG_SEAT=seat0, XDG_SESSION_ID=c1, XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0, XDG_VTNR=7, GTK_MODULES=overlay-scrollbar:unity-gtk-module, GNOME_KEYRING_CONTROL=/run/user/1000/keyring-PHTm2z, SHLVL=1, TEXTDOMAINDIR=/usr/share/locale/, XFILESEARCHPATH=/usr/dt/app-defaults/%L/Dt, COMPIZ_BIN_PATH=/usr/bin/, COLORTERM=gnome-terminal, JOB=dbus, XDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/, QT_QPA_PLATFORMTHEME=appmenu-qt5, QT_IM_MODULE=ibus, LOGNAME=jack, WINDOWID=77594635, SESSION=ubuntu, GPG_AGENT_INFO=/run/user/1000/keyring-PHTm2z/gpg:0:1, _=./studio.sh, XMODIFIERS=@im=ibus, SSH_AUTH_SOCK=/run/user/1000/keyring-PHTm2z/ssh, LD_LIBRARY_PATH=/media/jack/home-partition/tool/jdk1.6.0_45/jre/lib/amd64/server:/media/jack/home-partition/tool/jdk1.6.0_45/jre/lib/amd64:/media/jack/home-partition/tool/jdk1.6.0_45/jre/../lib/amd64:/media/jack/home-partition/tool/android-studio/bin:, OLDPWD=/media/jack/home-partition/tool/jdk1.6.0_45, DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-7fBenTRGb1, SHELL=/bin/bash, LANGUAGE=zh_CN:zh, CLASSPATH=/media/jack/home-partition/tool/android-studio/bin/../lib/bootstrap.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/extensions.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/util.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/jdom.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/log4j.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/trove4j.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/jna.jar:/media/jack/home-partition/tool/jdk1.6.0_45/lib/tools.jar, DESKTOP_SESSION=ubuntu, INSTANCE=, DISPLAY=:0, CLUTTER_IM_MODULE=xim, USER=jack, UBUNTU_MENUPROXY=1, HOME=/home/jack, VTE_VERSION=3409, LESSOPEN=| /usr/bin/lesspipe %s, QT4_IM_MODULE=xim, DEFAULTS_PATH=/usr/share/gconf/ubuntu.default.path, LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:, XDG_RUNTIME_DIR=/run/user/1000, LANG=zh_CN.UTF-8}
+13:01:03.367 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+13:01:03.367 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 5482). The daemon log file: /home/jack/.gradle/daemon/1.12/daemon-5482.out.log
+13:01:03.368 [INFO] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=3b2a96da-527d-4264-9bcf-e5b0b0d2c381,javaHome=/media/jack/home-partition/tool/jdk1.6.0_45,daemonRegistryDir=/home/jack/.gradle/daemon,pid=5482,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8]
+13:01:03.382 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 21: received class org.gradle.launcher.daemon.protocol.CloseInput
+13:01:03.383 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received IO message from client: CloseInput[id=285abcb7-3ec8-4a82-9c64-6c93047d2cb7.2]
+13:01:03.383 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] Closing daemon's stdin at end of input.
+13:01:03.384 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] The daemon will no longer process any standard input.
+
+BUILD SUCCESSFUL
+
+Total time: 4.61 secs
+13:01:07.855 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+13:01:07.856 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: DaemonCommandResult[type=Success, value=org.gradle.tooling.internal.provider.BuildActionResult@323ba8a]
+13:01:07.856 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: dispatching class org.gradle.launcher.daemon.protocol.Success
+13:01:07.862 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] onFinishCommand() called while execution = DaemonCommandExecution[command = Build{id=285abcb7-3ec8-4a82-9c64-6c93047d2cb7.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1}, connection = org.gradle.launcher.daemon.server.DefaultDaemonConnection@4694bc86]
+13:01:07.863 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] updating lastActivityAt to 1409461267863
+13:01:07.864 [INFO] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Marking the daemon as idle, address: [8f5c4f7c-33b0-41a4-b7e4-2e5f487ff3f2 port:58259, addresses:[/0:0:0:0:0:0:0:1%1, /127.0.0.1]]
+13:01:07.864 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking idle by address: [8f5c4f7c-33b0-41a4-b7e4-2e5f487ff3f2 port:58259, addresses:[/0:0:0:0:0:0:0:1%1, /127.0.0.1]]
+13:01:07.865 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+13:01:07.866 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+13:01:07.869 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+13:01:07.870 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is idle, sleeping until state change or idle timeout at Sun Aug 31 16:01:07 CST 2014
+13:01:08.459 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=285abcb7-3ec8-4a82-9c64-6c93047d2cb7.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1}
+13:01:08.458 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 21: received class org.gradle.launcher.daemon.protocol.Finished
+13:01:08.460 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@82aab2f
+13:01:08.460 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 21: received null
+13:01:08.461 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received end-of-input from client.
+13:01:08.461 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: null
+13:01:08.462 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: stopping connection
+13:01:08.467 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: stopping connection
+13:01:11.480 [DEBUG] [org.gradle.messaging.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:52597 to /127.0.0.1:58259.
+13:01:11.511 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 23: received class org.gradle.launcher.daemon.protocol.Build
+13:01:11.512 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received non-IO message from client: Build{id=5197603f-9a01-464d-ac03-0fb1e4aecb01.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1}
+13:01:11.513 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=5197603f-9a01-464d-ac03-0fb1e4aecb01.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1}.
+13:01:11.513 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=5197603f-9a01-464d-ac03-0fb1e4aecb01.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1} with connection: socket connection at /127.0.0.1:58259 with /127.0.0.1:52597.
+13:01:11.514 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] onStartCommand(DaemonCommandExecution[command = Build{id=5197603f-9a01-464d-ac03-0fb1e4aecb01.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1}, connection = org.gradle.launcher.daemon.server.DefaultDaemonConnection@5d463027]) called after 0.0 minutes of idle
+13:01:11.515 [INFO] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Marking the daemon as busy, address: [8f5c4f7c-33b0-41a4-b7e4-2e5f487ff3f2 port:58259, addresses:[/0:0:0:0:0:0:0:1%1, /127.0.0.1]]
+13:01:11.515 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [8f5c4f7c-33b0-41a4-b7e4-2e5f487ff3f2 port:58259, addresses:[/0:0:0:0:0:0:0:1%1, /127.0.0.1]]
+13:01:11.516 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+13:01:11.516 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+13:01:11.534 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+13:01:11.537 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] updating lastActivityAt to 1409461271537
+13:01:11.539 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is busy, sleeping until state changes.
+13:01:11.541 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building: Build{id=5197603f-9a01-464d-ac03-0fb1e4aecb01.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1}. Dispatching build started information...
+13:01:11.542 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: dispatching class org.gradle.launcher.daemon.protocol.BuildStarted
+13:01:11.550 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: {TERM=xterm, XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0, SSH_AGENT_PID=1896, JAVA_HOME=/media/jack/home-partition/tool/jdk1.6.0_45, SSH_AGENT_LAUNCHER=upstart, LESSCLOSE=/usr/bin/lesspipe %s %s, UPSTART_SESSION=unix:abstract=/com/ubuntu/upstart-session/1000/1812, SESSION_MANAGER=local/jack-ThinkPad-S430:@/tmp/.ICE-unix/1950,unix/jack-ThinkPad-S430:/tmp/.ICE-unix/1950, GNOME_DESKTOP_SESSION_ID=this-is-deprecated, COMPIZ_CONFIG_PROFILE=ubuntu, IM_CONFIG_PHASE=1, GDMSESSION=ubuntu, MANDATORY_PATH=/usr/share/gconf/ubuntu.mandatory.path, PWD=/home/jack, SESSIONTYPE=gnome-session, GTK_IM_MODULE=ibus, XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/jack, NLSPATH=/usr/dt/lib/nls/msg/%L/%N.cat, TEXTDOMAIN=im-config, XDG_MENU_PREFIX=gnome-, SELINUX_INIT=YES, PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/media/jack/home-partition/tool/jdk1.6.0_45/bin, XDG_CURRENT_DESKTOP=Unity, XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg, GDM_LANG=zh_CN, XAUTHORITY=/home/jack/.Xauthority, XDG_SEAT=seat0, XDG_SESSION_ID=c1, XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0, XDG_VTNR=7, GTK_MODULES=overlay-scrollbar:unity-gtk-module, GNOME_KEYRING_CONTROL=/run/user/1000/keyring-PHTm2z, SHLVL=1, TEXTDOMAINDIR=/usr/share/locale/, XFILESEARCHPATH=/usr/dt/app-defaults/%L/Dt, COMPIZ_BIN_PATH=/usr/bin/, COLORTERM=gnome-terminal, JOB=dbus, XDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/, QT_QPA_PLATFORMTHEME=appmenu-qt5, QT_IM_MODULE=ibus, LOGNAME=jack, WINDOWID=77594635, SESSION=ubuntu, GPG_AGENT_INFO=/run/user/1000/keyring-PHTm2z/gpg:0:1, _=./studio.sh, XMODIFIERS=@im=ibus, SSH_AUTH_SOCK=/run/user/1000/keyring-PHTm2z/ssh, LD_LIBRARY_PATH=/media/jack/home-partition/tool/jdk1.6.0_45/jre/lib/amd64/server:/media/jack/home-partition/tool/jdk1.6.0_45/jre/lib/amd64:/media/jack/home-partition/tool/jdk1.6.0_45/jre/../lib/amd64:/media/jack/home-partition/tool/android-studio/bin:, OLDPWD=/media/jack/home-partition/tool/jdk1.6.0_45, DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-7fBenTRGb1, SHELL=/bin/bash, LANGUAGE=zh_CN:zh, CLASSPATH=/media/jack/home-partition/tool/android-studio/bin/../lib/bootstrap.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/extensions.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/util.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/jdom.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/log4j.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/trove4j.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/jna.jar:/media/jack/home-partition/tool/jdk1.6.0_45/lib/tools.jar, DESKTOP_SESSION=ubuntu, INSTANCE=, DISPLAY=:0, CLUTTER_IM_MODULE=xim, USER=jack, UBUNTU_MENUPROXY=1, HOME=/home/jack, VTE_VERSION=3409, LESSOPEN=| /usr/bin/lesspipe %s, QT4_IM_MODULE=xim, DEFAULTS_PATH=/usr/share/gconf/ubuntu.default.path, LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:, XDG_RUNTIME_DIR=/run/user/1000, LANG=zh_CN.UTF-8}
+13:01:11.554 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+13:01:11.554 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 5482). The daemon log file: /home/jack/.gradle/daemon/1.12/daemon-5482.out.log
+13:01:11.555 [INFO] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=3b2a96da-527d-4264-9bcf-e5b0b0d2c381,javaHome=/media/jack/home-partition/tool/jdk1.6.0_45,daemonRegistryDir=/home/jack/.gradle/daemon,pid=5482,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8]
+13:01:11.566 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 23: received class org.gradle.launcher.daemon.protocol.CloseInput
+13:01:11.567 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received IO message from client: CloseInput[id=5197603f-9a01-464d-ac03-0fb1e4aecb01.2]
+13:01:11.567 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] Closing daemon's stdin at end of input.
+13:01:11.567 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] The daemon will no longer process any standard input.
+Configuration on demand is an incubating feature.
+:app:preBuild
+:app:preDebugBuild
+:app:checkDebugManifest
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+
+BUILD SUCCESSFUL
+
+Total time: 5.081 secs
+13:01:16.555 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+13:01:16.556 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: DaemonCommandResult[type=Success, value=org.gradle.tooling.internal.provider.BuildActionResult@72f221de]
+13:01:16.556 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: dispatching class org.gradle.launcher.daemon.protocol.Success
+13:01:16.561 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] onFinishCommand() called while execution = DaemonCommandExecution[command = Build{id=5197603f-9a01-464d-ac03-0fb1e4aecb01.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1}, connection = org.gradle.launcher.daemon.server.DefaultDaemonConnection@5d463027]
+13:01:16.561 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] updating lastActivityAt to 1409461276561
+13:01:16.562 [INFO] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Marking the daemon as idle, address: [8f5c4f7c-33b0-41a4-b7e4-2e5f487ff3f2 port:58259, addresses:[/0:0:0:0:0:0:0:1%1, /127.0.0.1]]
+13:01:16.562 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking idle by address: [8f5c4f7c-33b0-41a4-b7e4-2e5f487ff3f2 port:58259, addresses:[/0:0:0:0:0:0:0:1%1, /127.0.0.1]]
+13:01:16.562 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+13:01:16.563 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+13:01:16.563 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 23: received class org.gradle.launcher.daemon.protocol.Finished
+13:01:16.564 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@3d0cc52f
+13:01:16.565 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 23: received null
+13:01:16.565 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received end-of-input from client.
+13:01:16.567 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+13:01:16.568 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is idle, sleeping until state change or idle timeout at Sun Aug 31 16:01:16 CST 2014
+13:01:16.569 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=5197603f-9a01-464d-ac03-0fb1e4aecb01.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1}
+13:01:16.569 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: null
+13:01:16.570 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: stopping connection
+13:01:16.571 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: stopping connection
+13:01:16.812 [DEBUG] [org.gradle.messaging.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:52598 to /127.0.0.1:58259.
+13:01:16.832 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 44: received class org.gradle.launcher.daemon.protocol.Build
+13:01:16.832 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received non-IO message from client: Build{id=9995bd15-2848-46a7-b60e-9799aec60bfe.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1}
+13:01:16.833 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=9995bd15-2848-46a7-b60e-9799aec60bfe.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1}.
+13:01:16.833 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=9995bd15-2848-46a7-b60e-9799aec60bfe.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1} with connection: socket connection at /127.0.0.1:58259 with /127.0.0.1:52598.
+13:01:16.834 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] onStartCommand(DaemonCommandExecution[command = Build{id=9995bd15-2848-46a7-b60e-9799aec60bfe.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1}, connection = org.gradle.launcher.daemon.server.DefaultDaemonConnection@212ca458]) called after 0.0 minutes of idle
+13:01:16.835 [INFO] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Marking the daemon as busy, address: [8f5c4f7c-33b0-41a4-b7e4-2e5f487ff3f2 port:58259, addresses:[/0:0:0:0:0:0:0:1%1, /127.0.0.1]]
+13:01:16.837 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [8f5c4f7c-33b0-41a4-b7e4-2e5f487ff3f2 port:58259, addresses:[/0:0:0:0:0:0:0:1%1, /127.0.0.1]]
+13:01:16.838 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+13:01:16.838 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+13:01:16.841 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+13:01:16.842 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] updating lastActivityAt to 1409461276842
+13:01:16.843 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is busy, sleeping until state changes.
+13:01:16.843 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building: Build{id=9995bd15-2848-46a7-b60e-9799aec60bfe.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1}. Dispatching build started information...
+13:01:16.844 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: dispatching class org.gradle.launcher.daemon.protocol.BuildStarted
+13:01:16.852 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: {TERM=xterm, XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0, SSH_AGENT_PID=1896, JAVA_HOME=/media/jack/home-partition/tool/jdk1.6.0_45, SSH_AGENT_LAUNCHER=upstart, LESSCLOSE=/usr/bin/lesspipe %s %s, UPSTART_SESSION=unix:abstract=/com/ubuntu/upstart-session/1000/1812, SESSION_MANAGER=local/jack-ThinkPad-S430:@/tmp/.ICE-unix/1950,unix/jack-ThinkPad-S430:/tmp/.ICE-unix/1950, GNOME_DESKTOP_SESSION_ID=this-is-deprecated, COMPIZ_CONFIG_PROFILE=ubuntu, IM_CONFIG_PHASE=1, GDMSESSION=ubuntu, MANDATORY_PATH=/usr/share/gconf/ubuntu.mandatory.path, PWD=/home/jack, SESSIONTYPE=gnome-session, GTK_IM_MODULE=ibus, XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/jack, NLSPATH=/usr/dt/lib/nls/msg/%L/%N.cat, TEXTDOMAIN=im-config, XDG_MENU_PREFIX=gnome-, SELINUX_INIT=YES, PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/media/jack/home-partition/tool/jdk1.6.0_45/bin, XDG_CURRENT_DESKTOP=Unity, XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg, GDM_LANG=zh_CN, XAUTHORITY=/home/jack/.Xauthority, XDG_SEAT=seat0, XDG_SESSION_ID=c1, XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0, XDG_VTNR=7, GTK_MODULES=overlay-scrollbar:unity-gtk-module, GNOME_KEYRING_CONTROL=/run/user/1000/keyring-PHTm2z, SHLVL=1, TEXTDOMAINDIR=/usr/share/locale/, XFILESEARCHPATH=/usr/dt/app-defaults/%L/Dt, COMPIZ_BIN_PATH=/usr/bin/, COLORTERM=gnome-terminal, JOB=dbus, XDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/, QT_QPA_PLATFORMTHEME=appmenu-qt5, QT_IM_MODULE=ibus, LOGNAME=jack, WINDOWID=77594635, SESSION=ubuntu, GPG_AGENT_INFO=/run/user/1000/keyring-PHTm2z/gpg:0:1, _=./studio.sh, XMODIFIERS=@im=ibus, SSH_AUTH_SOCK=/run/user/1000/keyring-PHTm2z/ssh, LD_LIBRARY_PATH=/media/jack/home-partition/tool/jdk1.6.0_45/jre/lib/amd64/server:/media/jack/home-partition/tool/jdk1.6.0_45/jre/lib/amd64:/media/jack/home-partition/tool/jdk1.6.0_45/jre/../lib/amd64:/media/jack/home-partition/tool/android-studio/bin:, OLDPWD=/media/jack/home-partition/tool/jdk1.6.0_45, DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-7fBenTRGb1, SHELL=/bin/bash, LANGUAGE=zh_CN:zh, CLASSPATH=/media/jack/home-partition/tool/android-studio/bin/../lib/bootstrap.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/extensions.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/util.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/jdom.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/log4j.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/trove4j.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/jna.jar:/media/jack/home-partition/tool/jdk1.6.0_45/lib/tools.jar, DESKTOP_SESSION=ubuntu, INSTANCE=, DISPLAY=:0, CLUTTER_IM_MODULE=xim, USER=jack, UBUNTU_MENUPROXY=1, HOME=/home/jack, VTE_VERSION=3409, LESSOPEN=| /usr/bin/lesspipe %s, QT4_IM_MODULE=xim, DEFAULTS_PATH=/usr/share/gconf/ubuntu.default.path, LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:, XDG_RUNTIME_DIR=/run/user/1000, LANG=zh_CN.UTF-8}
+13:01:16.855 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+13:01:16.855 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 5482). The daemon log file: /home/jack/.gradle/daemon/1.12/daemon-5482.out.log
+13:01:16.856 [INFO] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=3b2a96da-527d-4264-9bcf-e5b0b0d2c381,javaHome=/media/jack/home-partition/tool/jdk1.6.0_45,daemonRegistryDir=/home/jack/.gradle/daemon,pid=5482,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8]
+Configuration on demand is an incubating feature.
+:app:preBuild
+:app:compileDebugNdk
+:app:preDebugBuild
+:app:checkDebugManifest
+:app:prepareDebugDependencies
+:app:compileDebugAidl UP-TO-DATE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:mergeDebugResources UP-TO-DATE
+:app:processDebugManifest UP-TO-DATE
+:app:processDebugResources UP-TO-DATE
+:app:generateDebugSources UP-TO-DATE
+:app:compileDebugJava
+:app:preDexDebug
+:app:dexDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+
+BUILD SUCCESSFUL
+
+Total time: 9.392 secs
+13:01:26.185 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+13:01:26.185 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: DaemonCommandResult[type=Success, value=org.gradle.tooling.internal.provider.BuildActionResult@5afecc75]
+13:01:26.185 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: dispatching class org.gradle.launcher.daemon.protocol.Success
+13:01:26.188 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] onFinishCommand() called while execution = DaemonCommandExecution[command = Build{id=9995bd15-2848-46a7-b60e-9799aec60bfe.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1}, connection = org.gradle.launcher.daemon.server.DefaultDaemonConnection@212ca458]
+13:01:26.188 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] updating lastActivityAt to 1409461286188
+13:01:26.188 [INFO] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Marking the daemon as idle, address: [8f5c4f7c-33b0-41a4-b7e4-2e5f487ff3f2 port:58259, addresses:[/0:0:0:0:0:0:0:1%1, /127.0.0.1]]
+13:01:26.189 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking idle by address: [8f5c4f7c-33b0-41a4-b7e4-2e5f487ff3f2 port:58259, addresses:[/0:0:0:0:0:0:0:1%1, /127.0.0.1]]
+13:01:26.189 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+13:01:26.189 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+13:01:26.191 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+13:01:26.192 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=9995bd15-2848-46a7-b60e-9799aec60bfe.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1}
+13:01:26.192 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is idle, sleeping until state change or idle timeout at Sun Aug 31 16:01:26 CST 2014
+13:01:26.328 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 44: received class org.gradle.launcher.daemon.protocol.Finished
+13:01:26.329 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@4e97031
+13:01:26.329 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 44: received null
+13:01:26.330 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received end-of-input from client.
+13:01:26.330 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: null
+13:01:26.331 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: stopping connection
+13:01:26.332 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: stopping connection
+13:11:40.057 [DEBUG] [org.gradle.messaging.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:52646 to /127.0.0.1:58259.
+13:11:40.077 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 57: received class org.gradle.launcher.daemon.protocol.Build
+13:11:40.078 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received non-IO message from client: Build{id=fc8b55c6-2349-4448-b090-8bf6c3693f4f.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1}
+13:11:40.079 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=fc8b55c6-2349-4448-b090-8bf6c3693f4f.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1}.
+13:11:40.079 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=fc8b55c6-2349-4448-b090-8bf6c3693f4f.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1} with connection: socket connection at /127.0.0.1:58259 with /127.0.0.1:52646.
+13:11:40.080 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] onStartCommand(DaemonCommandExecution[command = Build{id=fc8b55c6-2349-4448-b090-8bf6c3693f4f.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1}, connection = org.gradle.launcher.daemon.server.DefaultDaemonConnection@21e66f2a]) called after 10.0 minutes of idle
+13:11:40.080 [INFO] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Marking the daemon as busy, address: [8f5c4f7c-33b0-41a4-b7e4-2e5f487ff3f2 port:58259, addresses:[/0:0:0:0:0:0:0:1%1, /127.0.0.1]]
+13:11:40.080 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [8f5c4f7c-33b0-41a4-b7e4-2e5f487ff3f2 port:58259, addresses:[/0:0:0:0:0:0:0:1%1, /127.0.0.1]]
+13:11:40.081 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+13:11:40.091 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+13:11:40.107 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+13:11:40.107 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] updating lastActivityAt to 1409461900107
+13:11:40.108 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building: Build{id=fc8b55c6-2349-4448-b090-8bf6c3693f4f.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1}. Dispatching build started information...
+13:11:40.108 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is busy, sleeping until state changes.
+13:11:40.108 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 56: dispatching class org.gradle.launcher.daemon.protocol.BuildStarted
+13:11:40.110 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: {TERM=xterm, XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0, SSH_AGENT_PID=1896, JAVA_HOME=/media/jack/home-partition/tool/jdk1.6.0_45, SSH_AGENT_LAUNCHER=upstart, LESSCLOSE=/usr/bin/lesspipe %s %s, UPSTART_SESSION=unix:abstract=/com/ubuntu/upstart-session/1000/1812, SESSION_MANAGER=local/jack-ThinkPad-S430:@/tmp/.ICE-unix/1950,unix/jack-ThinkPad-S430:/tmp/.ICE-unix/1950, GNOME_DESKTOP_SESSION_ID=this-is-deprecated, COMPIZ_CONFIG_PROFILE=ubuntu, IM_CONFIG_PHASE=1, GDMSESSION=ubuntu, MANDATORY_PATH=/usr/share/gconf/ubuntu.mandatory.path, PWD=/home/jack, SESSIONTYPE=gnome-session, GTK_IM_MODULE=ibus, XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/jack, NLSPATH=/usr/dt/lib/nls/msg/%L/%N.cat, TEXTDOMAIN=im-config, XDG_MENU_PREFIX=gnome-, SELINUX_INIT=YES, PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/media/jack/home-partition/tool/jdk1.6.0_45/bin, XDG_CURRENT_DESKTOP=Unity, XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg, GDM_LANG=zh_CN, XAUTHORITY=/home/jack/.Xauthority, XDG_SEAT=seat0, XDG_SESSION_ID=c1, XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0, XDG_VTNR=7, GTK_MODULES=overlay-scrollbar:unity-gtk-module, GNOME_KEYRING_CONTROL=/run/user/1000/keyring-PHTm2z, SHLVL=1, TEXTDOMAINDIR=/usr/share/locale/, XFILESEARCHPATH=/usr/dt/app-defaults/%L/Dt, COMPIZ_BIN_PATH=/usr/bin/, COLORTERM=gnome-terminal, JOB=dbus, XDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/, QT_QPA_PLATFORMTHEME=appmenu-qt5, QT_IM_MODULE=ibus, LOGNAME=jack, WINDOWID=77594635, SESSION=ubuntu, GPG_AGENT_INFO=/run/user/1000/keyring-PHTm2z/gpg:0:1, _=./studio.sh, XMODIFIERS=@im=ibus, SSH_AUTH_SOCK=/run/user/1000/keyring-PHTm2z/ssh, LD_LIBRARY_PATH=/media/jack/home-partition/tool/jdk1.6.0_45/jre/lib/amd64/server:/media/jack/home-partition/tool/jdk1.6.0_45/jre/lib/amd64:/media/jack/home-partition/tool/jdk1.6.0_45/jre/../lib/amd64:/media/jack/home-partition/tool/android-studio/bin:, OLDPWD=/media/jack/home-partition/tool/jdk1.6.0_45, DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-7fBenTRGb1, SHELL=/bin/bash, LANGUAGE=zh_CN:zh, CLASSPATH=/media/jack/home-partition/tool/android-studio/bin/../lib/bootstrap.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/extensions.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/util.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/jdom.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/log4j.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/trove4j.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/jna.jar:/media/jack/home-partition/tool/jdk1.6.0_45/lib/tools.jar, DESKTOP_SESSION=ubuntu, INSTANCE=, DISPLAY=:0, CLUTTER_IM_MODULE=xim, USER=jack, UBUNTU_MENUPROXY=1, HOME=/home/jack, VTE_VERSION=3409, LESSOPEN=| /usr/bin/lesspipe %s, QT4_IM_MODULE=xim, DEFAULTS_PATH=/usr/share/gconf/ubuntu.default.path, LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:, XDG_RUNTIME_DIR=/run/user/1000, LANG=zh_CN.UTF-8}
+13:11:40.112 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+13:11:40.112 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 5482). The daemon log file: /home/jack/.gradle/daemon/1.12/daemon-5482.out.log
+13:11:40.113 [INFO] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=3b2a96da-527d-4264-9bcf-e5b0b0d2c381,javaHome=/media/jack/home-partition/tool/jdk1.6.0_45,daemonRegistryDir=/home/jack/.gradle/daemon,pid=5482,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8]
+13:11:40.114 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 57: received class org.gradle.launcher.daemon.protocol.CloseInput
+13:11:40.114 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received IO message from client: CloseInput[id=fc8b55c6-2349-4448-b090-8bf6c3693f4f.2]
+13:11:40.115 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] Closing daemon's stdin at end of input.
+13:11:40.115 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] The daemon will no longer process any standard input.
+Configuration on demand is an incubating feature.
+:app:preBuild
+:app:compileDebugNdk UP-TO-DATE
+:app:preDebugBuild
+:app:checkDebugManifest
+:app:prepareDebugDependencies
+:app:compileDebugAidl UP-TO-DATE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:mergeDebugResources UP-TO-DATE
+:app:processDebugManifest UP-TO-DATE
+:app:processDebugResources UP-TO-DATE
+:app:generateDebugSources UP-TO-DATE
+:app:compileDebugJava UP-TO-DATE
+:app:preDexDebug UP-TO-DATE
+:app:dexDebug UP-TO-DATE
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug UP-TO-DATE
+:app:zipalignDebug UP-TO-DATE
+:app:assembleDebug UP-TO-DATE
+
+BUILD SUCCESSFUL
+
+Total time: 2.162 secs
+13:11:42.000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+13:11:42.000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: DaemonCommandResult[type=Success, value=org.gradle.tooling.internal.provider.BuildActionResult@79a83d5c]
+13:11:42.000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 56: dispatching class org.gradle.launcher.daemon.protocol.Success
+13:11:42.003 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] onFinishCommand() called while execution = DaemonCommandExecution[command = Build{id=fc8b55c6-2349-4448-b090-8bf6c3693f4f.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1}, connection = org.gradle.launcher.daemon.server.DefaultDaemonConnection@21e66f2a]
+13:11:42.003 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] updating lastActivityAt to 1409461902003
+13:11:42.004 [INFO] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Marking the daemon as idle, address: [8f5c4f7c-33b0-41a4-b7e4-2e5f487ff3f2 port:58259, addresses:[/0:0:0:0:0:0:0:1%1, /127.0.0.1]]
+13:11:42.004 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking idle by address: [8f5c4f7c-33b0-41a4-b7e4-2e5f487ff3f2 port:58259, addresses:[/0:0:0:0:0:0:0:1%1, /127.0.0.1]]
+13:11:42.004 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+13:11:42.005 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+13:11:42.007 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+13:11:42.008 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is idle, sleeping until state change or idle timeout at Sun Aug 31 16:11:42 CST 2014
+13:11:42.554 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=fc8b55c6-2349-4448-b090-8bf6c3693f4f.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1}
+13:11:42.554 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 57: received class org.gradle.launcher.daemon.protocol.Finished
+13:11:42.555 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@2c35c28c
+13:11:42.556 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 57: received null
+13:11:42.556 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received end-of-input from client.
+13:11:42.558 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: null
+13:11:42.559 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 56: stopping connection
+13:11:42.561 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 56: stopping connection
+13:13:40.270 [DEBUG] [org.gradle.messaging.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:52744 to /127.0.0.1:58259.
+13:13:40.283 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 60: received class org.gradle.launcher.daemon.protocol.Build
+13:13:40.285 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received non-IO message from client: Build{id=ce2f29e2-953b-4122-aba2-acd055d6244b.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1}
+13:13:40.286 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=ce2f29e2-953b-4122-aba2-acd055d6244b.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1}.
+13:13:40.287 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=ce2f29e2-953b-4122-aba2-acd055d6244b.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1} with connection: socket connection at /127.0.0.1:58259 with /127.0.0.1:52744.
+13:13:40.288 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] onStartCommand(DaemonCommandExecution[command = Build{id=ce2f29e2-953b-4122-aba2-acd055d6244b.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1}, connection = org.gradle.launcher.daemon.server.DefaultDaemonConnection@787c29d7]) called after 1.0 minutes of idle
+13:13:40.288 [INFO] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Marking the daemon as busy, address: [8f5c4f7c-33b0-41a4-b7e4-2e5f487ff3f2 port:58259, addresses:[/0:0:0:0:0:0:0:1%1, /127.0.0.1]]
+13:13:40.288 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [8f5c4f7c-33b0-41a4-b7e4-2e5f487ff3f2 port:58259, addresses:[/0:0:0:0:0:0:0:1%1, /127.0.0.1]]
+13:13:40.289 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+13:13:40.289 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+13:13:40.291 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+13:13:40.292 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] updating lastActivityAt to 1409462020292
+13:13:40.292 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is busy, sleeping until state changes.
+13:13:40.292 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building: Build{id=ce2f29e2-953b-4122-aba2-acd055d6244b.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1}. Dispatching build started information...
+13:13:40.293 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 59: dispatching class org.gradle.launcher.daemon.protocol.BuildStarted
+13:13:40.294 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: {TERM=xterm, XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0, SSH_AGENT_PID=1896, JAVA_HOME=/media/jack/home-partition/tool/jdk1.6.0_45, SSH_AGENT_LAUNCHER=upstart, LESSCLOSE=/usr/bin/lesspipe %s %s, UPSTART_SESSION=unix:abstract=/com/ubuntu/upstart-session/1000/1812, SESSION_MANAGER=local/jack-ThinkPad-S430:@/tmp/.ICE-unix/1950,unix/jack-ThinkPad-S430:/tmp/.ICE-unix/1950, GNOME_DESKTOP_SESSION_ID=this-is-deprecated, COMPIZ_CONFIG_PROFILE=ubuntu, IM_CONFIG_PHASE=1, GDMSESSION=ubuntu, MANDATORY_PATH=/usr/share/gconf/ubuntu.mandatory.path, PWD=/home/jack, SESSIONTYPE=gnome-session, GTK_IM_MODULE=ibus, XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/jack, NLSPATH=/usr/dt/lib/nls/msg/%L/%N.cat, TEXTDOMAIN=im-config, XDG_MENU_PREFIX=gnome-, SELINUX_INIT=YES, PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/media/jack/home-partition/tool/jdk1.6.0_45/bin, XDG_CURRENT_DESKTOP=Unity, XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg, GDM_LANG=zh_CN, XAUTHORITY=/home/jack/.Xauthority, XDG_SEAT=seat0, XDG_SESSION_ID=c1, XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0, XDG_VTNR=7, GTK_MODULES=overlay-scrollbar:unity-gtk-module, GNOME_KEYRING_CONTROL=/run/user/1000/keyring-PHTm2z, SHLVL=1, TEXTDOMAINDIR=/usr/share/locale/, XFILESEARCHPATH=/usr/dt/app-defaults/%L/Dt, COMPIZ_BIN_PATH=/usr/bin/, COLORTERM=gnome-terminal, JOB=dbus, XDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/, QT_QPA_PLATFORMTHEME=appmenu-qt5, QT_IM_MODULE=ibus, LOGNAME=jack, WINDOWID=77594635, SESSION=ubuntu, GPG_AGENT_INFO=/run/user/1000/keyring-PHTm2z/gpg:0:1, _=./studio.sh, XMODIFIERS=@im=ibus, SSH_AUTH_SOCK=/run/user/1000/keyring-PHTm2z/ssh, LD_LIBRARY_PATH=/media/jack/home-partition/tool/jdk1.6.0_45/jre/lib/amd64/server:/media/jack/home-partition/tool/jdk1.6.0_45/jre/lib/amd64:/media/jack/home-partition/tool/jdk1.6.0_45/jre/../lib/amd64:/media/jack/home-partition/tool/android-studio/bin:, OLDPWD=/media/jack/home-partition/tool/jdk1.6.0_45, DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-7fBenTRGb1, SHELL=/bin/bash, LANGUAGE=zh_CN:zh, CLASSPATH=/media/jack/home-partition/tool/android-studio/bin/../lib/bootstrap.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/extensions.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/util.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/jdom.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/log4j.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/trove4j.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/jna.jar:/media/jack/home-partition/tool/jdk1.6.0_45/lib/tools.jar, DESKTOP_SESSION=ubuntu, INSTANCE=, DISPLAY=:0, CLUTTER_IM_MODULE=xim, USER=jack, UBUNTU_MENUPROXY=1, HOME=/home/jack, VTE_VERSION=3409, LESSOPEN=| /usr/bin/lesspipe %s, QT4_IM_MODULE=xim, DEFAULTS_PATH=/usr/share/gconf/ubuntu.default.path, LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:, XDG_RUNTIME_DIR=/run/user/1000, LANG=zh_CN.UTF-8}
+13:13:40.296 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+13:13:40.296 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 5482). The daemon log file: /home/jack/.gradle/daemon/1.12/daemon-5482.out.log
+13:13:40.297 [INFO] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=3b2a96da-527d-4264-9bcf-e5b0b0d2c381,javaHome=/media/jack/home-partition/tool/jdk1.6.0_45,daemonRegistryDir=/home/jack/.gradle/daemon,pid=5482,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8]
+13:13:40.299 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 60: received class org.gradle.launcher.daemon.protocol.CloseInput
+13:13:40.299 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received IO message from client: CloseInput[id=ce2f29e2-953b-4122-aba2-acd055d6244b.2]
+13:13:40.300 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] Closing daemon's stdin at end of input.
+13:13:40.300 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] The daemon will no longer process any standard input.
+Configuration on demand is an incubating feature.
+:app:preBuild
+:app:compileDebugNdk UP-TO-DATE
+:app:preDebugBuild
+:app:checkDebugManifest
+:app:prepareDebugDependencies
+:app:compileDebugAidl UP-TO-DATE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:mergeDebugResources UP-TO-DATE
+:app:processDebugManifest UP-TO-DATE
+:app:processDebugResources UP-TO-DATE
+:app:generateDebugSources UP-TO-DATE
+:app:compileDebugJava UP-TO-DATE
+:app:preDexDebug UP-TO-DATE
+:app:dexDebug UP-TO-DATE
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug UP-TO-DATE
+:app:zipalignDebug UP-TO-DATE
+:app:assembleDebug UP-TO-DATE
+
+BUILD SUCCESSFUL
+
+Total time: 1.635 secs
+13:13:41.855 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+13:13:41.855 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: DaemonCommandResult[type=Success, value=org.gradle.tooling.internal.provider.BuildActionResult@d503e0b]
+13:13:41.855 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 59: dispatching class org.gradle.launcher.daemon.protocol.Success
+13:13:41.858 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] onFinishCommand() called while execution = DaemonCommandExecution[command = Build{id=ce2f29e2-953b-4122-aba2-acd055d6244b.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1}, connection = org.gradle.launcher.daemon.server.DefaultDaemonConnection@787c29d7]
+13:13:41.858 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] updating lastActivityAt to 1409462021858
+13:13:41.858 [INFO] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Marking the daemon as idle, address: [8f5c4f7c-33b0-41a4-b7e4-2e5f487ff3f2 port:58259, addresses:[/0:0:0:0:0:0:0:1%1, /127.0.0.1]]
+13:13:41.859 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking idle by address: [8f5c4f7c-33b0-41a4-b7e4-2e5f487ff3f2 port:58259, addresses:[/0:0:0:0:0:0:0:1%1, /127.0.0.1]]
+13:13:41.859 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+13:13:41.860 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+13:13:41.860 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 60: received class org.gradle.launcher.daemon.protocol.Finished
+13:13:41.861 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@36f5ca2e
+13:13:41.862 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 60: received null
+13:13:41.862 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received end-of-input from client.
+13:13:41.862 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+13:13:41.864 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=ce2f29e2-953b-4122-aba2-acd055d6244b.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1}
+13:13:41.864 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is idle, sleeping until state change or idle timeout at Sun Aug 31 16:13:41 CST 2014
+13:13:41.867 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: null
+13:13:41.868 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 59: stopping connection
+13:13:41.869 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 59: stopping connection
+13:14:22.058 [DEBUG] [org.gradle.messaging.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:52764 to /127.0.0.1:58259.
+13:14:22.065 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 62: received class org.gradle.launcher.daemon.protocol.Build
+13:14:22.066 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received non-IO message from client: Build{id=5d3d994b-4c4e-461e-abba-5630ce7c6d96.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1}
+13:14:22.067 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=5d3d994b-4c4e-461e-abba-5630ce7c6d96.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1}.
+13:14:22.068 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=5d3d994b-4c4e-461e-abba-5630ce7c6d96.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1} with connection: socket connection at /127.0.0.1:58259 with /127.0.0.1:52764.
+13:14:22.069 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] onStartCommand(DaemonCommandExecution[command = Build{id=5d3d994b-4c4e-461e-abba-5630ce7c6d96.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1}, connection = org.gradle.launcher.daemon.server.DefaultDaemonConnection@74a27fae]) called after 0.0 minutes of idle
+13:14:22.070 [INFO] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Marking the daemon as busy, address: [8f5c4f7c-33b0-41a4-b7e4-2e5f487ff3f2 port:58259, addresses:[/0:0:0:0:0:0:0:1%1, /127.0.0.1]]
+13:14:22.070 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [8f5c4f7c-33b0-41a4-b7e4-2e5f487ff3f2 port:58259, addresses:[/0:0:0:0:0:0:0:1%1, /127.0.0.1]]
+13:14:22.071 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+13:14:22.072 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+13:14:22.075 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+13:14:22.076 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] updating lastActivityAt to 1409462062076
+13:14:22.076 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is busy, sleeping until state changes.
+13:14:22.076 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building: Build{id=5d3d994b-4c4e-461e-abba-5630ce7c6d96.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1}. Dispatching build started information...
+13:14:22.078 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 59: dispatching class org.gradle.launcher.daemon.protocol.BuildStarted
+13:14:22.079 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: {TERM=xterm, XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0, SSH_AGENT_PID=1896, JAVA_HOME=/media/jack/home-partition/tool/jdk1.6.0_45, SSH_AGENT_LAUNCHER=upstart, LESSCLOSE=/usr/bin/lesspipe %s %s, UPSTART_SESSION=unix:abstract=/com/ubuntu/upstart-session/1000/1812, SESSION_MANAGER=local/jack-ThinkPad-S430:@/tmp/.ICE-unix/1950,unix/jack-ThinkPad-S430:/tmp/.ICE-unix/1950, GNOME_DESKTOP_SESSION_ID=this-is-deprecated, COMPIZ_CONFIG_PROFILE=ubuntu, IM_CONFIG_PHASE=1, GDMSESSION=ubuntu, MANDATORY_PATH=/usr/share/gconf/ubuntu.mandatory.path, PWD=/home/jack, SESSIONTYPE=gnome-session, GTK_IM_MODULE=ibus, XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/jack, NLSPATH=/usr/dt/lib/nls/msg/%L/%N.cat, TEXTDOMAIN=im-config, XDG_MENU_PREFIX=gnome-, SELINUX_INIT=YES, PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/media/jack/home-partition/tool/jdk1.6.0_45/bin, XDG_CURRENT_DESKTOP=Unity, XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg, GDM_LANG=zh_CN, XAUTHORITY=/home/jack/.Xauthority, XDG_SEAT=seat0, XDG_SESSION_ID=c1, XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0, XDG_VTNR=7, GTK_MODULES=overlay-scrollbar:unity-gtk-module, GNOME_KEYRING_CONTROL=/run/user/1000/keyring-PHTm2z, SHLVL=1, TEXTDOMAINDIR=/usr/share/locale/, XFILESEARCHPATH=/usr/dt/app-defaults/%L/Dt, COMPIZ_BIN_PATH=/usr/bin/, COLORTERM=gnome-terminal, JOB=dbus, XDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/, QT_QPA_PLATFORMTHEME=appmenu-qt5, QT_IM_MODULE=ibus, LOGNAME=jack, WINDOWID=77594635, SESSION=ubuntu, GPG_AGENT_INFO=/run/user/1000/keyring-PHTm2z/gpg:0:1, _=./studio.sh, XMODIFIERS=@im=ibus, SSH_AUTH_SOCK=/run/user/1000/keyring-PHTm2z/ssh, LD_LIBRARY_PATH=/media/jack/home-partition/tool/jdk1.6.0_45/jre/lib/amd64/server:/media/jack/home-partition/tool/jdk1.6.0_45/jre/lib/amd64:/media/jack/home-partition/tool/jdk1.6.0_45/jre/../lib/amd64:/media/jack/home-partition/tool/android-studio/bin:, OLDPWD=/media/jack/home-partition/tool/jdk1.6.0_45, DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-7fBenTRGb1, SHELL=/bin/bash, LANGUAGE=zh_CN:zh, CLASSPATH=/media/jack/home-partition/tool/android-studio/bin/../lib/bootstrap.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/extensions.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/util.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/jdom.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/log4j.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/trove4j.jar:/media/jack/home-partition/tool/android-studio/bin/../lib/jna.jar:/media/jack/home-partition/tool/jdk1.6.0_45/lib/tools.jar, DESKTOP_SESSION=ubuntu, INSTANCE=, DISPLAY=:0, CLUTTER_IM_MODULE=xim, USER=jack, UBUNTU_MENUPROXY=1, HOME=/home/jack, VTE_VERSION=3409, LESSOPEN=| /usr/bin/lesspipe %s, QT4_IM_MODULE=xim, DEFAULTS_PATH=/usr/share/gconf/ubuntu.default.path, LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:, XDG_RUNTIME_DIR=/run/user/1000, LANG=zh_CN.UTF-8}
+13:14:22.081 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+13:14:22.081 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 5482). The daemon log file: /home/jack/.gradle/daemon/1.12/daemon-5482.out.log
+13:14:22.082 [INFO] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=3b2a96da-527d-4264-9bcf-e5b0b0d2c381,javaHome=/media/jack/home-partition/tool/jdk1.6.0_45,daemonRegistryDir=/home/jack/.gradle/daemon,pid=5482,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8]
+13:14:22.084 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 62: received class org.gradle.launcher.daemon.protocol.CloseInput
+13:14:22.084 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received IO message from client: CloseInput[id=5d3d994b-4c4e-461e-abba-5630ce7c6d96.2]
+13:14:22.085 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] Closing daemon's stdin at end of input.
+13:14:22.086 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] The daemon will no longer process any standard input.
+Configuration on demand is an incubating feature.
+:app:preBuild
+:app:compileDebugNdk UP-TO-DATE
+:app:preDebugBuild
+:app:checkDebugManifest
+:app:prepareDebugDependencies
+:app:compileDebugAidl UP-TO-DATE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:mergeDebugResources UP-TO-DATE
+:app:processDebugManifest UP-TO-DATE
+:app:processDebugResources UP-TO-DATE
+:app:generateDebugSources UP-TO-DATE
+:app:compileDebugJava UP-TO-DATE
+:app:preDexDebug UP-TO-DATE
+:app:dexDebug UP-TO-DATE
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug UP-TO-DATE
+:app:zipalignDebug UP-TO-DATE
+:app:assembleDebug UP-TO-DATE
+
+BUILD SUCCESSFUL
+
+Total time: 1.043 secs
+13:14:23.106 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+13:14:23.106 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: DaemonCommandResult[type=Success, value=org.gradle.tooling.internal.provider.BuildActionResult@2560294e]
+13:14:23.107 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 59: dispatching class org.gradle.launcher.daemon.protocol.Success
+13:14:23.109 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] onFinishCommand() called while execution = DaemonCommandExecution[command = Build{id=5d3d994b-4c4e-461e-abba-5630ce7c6d96.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1}, connection = org.gradle.launcher.daemon.server.DefaultDaemonConnection@74a27fae]
+13:14:23.110 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] updating lastActivityAt to 1409462063110
+13:14:23.110 [INFO] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Marking the daemon as idle, address: [8f5c4f7c-33b0-41a4-b7e4-2e5f487ff3f2 port:58259, addresses:[/0:0:0:0:0:0:0:1%1, /127.0.0.1]]
+13:14:23.110 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking idle by address: [8f5c4f7c-33b0-41a4-b7e4-2e5f487ff3f2 port:58259, addresses:[/0:0:0:0:0:0:0:1%1, /127.0.0.1]]
+13:14:23.111 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+13:14:23.111 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+13:14:23.115 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+13:14:23.116 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is idle, sleeping until state change or idle timeout at Sun Aug 31 16:14:23 CST 2014
+13:14:23.762 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 62: received class org.gradle.launcher.daemon.protocol.Finished
+13:14:23.764 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@12992c
+13:14:23.762 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=5d3d994b-4c4e-461e-abba-5630ce7c6d96.1, currentDir=/home/jack/AndroidStudioProjects/MyApplication1}
+13:14:23.764 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 62: received null
+13:14:23.764 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: org.gradle.launcher.daemon.protocol.Finished@12992c
+13:14:23.765 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received end-of-input from client.
+13:14:23.765 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 59: stopping connection
+13:14:23.766 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 59: stopping connection

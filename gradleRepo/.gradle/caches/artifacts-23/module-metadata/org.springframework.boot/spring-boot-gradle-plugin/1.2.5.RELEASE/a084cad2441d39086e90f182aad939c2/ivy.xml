@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.springframework.boot"
+		module="spring-boot-gradle-plugin"
+		revision="1.2.5.RELEASE"
+		status="release"
+		publication="20151006140523"
+	>
+		<description homepage="http://projects.spring.io/spring-boot/">
+		Spring Boot Gradle Plugin
+		</description>
+		<m:dependency.management__org.apache.maven__maven-core__version>3.1.1</m:dependency.management__org.apache.maven__maven-core__version>
+		<m:dependency.management__org.jdom__jdom2__version>2.0.6</m:dependency.management__org.jdom__jdom2__version>
+		<m:dependency.management__net.sf.jopt-simple__jopt-simple__version>4.6</m:dependency.management__net.sf.jopt-simple__jopt-simple__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-social-facebook__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-social-facebook__version>
+		<m:dependency.management__org.apache.tomcat.embed__tomcat-embed-core__version>8.0.23</m:dependency.management__org.apache.tomcat.embed__tomcat-embed-core__version>
+		<m:properties__httpclient.version>4.3.6</m:properties__httpclient.version>
+		<m:dependency.management__org.eclipse.jetty__jetty-xml__version>9.2.11.v20150529</m:dependency.management__org.eclipse.jetty__jetty-xml__version>
+		<m:dependency.management__javax.transaction__javax.transaction-api__version>1.2</m:dependency.management__javax.transaction__javax.transaction-api__version>
+		<m:dependency.management__antlr__antlr__version>2.7.7</m:dependency.management__antlr__antlr__version>
+		<m:properties__maven.version>3.1.1</m:properties__maven.version>
+		<m:dependency.management__org.projectreactor.spring__reactor-spring-context__version>1.1.3.RELEASE</m:dependency.management__org.projectreactor.spring__reactor-spring-context__version>
+		<m:properties__commons-digester.version>2.1</m:properties__commons-digester.version>
+		<m:properties__bitronix.version>2.1.4</m:properties__bitronix.version>
+		<m:dependency.management__com.github.mxab.thymeleaf.extras__thymeleaf-extras-data-attribute__version>1.3</m:dependency.management__com.github.mxab.thymeleaf.extras__thymeleaf-extras-data-attribute__version>
+		<m:properties__json-path.version>0.9.1</m:properties__json-path.version>
+		<m:dependency.management__org.codehaus.groovy__groovy-console__version>2.3.11</m:dependency.management__org.codehaus.groovy__groovy-console__version>
+		<m:properties__mysql.version>5.1.35</m:properties__mysql.version>
+		<m:dependency.management__org.springframework.boot__spring-boot-loader-tools__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-loader-tools__version>
+		<m:dependency.management__org.apache.velocity__velocity-tools__exclusion_0>commons-logging__commons-logging</m:dependency.management__org.apache.velocity__velocity-tools__exclusion_0>
+		<m:dependency.management__org.projectreactor.spring__reactor-spring-core__version>1.1.3.RELEASE</m:dependency.management__org.projectreactor.spring__reactor-spring-core__version>
+		<m:dependency.management__org.apache.tomcat.embed__tomcat-embed-logging-juli__version>8.0.23</m:dependency.management__org.apache.tomcat.embed__tomcat-embed-logging-juli__version>
+		<m:properties__spring-ws.version>2.2.1.RELEASE</m:properties__spring-ws.version>
+		<m:dependency.management__org.thymeleaf.extras__thymeleaf-extras-conditionalcomments__version>2.1.1.RELEASE</m:dependency.management__org.thymeleaf.extras__thymeleaf-extras-conditionalcomments__version>
+		<m:properties__gradle.version>1.6</m:properties__gradle.version>
+		<m:dependency.management__org.eclipse.jetty__jetty-annotations__version>9.2.11.v20150529</m:dependency.management__org.eclipse.jetty__jetty-annotations__version>
+		<m:dependency.management__javax.cache__cache-api__version>1.0.0</m:dependency.management__javax.cache__cache-api__version>
+		<m:properties__hibernate-validator.version>5.1.3.Final</m:properties__hibernate-validator.version>
+		<m:dependency.management__org.eclipse.jetty__jetty-continuation__version>9.2.11.v20150529</m:dependency.management__org.eclipse.jetty__jetty-continuation__version>
+		<m:dependency.management__org.crashub__crash.cli__version>1.3.1</m:dependency.management__org.crashub__crash.cli__version>
+		<m:dependency.management__org.springframework.integration__spring-integration-twitter__version>4.1.5.RELEASE</m:dependency.management__org.springframework.integration__spring-integration-twitter__version>
+		<m:dependency.management__org.springframework.cloud__spring-cloud-localconfig-connector__version>1.1.1.RELEASE</m:dependency.management__org.springframework.cloud__spring-cloud-localconfig-connector__version>
+		<m:properties__spring-social-twitter.version>1.1.0.RELEASE</m:properties__spring-social-twitter.version>
+		<m:dependency.management__org.springframework.social__spring-social-core__version>1.1.2.RELEASE</m:dependency.management__org.springframework.social__spring-social-core__version>
+		<m:dependency.management__org.springframework__spring-context-support__version>4.1.7.RELEASE</m:dependency.management__org.springframework__spring-context-support__version>
+		<m:dependency.management__org.springframework__spring-tx__version>4.1.7.RELEASE</m:dependency.management__org.springframework__spring-tx__version>
+		<m:dependency.management__org.projectreactor__reactor-net__version>1.1.6.RELEASE</m:dependency.management__org.projectreactor__reactor-net__version>
+		<m:dependency.management__org.freemarker__freemarker__version>2.3.22</m:dependency.management__org.freemarker__freemarker__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-util__version>9.2.11.v20150529</m:dependency.management__org.eclipse.jetty__jetty-util__version>
+		<m:dependency.management__org.eclipse.jetty.orbit__javax.servlet.jsp__version>2.2.0.v201112011158</m:dependency.management__org.eclipse.jetty.orbit__javax.servlet.jsp__version>
+		<m:properties__hibernate-entitymanager.version>${hibernate.version}</m:properties__hibernate-entitymanager.version>
+		<m:properties__commons-collections.version>3.2.1</m:properties__commons-collections.version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-mustache__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-mustache__version>
+		<m:dependency.management__org.apache.httpcomponents__httpasyncclient__exclusion_0>commons-logging__commons-logging</m:dependency.management__org.apache.httpcomponents__httpasyncclient__exclusion_0>
+		<m:properties__slf4j.version>1.7.12</m:properties__slf4j.version>
+		<m:dependency.management__org.apache.httpcomponents__httpmime__version>4.3.6</m:dependency.management__org.apache.httpcomponents__httpmime__version>
+		<m:dependency.management__org.springframework.social__spring-social-security__version>1.1.2.RELEASE</m:dependency.management__org.springframework.social__spring-social-security__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-log4j__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-log4j__version>
+		<m:properties__jstl.version>1.2</m:properties__jstl.version>
+		<m:dependency.management__org.apache.tomcat.embed__tomcat-embed-el__version>8.0.23</m:dependency.management__org.apache.tomcat.embed__tomcat-embed-el__version>
+		<m:dependency.management__org.springframework.data__spring-data-mongodb__version>1.6.3.RELEASE</m:dependency.management__org.springframework.data__spring-data-mongodb__version>
+		<m:dependency.management__org.springframework.integration__spring-integration-scripting__version>4.1.5.RELEASE</m:dependency.management__org.springframework.integration__spring-integration-scripting__version>
+		<m:properties__sun-mail.version>${javax-mail.version}</m:properties__sun-mail.version>
+		<m:properties__undertow.version>1.1.7.Final</m:properties__undertow.version>
+		<m:properties__spring-data-releasetrain.version>Evans-SR3</m:properties__spring-data-releasetrain.version>
+		<m:dependency.management__org.springframework.data__spring-data-jpa__version>1.7.3.RELEASE</m:dependency.management__org.springframework.data__spring-data-jpa__version>
+		<m:properties__project.reporting.outputEncoding>UTF-8</m:properties__project.reporting.outputEncoding>
+		<m:dependency.management__org.springframework.ws__spring-ws-security__version>2.2.1.RELEASE</m:dependency.management__org.springframework.ws__spring-ws-security__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-io__version>9.2.11.v20150529</m:dependency.management__org.eclipse.jetty__jetty-io__version>
+		<m:dependency.management__com.fasterxml.jackson.datatype__jackson-datatype-joda__version>2.4.6</m:dependency.management__com.fasterxml.jackson.datatype__jackson-datatype-joda__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-social-twitter__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-social-twitter__version>
+		<m:dependency.management__org.springframework__spring-webmvc__version>4.1.7.RELEASE</m:dependency.management__org.springframework__spring-webmvc__version>
+		<m:properties__spock.version>0.7-groovy-2.0</m:properties__spock.version>
+		<m:dependency.management__org.springframework.integration__spring-integration-websocket__version>4.1.5.RELEASE</m:dependency.management__org.springframework.integration__spring-integration-websocket__version>
+		<m:properties__simple-json.version>1.1.1</m:properties__simple-json.version>
+		<m:properties__spring-amqp.version>1.4.5.RELEASE</m:properties__spring-amqp.version>
+		<m:dependency.management__org.codehaus.plexus__plexus-utils__version>3.0.17</m:dependency.management__org.codehaus.plexus__plexus-utils__version>
+		<m:dependency.management__org.eclipse.jetty.websocket__websocket-server__version>9.2.11.v20150529</m:dependency.management__org.eclipse.jetty.websocket__websocket-server__version>
+		<m:dependency.management__org.apache.commons__commons-pool2__version>2.2</m:dependency.management__org.apache.commons__commons-pool2__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-jersey__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-jersey__version>
+		<m:dependency.management__org.apache.httpcomponents__httpclient__version>4.3.6</m:dependency.management__org.apache.httpcomponents__httpclient__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-undertow__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-undertow__version>
+		<m:properties__log4j.version>1.2.17</m:properties__log4j.version>
+		<m:properties__jersey.version>2.14</m:properties__jersey.version>
+		<m:dependency.management__org.springframework.social__spring-social-facebook__version>2.0.1.RELEASE</m:dependency.management__org.springframework.social__spring-social-facebook__version>
+		<m:dependency.management__com.atomikos__transactions-jdbc__version>3.9.3</m:dependency.management__com.atomikos__transactions-jdbc__version>
+		<m:dependency.management__org.codehaus.groovy__groovy-testng__version>2.3.11</m:dependency.management__org.codehaus.groovy__groovy-testng__version>
+		<m:dependency.management__org.codehaus.janino__janino__version>2.6.1</m:dependency.management__org.codehaus.janino__janino__version>
+		<m:dependency.management__org.springframework.batch__spring-batch-infrastructure__version>3.0.4.RELEASE</m:dependency.management__org.springframework.batch__spring-batch-infrastructure__version>
+		<m:dependency.management__org.springframework.integration__spring-integration-event__version>4.1.5.RELEASE</m:dependency.management__org.springframework.integration__spring-integration-event__version>
+		<m:properties__gson.version>2.3.1</m:properties__gson.version>
+		<m:dependency.management__org.eclipse.aether__aether-impl__version>0.9.1.v20140329</m:dependency.management__org.eclipse.aether__aether-impl__version>
+		<m:dependency.management__com.google.code.gson__gson__version>2.3.1</m:dependency.management__com.google.code.gson__gson__version>
+		<m:dependency.management__org.springframework.integration__spring-integration-syslog__version>4.1.5.RELEASE</m:dependency.management__org.springframework.integration__spring-integration-syslog__version>
+		<m:dependency.management__org.codehaus.groovy__groovy-groovysh__version>2.3.11</m:dependency.management__org.codehaus.groovy__groovy-groovysh__version>
+		<m:properties__aether.version>0.9.1.v20140329</m:properties__aether.version>
+		<m:dependency.management__org.springframework.security__spring-security-acl__version>3.2.7.RELEASE</m:dependency.management__org.springframework.security__spring-security-acl__version>
+		<m:properties__crashub.version>1.3.1</m:properties__crashub.version>
+		<m:properties__thymeleaf-extras-data-attribute.version>1.3</m:properties__thymeleaf-extras-data-attribute.version>
+		<m:properties__hornetq.version>2.4.7.Final</m:properties__hornetq.version>
+		<m:properties__mongodb.version>2.12.5</m:properties__mongodb.version>
+		<m:dependency.management__org.slf4j__jul-to-slf4j__version>1.7.12</m:dependency.management__org.slf4j__jul-to-slf4j__version>
+		<m:dependency.management__org.slf4j__log4j-over-slf4j__version>1.7.12</m:dependency.management__org.slf4j__log4j-over-slf4j__version>
+		<m:dependency.management__org.aspectj__aspectjrt__version>1.8.6</m:dependency.management__org.aspectj__aspectjrt__version>
+		<m:dependency.management__com.fasterxml.jackson.dataformat__jackson-dataformat-yaml__version>2.4.6</m:dependency.management__com.fasterxml.jackson.dataformat__jackson-dataformat-yaml__version>
+		<m:dependency.management__org.springframework.batch__spring-batch-core__version>3.0.4.RELEASE</m:dependency.management__org.springframework.batch__spring-batch-core__version>
+		<m:properties__groovy.version>2.3.11</m:properties__groovy.version>
+		<m:dependency.management__org.eclipse.jetty__jetty-http__version>9.2.11.v20150529</m:dependency.management__org.eclipse.jetty__jetty-http__version>
+		<m:dependency.management__javax.jms__jms-api__version>1.1-rev-1</m:dependency.management__javax.jms__jms-api__version>
+		<m:dependency.management__org.crashub__crash.shell__version>1.3.1</m:dependency.management__org.crashub__crash.shell__version>
+		<m:properties__commons-pool2.version>2.2</m:properties__commons-pool2.version>
+		<m:dependency.management__org.springframework.data__spring-data-rest-webmvc__version>2.2.3.RELEASE</m:dependency.management__org.springframework.data__spring-data-rest-webmvc__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter__exclusion_0>commons-logging__commons-logging</m:dependency.management__org.springframework.boot__spring-boot-starter__exclusion_0>
+		<m:dependency.management__org.springframework.integration__spring-integration-xmpp__version>4.1.5.RELEASE</m:dependency.management__org.springframework.integration__spring-integration-xmpp__version>
+		<m:properties__gemfire.version>7.0.2</m:properties__gemfire.version>
+		<m:dependency.management__org.springframework.security__spring-security-cas__version>3.2.7.RELEASE</m:dependency.management__org.springframework.security__spring-security-cas__version>
+		<m:dependency.management__org.springframework.cloud__spring-cloud-spring-service-connector__exclusion_0>log4j__log4j</m:dependency.management__org.springframework.cloud__spring-cloud-spring-service-connector__exclusion_0>
+		<m:properties__spring-social-linkedin.version>1.0.1.RELEASE</m:properties__spring-social-linkedin.version>
+		<m:dependency.management__org.codehaus.groovy__groovy-nio__version>2.3.11</m:dependency.management__org.codehaus.groovy__groovy-nio__version>
+		<m:dependency.management__com.jayway.jsonpath__json-path__version>0.9.1</m:dependency.management__com.jayway.jsonpath__json-path__version>
+		<m:dependency.management__org.codehaus.groovy__groovy__version>2.3.11</m:dependency.management__org.codehaus.groovy__groovy__version>
+		<m:dependency.management__org.gradle__gradle-base-services-groovy__version>1.6</m:dependency.management__org.gradle__gradle-base-services-groovy__version>
+		<m:dependency.management__com.atomikos__transactions-jta__version>3.9.3</m:dependency.management__com.atomikos__transactions-jta__version>
+		<m:dependency.management__commons-digester__commons-digester__exclusion_0>commons-logging__commons-logging</m:dependency.management__commons-digester__commons-digester__exclusion_0>
+		<m:dependency.management__org.springframework__spring-test__version>4.1.7.RELEASE</m:dependency.management__org.springframework__spring-test__version>
+		<m:properties__spring-hateoas.version>0.16.0.RELEASE</m:properties__spring-hateoas.version>
+		<m:dependency.management__org.springframework.batch__spring-batch-integration__version>3.0.4.RELEASE</m:dependency.management__org.springframework.batch__spring-batch-integration__version>
+		<m:dependency.management__org.springframework.ws__spring-ws-test__exclusion_0>commons-logging__commons-logging</m:dependency.management__org.springframework.ws__spring-ws-test__exclusion_0>
+		<m:dependency.management__org.springframework.boot__spring-boot-configuration-processor__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-configuration-processor__version>
+		<m:dependency.management__org.hornetq__hornetq-jms-server__exclusion_0>org.jboss.spec.javax.transaction__jboss-transaction-api_1.1_spec</m:dependency.management__org.hornetq__hornetq-jms-server__exclusion_0>
+		<m:dependency.management__org.springframework.social__spring-social-linkedin__version>1.0.1.RELEASE</m:dependency.management__org.springframework.social__spring-social-linkedin__version>
+		<m:properties__log4j2.version>2.1</m:properties__log4j2.version>
+		<m:properties__spring-boot.version>1.2.5.RELEASE</m:properties__spring-boot.version>
+		<m:dependency.management__org.hibernate__hibernate-entitymanager__version>4.3.10.Final</m:dependency.management__org.hibernate__hibernate-entitymanager__version>
+		<m:dependency.management__org.apache.maven__maven-settings-builder__version>3.1.1</m:dependency.management__org.apache.maven__maven-settings-builder__version>
+		<m:dependency.management__org.springframework.data__spring-data-gemfire__version>1.5.3.RELEASE</m:dependency.management__org.springframework.data__spring-data-gemfire__version>
+		<m:properties__solr.version>4.7.2</m:properties__solr.version>
+		<m:dependency.management__org.json__json__version>20140107</m:dependency.management__org.json__json__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-social-linkedin__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-social-linkedin__version>
+		<m:dependency.management__org.eclipse.aether__aether-util__version>0.9.1.v20140329</m:dependency.management__org.eclipse.aether__aether-util__version>
+		<m:properties__activemq.version>5.10.2</m:properties__activemq.version>
+		<m:dependency.management__org.eclipse.jetty__jetty-security__version>9.2.11.v20150529</m:dependency.management__org.eclipse.jetty__jetty-security__version>
+		<m:dependency.management__org.eclipse.aether__aether-connector-basic__version>0.9.1.v20140329</m:dependency.management__org.eclipse.aether__aether-connector-basic__version>
+		<m:dependency.management__com.gemstone.gemfire__gemfire__version>7.0.2</m:dependency.management__com.gemstone.gemfire__gemfire__version>
+		<m:dependency.management__com.samskivert__jmustache__version>1.10</m:dependency.management__com.samskivert__jmustache__version>
+		<m:dependency.management__org.springframework.integration__spring-integration-jms__version>4.1.5.RELEASE</m:dependency.management__org.springframework.integration__spring-integration-jms__version>
+		<m:properties__spring-social.version>1.1.2.RELEASE</m:properties__spring-social.version>
+		<m:dependency.management__org.springframework.plugin__spring-plugin-core__version>1.1.0.RELEASE</m:dependency.management__org.springframework.plugin__spring-plugin-core__version>
+		<m:dependency.management__com.sun.mail__javax.mail__version>1.5.4</m:dependency.management__com.sun.mail__javax.mail__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-data-elasticsearch__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-data-elasticsearch__version>
+		<m:properties__thymeleaf.version>2.1.4.RELEASE</m:properties__thymeleaf.version>
+		<m:dependency.management__org.gradle__gradle-base-services__version>1.6</m:dependency.management__org.gradle__gradle-base-services__version>
+		<m:properties__velocity-tools.version>2.0</m:properties__velocity-tools.version>
+		<m:dependency.management__org.mockito__mockito-core__version>1.10.19</m:dependency.management__org.mockito__mockito-core__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-integration__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-integration__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-jetty__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-jetty__version>
+		<m:dependency.management__ch.qos.logback__logback-classic__version>1.1.3</m:dependency.management__ch.qos.logback__logback-classic__version>
+		<m:dependency.management__io.dropwizard.metrics__metrics-graphite__version>3.1.2</m:dependency.management__io.dropwizard.metrics__metrics-graphite__version>
+		<m:dependency.management__wsdl4j__wsdl4j__version>1.6.3</m:dependency.management__wsdl4j__wsdl4j__version>
+		<m:dependency.management__org.springframework.integration__spring-integration-ftp__version>4.1.5.RELEASE</m:dependency.management__org.springframework.integration__spring-integration-ftp__version>
+		<m:dependency.management__org.springframework__spring-orm__version>4.1.7.RELEASE</m:dependency.management__org.springframework__spring-orm__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-hornetq__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-hornetq__version>
+		<m:dependency.management__org.glassfish.jersey.containers__jersey-container-servlet__version>2.14</m:dependency.management__org.glassfish.jersey.containers__jersey-container-servlet__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-logging__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-logging__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-jta-bitronix__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-jta-bitronix__version>
+		<m:dependency.management__org.apache.logging.log4j__log4j-core__version>2.1</m:dependency.management__org.apache.logging.log4j__log4j-core__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-batch__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-batch__version>
+		<m:properties__spring-plugin.version>1.1.0.RELEASE</m:properties__spring-plugin.version>
+		<m:dependency.management__org.projectlombok__lombok__version>1.12.6</m:dependency.management__org.projectlombok__lombok__version>
+		<m:dependency.management__jline__jline__version>2.11</m:dependency.management__jline__jline__version>
+		<m:dependency.management__org.springframework__spring-instrument-tomcat__version>4.1.7.RELEASE</m:dependency.management__org.springframework__spring-instrument-tomcat__version>
+		<m:properties__flyway.version>3.1</m:properties__flyway.version>
+		<m:dependency.management__org.projectreactor__reactor-core__version>1.1.6.RELEASE</m:dependency.management__org.projectreactor__reactor-core__version>
+		<m:dependency.management__org.eclipse.jetty.websocket__javax-websocket-server-impl__version>9.2.11.v20150529</m:dependency.management__org.eclipse.jetty.websocket__javax-websocket-server-impl__version>
+		<m:dependency.management__org.springframework.integration__spring-integration-gemfire__version>4.1.5.RELEASE</m:dependency.management__org.springframework.integration__spring-integration-gemfire__version>
+		<m:properties__json.version>20140107</m:properties__json.version>
+		<m:dependency.management__commons-beanutils__commons-beanutils__version>1.9.2</m:dependency.management__commons-beanutils__commons-beanutils__version>
+		<m:dependency.management__org.apache.ivy__ivy__version>2.3.0</m:dependency.management__org.apache.ivy__ivy__version>
+		<m:dependency.management__joda-time__joda-time__version>2.5</m:dependency.management__joda-time__joda-time__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-actuator__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-actuator__version>
+		<m:dependency.management__org.eclipse.aether__aether-transport-file__version>0.9.1.v20140329</m:dependency.management__org.eclipse.aether__aether-transport-file__version>
+		<m:dependency.management__org.apache.commons__commons-dbcp2__version>2.0.1</m:dependency.management__org.apache.commons__commons-dbcp2__version>
+		<m:dependency.management__org.apache.tomcat.embed__tomcat-embed-jasper__version>8.0.23</m:dependency.management__org.apache.tomcat.embed__tomcat-embed-jasper__version>
+		<m:properties__commons-dbcp2.version>2.0.1</m:properties__commons-dbcp2.version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-groovy-templates__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-groovy-templates__version>
+		<m:properties__wsdl4j.version>1.6.3</m:properties__wsdl4j.version>
+		<m:dependency.management__io.dropwizard.metrics__metrics-ganglia__version>3.1.2</m:dependency.management__io.dropwizard.metrics__metrics-ganglia__version>
+		<m:properties__jmustache.version>1.10</m:properties__jmustache.version>
+		<m:dependency.management__org.springframework__spring-instrument__version>4.1.7.RELEASE</m:dependency.management__org.springframework__spring-instrument__version>
+		<m:dependency.management__org.aspectj__aspectjtools__version>1.8.6</m:dependency.management__org.aspectj__aspectjtools__version>
+		<m:dependency.management__org.springframework.data__spring-data-cassandra__version>1.1.3.RELEASE</m:dependency.management__org.springframework.data__spring-data-cassandra__version>
+		<m:dependency.management__redis.clients__jedis__version>2.5.2</m:dependency.management__redis.clients__jedis__version>
+		<m:properties__javassist.version>3.18.1-GA</m:properties__javassist.version>
+		<m:dependency.management__org.glassfish.jersey.ext__jersey-bean-validation__version>2.14</m:dependency.management__org.glassfish.jersey.ext__jersey-bean-validation__version>
+		<m:dependency.management__org.springframework__spring-oxm__version>4.1.7.RELEASE</m:dependency.management__org.springframework__spring-oxm__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-thymeleaf__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-thymeleaf__version>
+		<m:dependency.management__io.dropwizard.metrics__metrics-core__version>3.1.2</m:dependency.management__io.dropwizard.metrics__metrics-core__version>
+		<m:dependency.management__org.glassfish.jersey.ext__jersey-spring3__version>2.14</m:dependency.management__org.glassfish.jersey.ext__jersey-spring3__version>
+		<m:dependency.management__org.springframework.integration__spring-integration-core__version>4.1.5.RELEASE</m:dependency.management__org.springframework.integration__spring-integration-core__version>
+		<m:dependency.management__org.apache.activemq__activemq-pool__version>5.10.2</m:dependency.management__org.apache.activemq__activemq-pool__version>
+		<m:dependency.management__com.h2database__h2__version>1.4.187</m:dependency.management__com.h2database__h2__version>
+		<m:dependency.management__org.apache.maven.plugin-tools__maven-plugin-annotations__version>3.2</m:dependency.management__org.apache.maven.plugin-tools__maven-plugin-annotations__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-data-mongodb__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-data-mongodb__version>
+		<m:dependency.management__javax.servlet__javax.servlet-api__version>3.1.0</m:dependency.management__javax.servlet__javax.servlet-api__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-plus__version>9.2.11.v20150529</m:dependency.management__org.eclipse.jetty__jetty-plus__version>
+		<m:properties__jaxen.version>1.1.6</m:properties__jaxen.version>
+		<m:dependency.management__org.springframework.security__spring-security-aspects__version>3.2.7.RELEASE</m:dependency.management__org.springframework.security__spring-security-aspects__version>
+		<m:dependency.management__org.springframework.boot__spring-boot__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot__version>
+		<m:dependency.management__org.crashub__crash.connectors.ssh__exclusion_0>commons-logging__commons-logging</m:dependency.management__org.crashub__crash.connectors.ssh__exclusion_0>
+		<m:dependency.management__org.hsqldb__hsqldb__version>2.3.3</m:dependency.management__org.hsqldb__hsqldb__version>
+		<m:properties__javax-cache.version>1.0.0</m:properties__javax-cache.version>
+		<m:properties__jetty-jsp.version>2.2.0.v201112011158</m:properties__jetty-jsp.version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-ws__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-ws__version>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:dependency.management__org.eclipse.aether__aether-transport-http__version>0.9.1.v20140329</m:dependency.management__org.eclipse.aether__aether-transport-http__version>
+		<m:properties__logback.version>1.1.3</m:properties__logback.version>
+		<m:dependency.management__jaxen__jaxen__version>1.1.6</m:dependency.management__jaxen__jaxen__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-cloud-connectors__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-cloud-connectors__version>
+		<m:dependency.management__org.springframework__spring-webmvc-portlet__version>4.1.7.RELEASE</m:dependency.management__org.springframework__spring-webmvc-portlet__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-websocket__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-websocket__version>
+		<m:dependency.management__org.springframework.data__spring-data-neo4j__version>3.2.3.RELEASE</m:dependency.management__org.springframework.data__spring-data-neo4j__version>
+		<m:dependency.management__org.codehaus.groovy__groovy-xml__version>2.3.11</m:dependency.management__org.codehaus.groovy__groovy-xml__version>
+		<m:dependency.management__org.springframework.integration__spring-integration-ip__version>4.1.5.RELEASE</m:dependency.management__org.springframework.integration__spring-integration-ip__version>
+		<m:dependency.management__org.apache.logging.log4j__log4j-api__version>2.1</m:dependency.management__org.apache.logging.log4j__log4j-api__version>
+		<m:dependency.management__org.apache.maven__maven-plugin-api__version>3.1.1</m:dependency.management__org.apache.maven__maven-plugin-api__version>
+		<m:dependency.management__org.slf4j__slf4j-jdk14__version>1.7.12</m:dependency.management__org.slf4j__slf4j-jdk14__version>
+		<m:dependency.management__org.springframework.data__spring-data-elasticsearch__version>1.1.3.RELEASE</m:dependency.management__org.springframework.data__spring-data-elasticsearch__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-freemarker__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-freemarker__version>
+		<m:properties__spring-batch.version>3.0.4.RELEASE</m:properties__spring-batch.version>
+		<m:properties__tomcat.version>8.0.23</m:properties__tomcat.version>
+		<m:dependency.management__org.springframework__spring-context__version>4.1.7.RELEASE</m:dependency.management__org.springframework__spring-context__version>
+		<m:dependency.management__org.springframework.integration__spring-integration-http__version>4.1.5.RELEASE</m:dependency.management__org.springframework.integration__spring-integration-http__version>
+		<m:dependency.management__org.codehaus.plexus__plexus-component-api__version>1.0-alpha-33</m:dependency.management__org.codehaus.plexus__plexus-component-api__version>
+		<m:dependency.management__org.mongodb__mongo-java-driver__version>2.12.5</m:dependency.management__org.mongodb__mongo-java-driver__version>
+		<m:dependency.management__org.springframework__spring-jms__version>4.1.7.RELEASE</m:dependency.management__org.springframework__spring-jms__version>
+		<m:dependency.management__commons-dbcp__commons-dbcp__version>1.4</m:dependency.management__commons-dbcp__commons-dbcp__version>
+		<m:properties__jedis.version>2.5.2</m:properties__jedis.version>
+		<m:properties__spring-security.version>3.2.7.RELEASE</m:properties__spring-security.version>
+		<m:dependency.management__commons-beanutils__commons-beanutils__exclusion_0>commons-logging__commons-logging</m:dependency.management__commons-beanutils__commons-beanutils__exclusion_0>
+		<m:dependency.management__org.codehaus.groovy__groovy-test__version>2.3.11</m:dependency.management__org.codehaus.groovy__groovy-test__version>
+		<m:dependency.management__org.flywaydb__flyway-core__version>3.1</m:dependency.management__org.flywaydb__flyway-core__version>
+		<m:dependency.management__org.codehaus.groovy__groovy-jmx__version>2.3.11</m:dependency.management__org.codehaus.groovy__groovy-jmx__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-loader__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-loader__version>
+		<m:dependency.management__org.hibernate__hibernate-envers__version>4.3.10.Final</m:dependency.management__org.hibernate__hibernate-envers__version>
+		<m:properties__freemarker.version>2.3.22</m:properties__freemarker.version>
+		<m:dependency.management__org.apache.httpcomponents__httpasyncclient__version>4.0.2</m:dependency.management__org.apache.httpcomponents__httpasyncclient__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-amqp__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-amqp__version>
+		<m:properties__httpasyncclient.version>4.0.2</m:properties__httpasyncclient.version>
+		<m:dependency.management__org.slf4j__jcl-over-slf4j__version>1.7.12</m:dependency.management__org.slf4j__jcl-over-slf4j__version>
+		<m:dependency.management__org.springframework.data__spring-data-redis__version>1.4.3.RELEASE</m:dependency.management__org.springframework.data__spring-data-redis__version>
+		<m:dependency.management__org.apache.velocity__velocity__version>1.7</m:dependency.management__org.apache.velocity__velocity__version>
+		<m:dependency.management__org.springframework.cloud__spring-cloud-spring-service-connector__version>1.1.1.RELEASE</m:dependency.management__org.springframework.cloud__spring-cloud-spring-service-connector__version>
+		<m:properties__thymeleaf-layout-dialect.version>1.2.9</m:properties__thymeleaf-layout-dialect.version>
+		<m:dependency.management__org.springframework.integration__spring-integration-test__version>4.1.5.RELEASE</m:dependency.management__org.springframework.integration__spring-integration-test__version>
+		<m:dependency.management__org.spockframework__spock-spring__version>0.7-groovy-2.0</m:dependency.management__org.spockframework__spock-spring__version>
+		<m:properties__snakeyaml.version>1.14</m:properties__snakeyaml.version>
+		<m:dependency.management__org.crashub__crash.embed.spring__version>1.3.1</m:dependency.management__org.crashub__crash.embed.spring__version>
+		<m:dependency.management__org.apache.maven.plugins__maven-shade-plugin__version>2.2</m:dependency.management__org.apache.maven.plugins__maven-shade-plugin__version>
+		<m:dependency.management__org.thymeleaf__thymeleaf__version>2.1.4.RELEASE</m:dependency.management__org.thymeleaf__thymeleaf__version>
+		<m:dependency.management__org.springframework.security__spring-security-taglibs__version>3.2.7.RELEASE</m:dependency.management__org.springframework.security__spring-security-taglibs__version>
+		<m:dependency.management__org.apache.tomcat__tomcat-jsp-api__version>8.0.23</m:dependency.management__org.apache.tomcat__tomcat-jsp-api__version>
+		<m:dependency.management__org.springframework__spring-messaging__version>4.1.7.RELEASE</m:dependency.management__org.springframework__spring-messaging__version>
+		<m:properties__spring-integration.version>4.1.5.RELEASE</m:properties__spring-integration.version>
+		<m:properties__jdom2.version>2.0.6</m:properties__jdom2.version>
+		<m:dependency.management__org.springframework.integration__spring-integration-file__version>4.1.5.RELEASE</m:dependency.management__org.springframework.integration__spring-integration-file__version>
+		<m:properties__spring-loaded.version>1.2.3.RELEASE</m:properties__spring-loaded.version>
+		<m:dependency.management__org.apache.activemq__activemq-client__version>5.10.2</m:dependency.management__org.apache.activemq__activemq-client__version>
+		<m:properties__junit.version>4.12</m:properties__junit.version>
+		<m:dependency.management__org.springframework.data__spring-data-mongodb-cross-store__version>1.6.3.RELEASE</m:dependency.management__org.springframework.data__spring-data-mongodb-cross-store__version>
+		<m:dependency.management__org.apache.activemq__activemq-broker__version>5.10.2</m:dependency.management__org.apache.activemq__activemq-broker__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-data-jpa__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-data-jpa__version>
+		<m:dependency.management__org.springframework.integration__spring-integration-xml__version>4.1.5.RELEASE</m:dependency.management__org.springframework.integration__spring-integration-xml__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-log4j2__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-log4j2__version>
+		<m:dependency.management__org.hamcrest__hamcrest-library__version>1.3</m:dependency.management__org.hamcrest__hamcrest-library__version>
+		<m:properties__spring-mobile.version>1.1.4.RELEASE</m:properties__spring-mobile.version>
+		<m:dependency.management__org.springframework.data__spring-data-commons__version>1.9.3.RELEASE</m:dependency.management__org.springframework.data__spring-data-commons__version>
+		<m:dependency.management__org.hibernate__hibernate-jpamodelgen__version>4.3.10.Final</m:dependency.management__org.hibernate__hibernate-jpamodelgen__version>
+		<m:dependency.management__org.projectreactor.spring__reactor-spring-webmvc__version>1.1.3.RELEASE</m:dependency.management__org.projectreactor.spring__reactor-spring-webmvc__version>
+		<m:dependency.management__org.springframework.security__spring-security-crypto__version>3.2.7.RELEASE</m:dependency.management__org.springframework.security__spring-security-crypto__version>
+		<m:dependency.management__org.hibernate__hibernate-ehcache__version>4.3.10.Final</m:dependency.management__org.hibernate__hibernate-ehcache__version>
+		<m:dependency.management__org.thymeleaf.extras__thymeleaf-extras-springsecurity3__version>2.1.2.RELEASE</m:dependency.management__org.thymeleaf.extras__thymeleaf-extras-springsecurity3__version>
+		<m:dependency.management__org.liquibase__liquibase-core__version>3.3.5</m:dependency.management__org.liquibase__liquibase-core__version>
+		<m:properties__spring.version>4.1.7.RELEASE</m:properties__spring.version>
+		<m:properties__dropwizard-metrics.version>3.1.2</m:properties__dropwizard-metrics.version>
+		<m:properties__thymeleaf-extras-springsecurity3.version>2.1.2.RELEASE</m:properties__thymeleaf-extras-springsecurity3.version>
+		<m:dependency.management__org.springframework__spring-web__version>4.1.7.RELEASE</m:dependency.management__org.springframework__spring-web__version>
+		<m:dependency.management__org.thymeleaf__thymeleaf-spring4__version>2.1.4.RELEASE</m:dependency.management__org.thymeleaf__thymeleaf-spring4__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-jsp__version>9.2.11.v20150529</m:dependency.management__org.eclipse.jetty__jetty-jsp__version>
+		<m:dependency.management__org.springframework.security__spring-security-config__version>3.2.7.RELEASE</m:dependency.management__org.springframework.security__spring-security-config__version>
+		<m:dependency.management__org.javassist__javassist__version>3.18.1-GA</m:dependency.management__org.javassist__javassist__version>
+		<m:dependency.management__nz.net.ultraq.thymeleaf__thymeleaf-layout-dialect__version>1.2.9</m:dependency.management__nz.net.ultraq.thymeleaf__thymeleaf-layout-dialect__version>
+		<m:dependency.management__org.springframework.amqp__spring-rabbit__version>1.4.5.RELEASE</m:dependency.management__org.springframework.amqp__spring-rabbit__version>
+		<m:properties__h2.version>1.4.187</m:properties__h2.version>
+		<m:dependency.management__org.codehaus.groovy__groovy-docgenerator__version>2.3.11</m:dependency.management__org.codehaus.groovy__groovy-docgenerator__version>
+		<m:dependency.management__org.gradle__gradle-core__version>1.6</m:dependency.management__org.gradle__gradle-core__version>
+		<m:dependency.management__org.codehaus.groovy__groovy-servlet__version>2.3.11</m:dependency.management__org.codehaus.groovy__groovy-servlet__version>
+		<m:maven.plugins>org.apache.maven.plugins__maven-compiler-plugin__null|org.apache.maven.plugins__maven-eclipse-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-jar-plugin__null|org.apache.maven.plugins__maven-surefire-plugin__null|org.apache.maven.plugins__maven-war-plugin__null|org.apache.maven.plugins__maven-source-plugin__null|org.apache.maven.plugins__maven-compiler-plugin__null|org.apache.maven.plugins__maven-eclipse-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-jar-plugin__null|org.apache.maven.plugins__maven-surefire-plugin__null|org.apache.maven.plugins__maven-war-plugin__null|org.apache.maven.plugins__maven-source-plugin__null|org.apache.maven.plugins__maven-compiler-plugin__null|org.apache.maven.plugins__maven-eclipse-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-jar-plugin__null|org.apache.maven.plugins__maven-surefire-plugin__null|org.apache.maven.plugins__maven-war-plugin__null|org.apache.maven.plugins__maven-source-plugin__null|org.apache.maven.plugins__maven-compiler-plugin__null|org.apache.maven.plugins__maven-eclipse-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-jar-plugin__null|org.apache.maven.plugins__maven-surefire-plugin__null|org.apache.maven.plugins__maven-war-plugin__null|org.apache.maven.plugins__maven-source-plugin__null|org.apache.maven.plugins__maven-compiler-plugin__null</m:maven.plugins>
+		<m:dependency.management__org.springframework.data__spring-data-rest-core__version>2.2.3.RELEASE</m:dependency.management__org.springframework.data__spring-data-rest-core__version>
+		<m:dependency.management__org.codehaus.plexus__plexus-archiver__version>2.4.4</m:dependency.management__org.codehaus.plexus__plexus-archiver__version>
+		<m:properties__reactor-spring.version>1.1.3.RELEASE</m:properties__reactor-spring.version>
+		<m:properties__spring-cloud-connectors.version>1.1.1.RELEASE</m:properties__spring-cloud-connectors.version>
+		<m:properties__hamcrest.version>1.3</m:properties__hamcrest.version>
+		<m:dependency.management__org.hornetq__hornetq-jms-client__version>2.4.7.Final</m:dependency.management__org.hornetq__hornetq-jms-client__version>
+		<m:dependency.management__org.springframework.security__spring-security-core__version>3.2.7.RELEASE</m:dependency.management__org.springframework.security__spring-security-core__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-server__version>9.2.11.v20150529</m:dependency.management__org.eclipse.jetty__jetty-server__version>
+		<m:dependency.management__org.springframework.integration__spring-integration-jdbc__version>4.1.5.RELEASE</m:dependency.management__org.springframework.integration__spring-integration-jdbc__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-autoconfigure__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-autoconfigure__version>
+		<m:dependency.management__org.glassfish.jersey.containers__jersey-container-servlet-core__version>2.14</m:dependency.management__org.glassfish.jersey.containers__jersey-container-servlet-core__version>
+		<m:dependency.management__org.springframework.cloud__spring-cloud-core__version>1.1.1.RELEASE</m:dependency.management__org.springframework.cloud__spring-cloud-core__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-security__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-security__version>
+		<m:dependency.management__org.apache.velocity__velocity-tools__version>2.0</m:dependency.management__org.apache.velocity__velocity-tools__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-data-gemfire__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-data-gemfire__version>
+		<m:dependency.management__org.glassfish.jersey.core__jersey-server__version>2.14</m:dependency.management__org.glassfish.jersey.core__jersey-server__version>
+		<m:dependency.management__org.springframework.integration__spring-integration-mqtt__version>4.1.5.RELEASE</m:dependency.management__org.springframework.integration__spring-integration-mqtt__version>
+		<m:properties__javax-mail.version>1.5.4</m:properties__javax-mail.version>
+		<m:properties__reactor.version>1.1.6.RELEASE</m:properties__reactor.version>
+		<m:dependency.management__org.codehaus.groovy__groovy-swing__version>2.3.11</m:dependency.management__org.codehaus.groovy__groovy-swing__version>
+		<m:dependency.management__org.springframework__spring-aop__version>4.1.7.RELEASE</m:dependency.management__org.springframework__spring-aop__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-remote-shell__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-remote-shell__version>
+		<m:dependency.management__org.springframework.ws__spring-ws-security__exclusion_0>commons-logging__commons-logging</m:dependency.management__org.springframework.ws__spring-ws-security__exclusion_0>
+		<m:dependency.management__org.springframework__spring-aspects__version>4.1.7.RELEASE</m:dependency.management__org.springframework__spring-aspects__version>
+		<m:dependency.management__org.springframework.integration__spring-integration-jpa__version>4.1.5.RELEASE</m:dependency.management__org.springframework.integration__spring-integration-jpa__version>
+		<m:dependency.management__org.springframework.integration__spring-integration-sftp__version>4.1.5.RELEASE</m:dependency.management__org.springframework.integration__spring-integration-sftp__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter__version>
+		<m:dependency.management__org.springframework__spring-core__version>4.1.7.RELEASE</m:dependency.management__org.springframework__spring-core__version>
+		<m:properties__javax-transaction.version>1.2</m:properties__javax-transaction.version>
+		<m:dependency.management__org.springframework__spring-jdbc__version>4.1.7.RELEASE</m:dependency.management__org.springframework__spring-jdbc__version>
+		<m:dependency.management__org.springframework.amqp__spring-amqp__version>1.4.5.RELEASE</m:dependency.management__org.springframework.amqp__spring-amqp__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-jmx__version>9.2.11.v20150529</m:dependency.management__org.eclipse.jetty__jetty-jmx__version>
+		<m:dependency.management__org.codehaus.groovy__groovy-jsr223__version>2.3.11</m:dependency.management__org.codehaus.groovy__groovy-jsr223__version>
+		<m:dependency.management__org.springframework.hateoas__spring-hateoas__version>0.16.0.RELEASE</m:dependency.management__org.springframework.hateoas__spring-hateoas__version>
+		<m:dependency.management__org.projectreactor.spring__reactor-spring-messaging__version>1.1.3.RELEASE</m:dependency.management__org.projectreactor.spring__reactor-spring-messaging__version>
+		<m:dependency.management__org.slf4j__slf4j-log4j12__version>1.7.12</m:dependency.management__org.slf4j__slf4j-log4j12__version>
+		<m:dependency.management__org.spockframework__spock-core__exclusion_0>org.codehaus.groovy__groovy-all</m:dependency.management__org.spockframework__spock-core__exclusion_0>
+		<m:properties__spring-security-jwt.version>1.0.3.RELEASE</m:properties__spring-security-jwt.version>
+		<m:dependency.management__org.springframework.social__spring-social-facebook-web__version>2.0.1.RELEASE</m:dependency.management__org.springframework.social__spring-social-facebook-web__version>
+		<m:dependency.management__org.springframework.cloud__spring-cloud-heroku-connector__version>1.1.1.RELEASE</m:dependency.management__org.springframework.cloud__spring-cloud-heroku-connector__version>
+		<m:dependency.management__org.crashub__crash.connectors.telnet__version>1.3.1</m:dependency.management__org.crashub__crash.connectors.telnet__version>
+		<m:dependency.management__org.springframework.integration__spring-integration-feed__version>4.1.5.RELEASE</m:dependency.management__org.springframework.integration__spring-integration-feed__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-velocity__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-velocity__version>
+		<m:dependency.management__org.springframework.ws__spring-ws-core__exclusion_0>commons-logging__commons-logging</m:dependency.management__org.springframework.ws__spring-ws-core__exclusion_0>
+		<m:dependency.management__org.springframework.security__spring-security-openid__version>3.2.7.RELEASE</m:dependency.management__org.springframework.security__spring-security-openid__version>
+		<m:properties__velocity.version>1.7</m:properties__velocity.version>
+		<m:dependency.management__org.codehaus.groovy__groovy-templates__version>2.3.11</m:dependency.management__org.codehaus.groovy__groovy-templates__version>
+		<m:dependency.management__commons-digester__commons-digester__version>2.1</m:dependency.management__commons-digester__commons-digester__version>
+		<m:dependency.management__org.gradle__gradle-plugins__version>1.6</m:dependency.management__org.gradle__gradle-plugins__version>
+		<m:dependency.management__org.springframework.security__spring-security-ldap__version>3.2.7.RELEASE</m:dependency.management__org.springframework.security__spring-security-ldap__version>
+		<m:dependency.management__org.apache.activemq__activemq-jms-pool__version>5.10.2</m:dependency.management__org.apache.activemq__activemq-jms-pool__version>
+		<m:dependency.management__org.aspectj__aspectjweaver__version>1.8.6</m:dependency.management__org.aspectj__aspectjweaver__version>
+		<m:dependency.management__org.glassfish__javax.el__version>3.0.0</m:dependency.management__org.glassfish__javax.el__version>
+		<m:properties__spring-social-facebook.version>2.0.1.RELEASE</m:properties__spring-social-facebook.version>
+		<m:dependency.management__org.codehaus.groovy__groovy-bsf__version>2.3.11</m:dependency.management__org.codehaus.groovy__groovy-bsf__version>
+		<m:properties__aspectj.version>1.8.6</m:properties__aspectj.version>
+		<m:dependency.management__org.springframework.data__spring-data-solr__version>1.3.3.RELEASE</m:dependency.management__org.springframework.data__spring-data-solr__version>
+		<m:dependency.management__org.springframework.integration__spring-integration-stream__version>4.1.5.RELEASE</m:dependency.management__org.springframework.integration__spring-integration-stream__version>
+		<m:dependency.management__com.zaxxer__HikariCP-java6__version>2.2.5</m:dependency.management__com.zaxxer__HikariCP-java6__version>
+		<m:dependency.management__org.springframework.security__spring-security-remoting__version>3.2.7.RELEASE</m:dependency.management__org.springframework.security__spring-security-remoting__version>
+		<m:dependency.management__org.springframework.data__spring-data-couchbase__version>1.2.3.RELEASE</m:dependency.management__org.springframework.data__spring-data-couchbase__version>
+		<m:properties__main.basedir>${basedir}/../..</m:properties__main.basedir>
+		<m:dependency.management__org.springframework.integration__spring-integration-groovy__version>4.1.5.RELEASE</m:dependency.management__org.springframework.integration__spring-integration-groovy__version>
+		<m:dependency.management__com.fasterxml.jackson.dataformat__jackson-dataformat-xml__version>2.4.6</m:dependency.management__com.fasterxml.jackson.dataformat__jackson-dataformat-xml__version>
+		<m:dependency.management__com.zaxxer__HikariCP__version>2.2.5</m:dependency.management__com.zaxxer__HikariCP__version>
+		<m:properties__joda-time.version>2.5</m:properties__joda-time.version>
+		<m:dependency.management__org.apache.maven__maven-archiver__version>2.5</m:dependency.management__org.apache.maven__maven-archiver__version>
+		<m:properties__hibernate.version>4.3.10.Final</m:properties__hibernate.version>
+		<m:dependency.management__javax.mail__javax.mail-api__version>1.5.4</m:dependency.management__javax.mail__javax.mail-api__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-hateoas__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-hateoas__version>
+		<m:dependency.management__com.fasterxml.jackson.core__jackson-core__version>2.4.6</m:dependency.management__com.fasterxml.jackson.core__jackson-core__version>
+		<m:dependency.management__org.springframework.social__spring-social-web__version>1.1.2.RELEASE</m:dependency.management__org.springframework.social__spring-social-web__version>
+		<m:dependency.management__io.undertow__undertow-servlet__version>1.1.7.Final</m:dependency.management__io.undertow__undertow-servlet__version>
+		<m:dependency.management__org.zeroturnaround__zt-zip__version>1.7</m:dependency.management__org.zeroturnaround__zt-zip__version>
+		<m:dependency.management__org.projectreactor__reactor-groovy-extensions__version>1.1.6.RELEASE</m:dependency.management__org.projectreactor__reactor-groovy-extensions__version>
+		<m:dependency.management__org.hornetq__hornetq-jms-server__version>2.4.7.Final</m:dependency.management__org.hornetq__hornetq-jms-server__version>
+		<m:dependency.management__org.springframework__springloaded__version>1.2.3.RELEASE</m:dependency.management__org.springframework__springloaded__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-test__exclusion_0>commons-logging__commons-logging</m:dependency.management__org.springframework.boot__spring-boot-starter-test__exclusion_0>
+		<m:dependency.management__org.crashub__crash.plugins.mail__version>1.3.1</m:dependency.management__org.crashub__crash.plugins.mail__version>
+		<m:dependency.management__org.springframework.cloud__spring-cloud-cloudfoundry-connector__version>1.1.1.RELEASE</m:dependency.management__org.springframework.cloud__spring-cloud-cloudfoundry-connector__version>
+		<m:dependency.management__mysql__mysql-connector-java__version>5.1.35</m:dependency.management__mysql__mysql-connector-java__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-servlet__version>9.2.11.v20150529</m:dependency.management__org.eclipse.jetty__jetty-servlet__version>
+		<m:properties__atomikos.version>3.9.3</m:properties__atomikos.version>
+		<m:dependency.management__org.spockframework__spock-core__version>0.7-groovy-2.0</m:dependency.management__org.spockframework__spock-core__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-tomcat__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-tomcat__version>
+		<m:properties__servlet-api.version>3.1.0</m:properties__servlet-api.version>
+		<m:properties__thymeleaf-extras-conditionalcomments.version>2.1.1.RELEASE</m:properties__thymeleaf-extras-conditionalcomments.version>
+		<m:properties__commons-pool.version>1.6</m:properties__commons-pool.version>
+		<m:dependency.management__com.fasterxml.jackson.core__jackson-annotations__version>2.4.6</m:dependency.management__com.fasterxml.jackson.core__jackson-annotations__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-data-rest__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-data-rest__version>
+		<m:dependency.management__org.glassfish.jersey.media__jersey-media-json-jackson__version>2.14</m:dependency.management__org.glassfish.jersey.media__jersey-media-json-jackson__version>
+		<m:dependency.management__io.undertow__undertow-core__version>1.1.7.Final</m:dependency.management__io.undertow__undertow-core__version>
+		<m:dependency.management__log4j__log4j__version>1.2.17</m:dependency.management__log4j__log4j__version>
+		<m:dependency.management__org.apache.maven__maven-artifact__version>3.1.1</m:dependency.management__org.apache.maven__maven-artifact__version>
+		<m:properties__glassfish-el.version>3.0.0</m:properties__glassfish-el.version>
+		<m:properties__hsqldb.version>2.3.3</m:properties__hsqldb.version>
+		<m:dependency.management__org.apache.tomcat__tomcat-jdbc__version>8.0.23</m:dependency.management__org.apache.tomcat__tomcat-jdbc__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-jdbc__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-jdbc__version>
+		<m:dependency.management__org.springframework.ws__spring-ws-core__version>2.2.1.RELEASE</m:dependency.management__org.springframework.ws__spring-ws-core__version>
+		<m:dependency.management__org.apache.solr__solr-solrj__version>4.7.2</m:dependency.management__org.apache.solr__solr-solrj__version>
+		<m:dependency.management__org.codehaus.btm__btm__version>2.1.4</m:dependency.management__org.codehaus.btm__btm__version>
+		<m:properties__derby.version>10.10.2.0</m:properties__derby.version>
+		<m:dependency.management__org.eclipse.jetty__jetty-deploy__version>9.2.11.v20150529</m:dependency.management__org.eclipse.jetty__jetty-deploy__version>
+		<m:dependency.management__org.apache.maven__maven-model__version>3.1.1</m:dependency.management__org.apache.maven__maven-model__version>
+		<m:dependency.management__commons-collections__commons-collections__version>3.2.1</m:dependency.management__commons-collections__commons-collections__version>
+		<m:dependency.management__org.apache.maven__maven-aether-provider__version>3.2.1</m:dependency.management__org.apache.maven__maven-aether-provider__version>
+		<m:properties__commons-dbcp.version>1.4</m:properties__commons-dbcp.version>
+		<m:dependency.management__org.springframework.integration__spring-integration-security__version>4.1.5.RELEASE</m:dependency.management__org.springframework.integration__spring-integration-security__version>
+		<m:dependency.management__org.springframework.amqp__spring-erlang__version>1.4.5.RELEASE</m:dependency.management__org.springframework.amqp__spring-erlang__version>
+		<m:dependency.management__org.eclipse.aether__aether-api__version>0.9.1.v20140329</m:dependency.management__org.eclipse.aether__aether-api__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-actuator__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-actuator__version>
+		<m:dependency.management__org.apache.maven__maven-settings__version>3.1.1</m:dependency.management__org.apache.maven__maven-settings__version>
+		<m:dependency.management__junit__junit__version>4.12</m:dependency.management__junit__junit__version>
+		<m:dependency.management__org.springframework.ws__spring-ws-support__exclusion_0>commons-logging__commons-logging</m:dependency.management__org.springframework.ws__spring-ws-support__exclusion_0>
+		<m:dependency.management__org.eclipse.jetty__jetty-jsp__exclusion_0>org.eclipse.jetty.orbit__javax.servlet</m:dependency.management__org.eclipse.jetty__jetty-jsp__exclusion_0>
+		<m:properties__jackson.version>2.4.6</m:properties__jackson.version>
+		<m:dependency.management__org.apache.tomcat.embed__tomcat-embed-websocket__version>8.0.23</m:dependency.management__org.apache.tomcat.embed__tomcat-embed-websocket__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-mobile__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-mobile__version>
+		<m:dependency.management__org.codehaus.groovy__groovy-json__version>2.3.11</m:dependency.management__org.codehaus.groovy__groovy-json__version>
+		<m:dependency.management__org.springframework.social__spring-social-config__version>1.1.2.RELEASE</m:dependency.management__org.springframework.social__spring-social-config__version>
+		<m:dependency.management__org.hamcrest__hamcrest-core__version>1.3</m:dependency.management__org.hamcrest__hamcrest-core__version>
+		<m:dependency.management__org.apache.httpcomponents__httpclient__exclusion_0>commons-logging__commons-logging</m:dependency.management__org.apache.httpcomponents__httpclient__exclusion_0>
+		<m:dependency.management__org.springframework.integration__spring-integration-mail__version>4.1.5.RELEASE</m:dependency.management__org.springframework.integration__spring-integration-mail__version>
+		<m:dependency.management__org.projectreactor__reactor-logback__version>1.1.6.RELEASE</m:dependency.management__org.projectreactor__reactor-logback__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-jta-atomikos__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-jta-atomikos__version>
+		<m:properties__jolokia.version>1.2.3</m:properties__jolokia.version>
+		<m:dependency.management__org.apache.maven.shared__maven-common-artifact-filters__version>1.4</m:dependency.management__org.apache.maven.shared__maven-common-artifact-filters__version>
+		<m:dependency.management__org.springframework.integration__spring-integration-ws__version>4.1.5.RELEASE</m:dependency.management__org.springframework.integration__spring-integration-ws__version>
+		<m:dependency.management__com.googlecode.json-simple__json-simple__version>1.1.1</m:dependency.management__com.googlecode.json-simple__json-simple__version>
+		<m:dependency.management__javax.servlet__jstl__version>1.2</m:dependency.management__javax.servlet__jstl__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-data-solr__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-data-solr__version>
+		<m:properties__jetty.version>9.2.11.v20150529</m:properties__jetty.version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-test__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-test__version>
+		<m:dependency.management__org.yaml__snakeyaml__version>1.14</m:dependency.management__org.yaml__snakeyaml__version>
+		<m:dependency.management__org.springframework__spring-websocket__version>4.1.7.RELEASE</m:dependency.management__org.springframework__spring-websocket__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-aop__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-aop__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-mail__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-mail__version>
+		<m:dependency.management__org.springframework.security__spring-security-web__version>3.2.7.RELEASE</m:dependency.management__org.springframework.security__spring-security-web__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-webapp__version>9.2.11.v20150529</m:dependency.management__org.eclipse.jetty__jetty-webapp__version>
+		<m:properties__antlr2.version>2.7.7</m:properties__antlr2.version>
+		<m:dependency.management__org.codehaus.groovy__groovy-sql__version>2.3.11</m:dependency.management__org.codehaus.groovy__groovy-sql__version>
+		<m:dependency.management__org.codehaus.groovy__groovy-all__version>2.3.11</m:dependency.management__org.codehaus.groovy__groovy-all__version>
+		<m:properties__hikaricp.version>2.2.5</m:properties__hikaricp.version>
+		<m:dependency.management__org.springframework.ws__spring-ws-support__version>2.2.1.RELEASE</m:dependency.management__org.springframework.ws__spring-ws-support__version>
+		<m:dependency.management__org.slf4j__slf4j-api__version>1.7.12</m:dependency.management__org.slf4j__slf4j-api__version>
+		<m:dependency.management__com.fasterxml.jackson.datatype__jackson-datatype-jsr310__version>2.4.6</m:dependency.management__com.fasterxml.jackson.datatype__jackson-datatype-jsr310__version>
+		<m:dependency.management__org.projectreactor__reactor-groovy__version>1.1.6.RELEASE</m:dependency.management__org.projectreactor__reactor-groovy__version>
+		<m:dependency.management__org.springframework.batch__spring-batch-test__version>3.0.4.RELEASE</m:dependency.management__org.springframework.batch__spring-batch-test__version>
+		<m:dependency.management__org.springframework.integration__spring-integration-http__exclusion_0>commons-logging__commons-logging</m:dependency.management__org.springframework.integration__spring-integration-http__exclusion_0>
+		<m:dependency.management__org.springframework.integration__spring-integration-http__exclusion_1>commons-logging__commons-logging-api</m:dependency.management__org.springframework.integration__spring-integration-http__exclusion_1>
+		<m:dependency.management__org.springframework__spring-beans__version>4.1.7.RELEASE</m:dependency.management__org.springframework__spring-beans__version>
+		<m:dependency.management__org.springframework.security__spring-security-jwt__version>1.0.3.RELEASE</m:dependency.management__org.springframework.security__spring-security-jwt__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-servlets__version>9.2.11.v20150529</m:dependency.management__org.eclipse.jetty__jetty-servlets__version>
+		<m:dependency.management__org.codehaus.groovy__groovy-groovydoc__version>2.3.11</m:dependency.management__org.codehaus.groovy__groovy-groovydoc__version>
+		<m:dependency.management__org.springframework__spring-expression__version>4.1.7.RELEASE</m:dependency.management__org.springframework__spring-expression__version>
+		<m:properties__janino.version>2.6.1</m:properties__janino.version>
+		<m:properties__mockito.version>1.10.19</m:properties__mockito.version>
+		<m:dependency.management__org.springframework.integration__spring-integration-rmi__version>4.1.5.RELEASE</m:dependency.management__org.springframework.integration__spring-integration-rmi__version>
+		<m:dependency.management__org.springframework.integration__spring-integration-jmx__version>4.1.5.RELEASE</m:dependency.management__org.springframework.integration__spring-integration-jmx__version>
+		<m:dependency.management__org.springframework.data__spring-cql__version>1.1.3.RELEASE</m:dependency.management__org.springframework.data__spring-cql__version>
+		<m:dependency.management__org.hibernate__hibernate-validator__version>5.1.3.Final</m:dependency.management__org.hibernate__hibernate-validator__version>
+		<m:dependency.management__org.springframework.social__spring-social-twitter__version>1.1.0.RELEASE</m:dependency.management__org.springframework.social__spring-social-twitter__version>
+		<m:dependency.management__org.crashub__crash.connectors.ssh__version>1.3.1</m:dependency.management__org.crashub__crash.connectors.ssh__version>
+		<m:properties__liquibase.version>3.3.5</m:properties__liquibase.version>
+		<m:dependency.management__org.crashub__crash.plugins.cron__version>1.3.1</m:dependency.management__org.crashub__crash.plugins.cron__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-web__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-web__version>
+		<m:dependency.management__org.springframework.data__spring-data-mongodb-log4j__version>1.6.3.RELEASE</m:dependency.management__org.springframework.data__spring-data-mongodb-log4j__version>
+		<m:dependency.management__org.springframework.integration__spring-integration-mongodb__version>4.1.5.RELEASE</m:dependency.management__org.springframework.integration__spring-integration-mongodb__version>
+		<m:properties__commons-beanutils.version>1.9.2</m:properties__commons-beanutils.version>
+		<m:dependency.management__io.undertow__undertow-websockets-jsr__version>1.1.7.Final</m:dependency.management__io.undertow__undertow-websockets-jsr__version>
+		<m:dependency.management__org.springframework.ws__spring-ws-test__version>2.2.1.RELEASE</m:dependency.management__org.springframework.ws__spring-ws-test__version>
+		<m:dependency.management__com.fasterxml.jackson.datatype__jackson-datatype-jdk8__version>2.4.6</m:dependency.management__com.fasterxml.jackson.datatype__jackson-datatype-jdk8__version>
+		<m:dependency.management__io.dropwizard.metrics__metrics-servlets__version>3.1.2</m:dependency.management__io.dropwizard.metrics__metrics-servlets__version>
+		<m:properties__java.version>1.6</m:properties__java.version>
+		<m:dependency.management__org.springframework.boot__spring-boot-dependency-tools__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-dependency-tools__version>
+		<m:dependency.management__com.fasterxml.jackson.core__jackson-databind__version>2.4.6</m:dependency.management__com.fasterxml.jackson.core__jackson-databind__version>
+		<m:dependency.management__org.springframework.boot__spring-boot-starter-redis__version>1.2.5.RELEASE</m:dependency.management__org.springframework.boot__spring-boot-starter-redis__version>
+		<m:dependency.management__com.atomikos__transactions-jms__version>3.9.3</m:dependency.management__com.atomikos__transactions-jms__version>
+		<m:dependency.management__org.eclipse.aether__aether-spi__version>0.9.1.v20140329</m:dependency.management__org.eclipse.aether__aether-spi__version>
+		<m:dependency.management__org.apache.derby__derby__version>10.10.2.0</m:dependency.management__org.apache.derby__derby__version>
+		<m:dependency.management__org.jolokia__jolokia-core__version>1.2.3</m:dependency.management__org.jolokia__jolokia-core__version>
+		<m:dependency.management__org.springframework.integration__spring-integration-amqp__version>4.1.5.RELEASE</m:dependency.management__org.springframework.integration__spring-integration-amqp__version>
+		<m:dependency.management__org.codehaus.groovy__groovy-ant__version>2.3.11</m:dependency.management__org.codehaus.groovy__groovy-ant__version>
+		<m:dependency.management__org.springframework.integration__spring-integration-redis__version>4.1.5.RELEASE</m:dependency.management__org.springframework.integration__spring-integration-redis__version>
+		<m:dependency.management__org.springframework.mobile__spring-mobile-device__version>1.1.4.RELEASE</m:dependency.management__org.springframework.mobile__spring-mobile-device__version>
+		<m:dependency.management__commons-pool__commons-pool__version>1.6</m:dependency.management__commons-pool__commons-pool__version>
+		<m:dependency.management__org.apache.logging.log4j__log4j-slf4j-impl__version>2.1</m:dependency.management__org.apache.logging.log4j__log4j-slf4j-impl__version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+		<artifact name="spring-boot-gradle-plugin" type="jar" ext="jar" conf="master"/>
+	</publications>
+	<dependencies>
+		<dependency org="org.springframework.boot" name="spring-boot-loader-tools" rev="1.2.5.RELEASE" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.springframework.boot" name="spring-boot-dependency-tools" rev="1.2.5.RELEASE" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.codehaus.groovy" name="groovy" rev="2.3.11" force="true" conf="provided->compile(*),provided(*),runtime(*),master(*)"/>
+		<dependency org="org.gradle" name="gradle-core" rev="1.6" force="true" conf="provided->compile(*),provided(*),runtime(*),master(*)"/>
+		<dependency org="org.gradle" name="gradle-base-services" rev="1.6" force="true" conf="provided->compile(*),provided(*),runtime(*),master(*)"/>
+		<dependency org="org.gradle" name="gradle-base-services-groovy" rev="1.6" force="true" conf="provided->compile(*),provided(*),runtime(*),master(*)"/>
+		<dependency org="org.gradle" name="gradle-plugins" rev="1.6" force="true" conf="provided->compile(*),provided(*),runtime(*),master(*)"/>
+		<dependency org="junit" name="junit" rev="4.12" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.mockito" name="mockito-core" rev="1.10.19" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.hamcrest" name="hamcrest-library" rev="1.3" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.springframework" name="spring-test" rev="4.1.7.RELEASE" force="true" conf="test->runtime(*),master(*)">
+			<exclude org="commons-logging" module="commons-logging" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<override org="org.apache.maven" module="maven-core" matcher="exact" rev="3.1.1"/>
+		<override org="org.jdom" module="jdom2" matcher="exact" rev="2.0.6"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-social-facebook" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="net.sf.jopt-simple" module="jopt-simple" matcher="exact" rev="4.6"/>
+		<override org="org.apache.tomcat.embed" module="tomcat-embed-core" matcher="exact" rev="8.0.23"/>
+		<override org="org.eclipse.jetty" module="jetty-xml" matcher="exact" rev="9.2.11.v20150529"/>
+		<override org="javax.transaction" module="javax.transaction-api" matcher="exact" rev="1.2"/>
+		<override org="antlr" module="antlr" matcher="exact" rev="2.7.7"/>
+		<override org="org.projectreactor.spring" module="reactor-spring-context" matcher="exact" rev="1.1.3.RELEASE"/>
+		<override org="com.github.mxab.thymeleaf.extras" module="thymeleaf-extras-data-attribute" matcher="exact" rev="1.3"/>
+		<override org="org.codehaus.groovy" module="groovy-console" matcher="exact" rev="2.3.11"/>
+		<override org="org.springframework.boot" module="spring-boot-loader-tools" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.apache.velocity" module="velocity-tools" matcher="exact" rev="2.0"/>
+		<override org="org.projectreactor.spring" module="reactor-spring-core" matcher="exact" rev="1.1.3.RELEASE"/>
+		<override org="org.apache.tomcat.embed" module="tomcat-embed-logging-juli" matcher="exact" rev="8.0.23"/>
+		<override org="org.thymeleaf.extras" module="thymeleaf-extras-conditionalcomments" matcher="exact" rev="2.1.1.RELEASE"/>
+		<override org="javax.cache" module="cache-api" matcher="exact" rev="1.0.0"/>
+		<override org="org.eclipse.jetty" module="jetty-annotations" matcher="exact" rev="9.2.11.v20150529"/>
+		<override org="org.eclipse.jetty" module="jetty-continuation" matcher="exact" rev="9.2.11.v20150529"/>
+		<override org="org.crashub" module="crash.cli" matcher="exact" rev="1.3.1"/>
+		<override org="org.springframework.integration" module="spring-integration-twitter" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="org.springframework.social" module="spring-social-core" matcher="exact" rev="1.1.2.RELEASE"/>
+		<override org="org.springframework.cloud" module="spring-cloud-localconfig-connector" matcher="exact" rev="1.1.1.RELEASE"/>
+		<override org="org.springframework" module="spring-tx" matcher="exact" rev="4.1.7.RELEASE"/>
+		<override org="org.springframework" module="spring-context-support" matcher="exact" rev="4.1.7.RELEASE"/>
+		<override org="org.projectreactor" module="reactor-net" matcher="exact" rev="1.1.6.RELEASE"/>
+		<override org="org.freemarker" module="freemarker" matcher="exact" rev="2.3.22"/>
+		<override org="org.eclipse.jetty" module="jetty-util" matcher="exact" rev="9.2.11.v20150529"/>
+		<override org="org.eclipse.jetty.orbit" module="javax.servlet.jsp" matcher="exact" rev="2.2.0.v201112011158"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-mustache" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.apache.httpcomponents" module="httpasyncclient" matcher="exact" rev="4.0.2"/>
+		<override org="org.apache.httpcomponents" module="httpmime" matcher="exact" rev="4.3.6"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-log4j" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.springframework.social" module="spring-social-security" matcher="exact" rev="1.1.2.RELEASE"/>
+		<override org="org.apache.tomcat.embed" module="tomcat-embed-el" matcher="exact" rev="8.0.23"/>
+		<override org="org.springframework.data" module="spring-data-mongodb" matcher="exact" rev="1.6.3.RELEASE"/>
+		<override org="org.springframework.integration" module="spring-integration-scripting" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="org.springframework.data" module="spring-data-jpa" matcher="exact" rev="1.7.3.RELEASE"/>
+		<override org="org.springframework.ws" module="spring-ws-security" matcher="exact" rev="2.2.1.RELEASE"/>
+		<override org="org.eclipse.jetty" module="jetty-io" matcher="exact" rev="9.2.11.v20150529"/>
+		<override org="com.fasterxml.jackson.datatype" module="jackson-datatype-joda" matcher="exact" rev="2.4.6"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-social-twitter" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.springframework" module="spring-webmvc" matcher="exact" rev="4.1.7.RELEASE"/>
+		<override org="org.springframework.integration" module="spring-integration-websocket" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="org.codehaus.plexus" module="plexus-utils" matcher="exact" rev="3.0.17"/>
+		<override org="org.eclipse.jetty.websocket" module="websocket-server" matcher="exact" rev="9.2.11.v20150529"/>
+		<override org="org.apache.commons" module="commons-pool2" matcher="exact" rev="2.2"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-jersey" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.apache.httpcomponents" module="httpclient" matcher="exact" rev="4.3.6"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-undertow" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.springframework.social" module="spring-social-facebook" matcher="exact" rev="2.0.1.RELEASE"/>
+		<override org="com.atomikos" module="transactions-jdbc" matcher="exact" rev="3.9.3"/>
+		<override org="org.codehaus.groovy" module="groovy-testng" matcher="exact" rev="2.3.11"/>
+		<override org="org.codehaus.janino" module="janino" matcher="exact" rev="2.6.1"/>
+		<override org="org.springframework.batch" module="spring-batch-infrastructure" matcher="exact" rev="3.0.4.RELEASE"/>
+		<override org="org.springframework.integration" module="spring-integration-event" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="org.eclipse.aether" module="aether-impl" matcher="exact" rev="0.9.1.v20140329"/>
+		<override org="com.google.code.gson" module="gson" matcher="exact" rev="2.3.1"/>
+		<override org="org.springframework.integration" module="spring-integration-syslog" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="org.codehaus.groovy" module="groovy-groovysh" matcher="exact" rev="2.3.11"/>
+		<override org="org.springframework.security" module="spring-security-acl" matcher="exact" rev="3.2.7.RELEASE"/>
+		<override org="org.slf4j" module="jul-to-slf4j" matcher="exact" rev="1.7.12"/>
+		<override org="org.slf4j" module="log4j-over-slf4j" matcher="exact" rev="1.7.12"/>
+		<override org="org.aspectj" module="aspectjrt" matcher="exact" rev="1.8.6"/>
+		<override org="com.fasterxml.jackson.dataformat" module="jackson-dataformat-yaml" matcher="exact" rev="2.4.6"/>
+		<override org="org.springframework.batch" module="spring-batch-core" matcher="exact" rev="3.0.4.RELEASE"/>
+		<override org="org.eclipse.jetty" module="jetty-http" matcher="exact" rev="9.2.11.v20150529"/>
+		<override org="javax.jms" module="jms-api" matcher="exact" rev="1.1-rev-1"/>
+		<override org="org.crashub" module="crash.shell" matcher="exact" rev="1.3.1"/>
+		<override org="org.springframework.data" module="spring-data-rest-webmvc" matcher="exact" rev="2.2.3.RELEASE"/>
+		<override org="org.springframework.boot" module="spring-boot-starter" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.springframework.integration" module="spring-integration-xmpp" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="org.springframework.security" module="spring-security-cas" matcher="exact" rev="3.2.7.RELEASE"/>
+		<override org="org.springframework.cloud" module="spring-cloud-spring-service-connector" matcher="exact" rev="1.1.1.RELEASE"/>
+		<override org="org.codehaus.groovy" module="groovy-nio" matcher="exact" rev="2.3.11"/>
+		<override org="com.jayway.jsonpath" module="json-path" matcher="exact" rev="0.9.1"/>
+		<override org="org.codehaus.groovy" module="groovy" matcher="exact" rev="2.3.11"/>
+		<override org="org.gradle" module="gradle-base-services-groovy" matcher="exact" rev="1.6"/>
+		<override org="com.atomikos" module="transactions-jta" matcher="exact" rev="3.9.3"/>
+		<override org="commons-digester" module="commons-digester" matcher="exact" rev="2.1"/>
+		<override org="org.springframework" module="spring-test" matcher="exact" rev="4.1.7.RELEASE"/>
+		<override org="org.springframework.batch" module="spring-batch-integration" matcher="exact" rev="3.0.4.RELEASE"/>
+		<override org="org.springframework.ws" module="spring-ws-test" matcher="exact" rev="2.2.1.RELEASE"/>
+		<override org="org.springframework.boot" module="spring-boot-configuration-processor" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.springframework.social" module="spring-social-linkedin" matcher="exact" rev="1.0.1.RELEASE"/>
+		<override org="org.hornetq" module="hornetq-jms-server" matcher="exact" rev="2.4.7.Final"/>
+		<override org="org.hibernate" module="hibernate-entitymanager" matcher="exact" rev="4.3.10.Final"/>
+		<override org="org.apache.maven" module="maven-settings-builder" matcher="exact" rev="3.1.1"/>
+		<override org="org.springframework.data" module="spring-data-gemfire" matcher="exact" rev="1.5.3.RELEASE"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-social-linkedin" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.json" module="json" matcher="exact" rev="20140107"/>
+		<override org="org.eclipse.aether" module="aether-util" matcher="exact" rev="0.9.1.v20140329"/>
+		<override org="org.eclipse.jetty" module="jetty-security" matcher="exact" rev="9.2.11.v20150529"/>
+		<override org="org.eclipse.aether" module="aether-connector-basic" matcher="exact" rev="0.9.1.v20140329"/>
+		<override org="com.gemstone.gemfire" module="gemfire" matcher="exact" rev="7.0.2"/>
+		<override org="org.springframework.integration" module="spring-integration-jms" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="com.samskivert" module="jmustache" matcher="exact" rev="1.10"/>
+		<override org="org.springframework.plugin" module="spring-plugin-core" matcher="exact" rev="1.1.0.RELEASE"/>
+		<override org="com.sun.mail" module="javax.mail" matcher="exact" rev="1.5.4"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-data-elasticsearch" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.gradle" module="gradle-base-services" matcher="exact" rev="1.6"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-jetty" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-integration" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.mockito" module="mockito-core" matcher="exact" rev="1.10.19"/>
+		<override org="ch.qos.logback" module="logback-classic" matcher="exact" rev="1.1.3"/>
+		<override org="io.dropwizard.metrics" module="metrics-graphite" matcher="exact" rev="3.1.2"/>
+		<override org="wsdl4j" module="wsdl4j" matcher="exact" rev="1.6.3"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-hornetq" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.springframework" module="spring-orm" matcher="exact" rev="4.1.7.RELEASE"/>
+		<override org="org.springframework.integration" module="spring-integration-ftp" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="org.glassfish.jersey.containers" module="jersey-container-servlet" matcher="exact" rev="2.14"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-logging" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-jta-bitronix" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.apache.logging.log4j" module="log4j-core" matcher="exact" rev="2.1"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-batch" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.projectlombok" module="lombok" matcher="exact" rev="1.12.6"/>
+		<override org="org.springframework" module="spring-instrument-tomcat" matcher="exact" rev="4.1.7.RELEASE"/>
+		<override org="jline" module="jline" matcher="exact" rev="2.11"/>
+		<override org="org.projectreactor" module="reactor-core" matcher="exact" rev="1.1.6.RELEASE"/>
+		<override org="org.eclipse.jetty.websocket" module="javax-websocket-server-impl" matcher="exact" rev="9.2.11.v20150529"/>
+		<override org="org.springframework.integration" module="spring-integration-gemfire" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="commons-beanutils" module="commons-beanutils" matcher="exact" rev="1.9.2"/>
+		<override org="joda-time" module="joda-time" matcher="exact" rev="2.5"/>
+		<override org="org.apache.ivy" module="ivy" matcher="exact" rev="2.3.0"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-actuator" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.apache.commons" module="commons-dbcp2" matcher="exact" rev="2.0.1"/>
+		<override org="org.eclipse.aether" module="aether-transport-file" matcher="exact" rev="0.9.1.v20140329"/>
+		<override org="org.apache.tomcat.embed" module="tomcat-embed-jasper" matcher="exact" rev="8.0.23"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-groovy-templates" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="io.dropwizard.metrics" module="metrics-ganglia" matcher="exact" rev="3.1.2"/>
+		<override org="org.springframework" module="spring-instrument" matcher="exact" rev="4.1.7.RELEASE"/>
+		<override org="org.aspectj" module="aspectjtools" matcher="exact" rev="1.8.6"/>
+		<override org="org.springframework.data" module="spring-data-cassandra" matcher="exact" rev="1.1.3.RELEASE"/>
+		<override org="redis.clients" module="jedis" matcher="exact" rev="2.5.2"/>
+		<override org="org.glassfish.jersey.ext" module="jersey-bean-validation" matcher="exact" rev="2.14"/>
+		<override org="org.springframework" module="spring-oxm" matcher="exact" rev="4.1.7.RELEASE"/>
+		<override org="io.dropwizard.metrics" module="metrics-core" matcher="exact" rev="3.1.2"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-thymeleaf" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.glassfish.jersey.ext" module="jersey-spring3" matcher="exact" rev="2.14"/>
+		<override org="org.springframework.integration" module="spring-integration-core" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="com.h2database" module="h2" matcher="exact" rev="1.4.187"/>
+		<override org="org.apache.activemq" module="activemq-pool" matcher="exact" rev="5.10.2"/>
+		<override org="org.apache.maven.plugin-tools" module="maven-plugin-annotations" matcher="exact" rev="3.2"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-data-mongodb" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="javax.servlet" module="javax.servlet-api" matcher="exact" rev="3.1.0"/>
+		<override org="org.eclipse.jetty" module="jetty-plus" matcher="exact" rev="9.2.11.v20150529"/>
+		<override org="org.springframework.security" module="spring-security-aspects" matcher="exact" rev="3.2.7.RELEASE"/>
+		<override org="org.springframework.boot" module="spring-boot" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.crashub" module="crash.connectors.ssh" matcher="exact" rev="1.3.1"/>
+		<override org="org.hsqldb" module="hsqldb" matcher="exact" rev="2.3.3"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-ws" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.eclipse.aether" module="aether-transport-http" matcher="exact" rev="0.9.1.v20140329"/>
+		<override org="jaxen" module="jaxen" matcher="exact" rev="1.1.6"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-cloud-connectors" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.springframework" module="spring-webmvc-portlet" matcher="exact" rev="4.1.7.RELEASE"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-websocket" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.springframework.data" module="spring-data-neo4j" matcher="exact" rev="3.2.3.RELEASE"/>
+		<override org="org.codehaus.groovy" module="groovy-xml" matcher="exact" rev="2.3.11"/>
+		<override org="org.springframework.integration" module="spring-integration-ip" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="org.apache.logging.log4j" module="log4j-api" matcher="exact" rev="2.1"/>
+		<override org="org.apache.maven" module="maven-plugin-api" matcher="exact" rev="3.1.1"/>
+		<override org="org.slf4j" module="slf4j-jdk14" matcher="exact" rev="1.7.12"/>
+		<override org="org.springframework.data" module="spring-data-elasticsearch" matcher="exact" rev="1.1.3.RELEASE"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-freemarker" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.springframework" module="spring-context" matcher="exact" rev="4.1.7.RELEASE"/>
+		<override org="org.springframework.integration" module="spring-integration-http" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="org.codehaus.plexus" module="plexus-component-api" matcher="exact" rev="1.0-alpha-33"/>
+		<override org="org.mongodb" module="mongo-java-driver" matcher="exact" rev="2.12.5"/>
+		<override org="org.springframework" module="spring-jms" matcher="exact" rev="4.1.7.RELEASE"/>
+		<override org="commons-dbcp" module="commons-dbcp" matcher="exact" rev="1.4"/>
+		<override org="commons-beanutils" module="commons-beanutils" matcher="exact" rev="1.9.2"/>
+		<override org="org.codehaus.groovy" module="groovy-test" matcher="exact" rev="2.3.11"/>
+		<override org="org.flywaydb" module="flyway-core" matcher="exact" rev="3.1"/>
+		<override org="org.codehaus.groovy" module="groovy-jmx" matcher="exact" rev="2.3.11"/>
+		<override org="org.springframework.boot" module="spring-boot-loader" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.hibernate" module="hibernate-envers" matcher="exact" rev="4.3.10.Final"/>
+		<override org="org.apache.httpcomponents" module="httpasyncclient" matcher="exact" rev="4.0.2"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-amqp" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.slf4j" module="jcl-over-slf4j" matcher="exact" rev="1.7.12"/>
+		<override org="org.springframework.data" module="spring-data-redis" matcher="exact" rev="1.4.3.RELEASE"/>
+		<override org="org.apache.velocity" module="velocity" matcher="exact" rev="1.7"/>
+		<override org="org.springframework.cloud" module="spring-cloud-spring-service-connector" matcher="exact" rev="1.1.1.RELEASE"/>
+		<override org="org.springframework.integration" module="spring-integration-test" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="org.spockframework" module="spock-spring" matcher="exact" rev="0.7-groovy-2.0"/>
+		<override org="org.crashub" module="crash.embed.spring" matcher="exact" rev="1.3.1"/>
+		<override org="org.apache.maven.plugins" module="maven-shade-plugin" matcher="exact" rev="2.2"/>
+		<override org="org.thymeleaf" module="thymeleaf" matcher="exact" rev="2.1.4.RELEASE"/>
+		<override org="org.springframework.security" module="spring-security-taglibs" matcher="exact" rev="3.2.7.RELEASE"/>
+		<override org="org.apache.tomcat" module="tomcat-jsp-api" matcher="exact" rev="8.0.23"/>
+		<override org="org.springframework" module="spring-messaging" matcher="exact" rev="4.1.7.RELEASE"/>
+		<override org="org.springframework.integration" module="spring-integration-file" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="org.apache.activemq" module="activemq-client" matcher="exact" rev="5.10.2"/>
+		<override org="org.springframework.data" module="spring-data-mongodb-cross-store" matcher="exact" rev="1.6.3.RELEASE"/>
+		<override org="org.apache.activemq" module="activemq-broker" matcher="exact" rev="5.10.2"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-data-jpa" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.springframework.integration" module="spring-integration-xml" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-log4j2" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.hamcrest" module="hamcrest-library" matcher="exact" rev="1.3"/>
+		<override org="org.springframework.data" module="spring-data-commons" matcher="exact" rev="1.9.3.RELEASE"/>
+		<override org="org.hibernate" module="hibernate-jpamodelgen" matcher="exact" rev="4.3.10.Final"/>
+		<override org="org.projectreactor.spring" module="reactor-spring-webmvc" matcher="exact" rev="1.1.3.RELEASE"/>
+		<override org="org.springframework.security" module="spring-security-crypto" matcher="exact" rev="3.2.7.RELEASE"/>
+		<override org="org.hibernate" module="hibernate-ehcache" matcher="exact" rev="4.3.10.Final"/>
+		<override org="org.thymeleaf.extras" module="thymeleaf-extras-springsecurity3" matcher="exact" rev="2.1.2.RELEASE"/>
+		<override org="org.liquibase" module="liquibase-core" matcher="exact" rev="3.3.5"/>
+		<override org="org.springframework" module="spring-web" matcher="exact" rev="4.1.7.RELEASE"/>
+		<override org="org.thymeleaf" module="thymeleaf-spring4" matcher="exact" rev="2.1.4.RELEASE"/>
+		<override org="org.eclipse.jetty" module="jetty-jsp" matcher="exact" rev="9.2.11.v20150529"/>
+		<override org="org.springframework.security" module="spring-security-config" matcher="exact" rev="3.2.7.RELEASE"/>
+		<override org="org.javassist" module="javassist" matcher="exact" rev="3.18.1-GA"/>
+		<override org="nz.net.ultraq.thymeleaf" module="thymeleaf-layout-dialect" matcher="exact" rev="1.2.9"/>
+		<override org="org.springframework.amqp" module="spring-rabbit" matcher="exact" rev="1.4.5.RELEASE"/>
+		<override org="org.codehaus.groovy" module="groovy-docgenerator" matcher="exact" rev="2.3.11"/>
+		<override org="org.gradle" module="gradle-core" matcher="exact" rev="1.6"/>
+		<override org="org.codehaus.groovy" module="groovy-servlet" matcher="exact" rev="2.3.11"/>
+		<override org="org.springframework.data" module="spring-data-rest-core" matcher="exact" rev="2.2.3.RELEASE"/>
+		<override org="org.codehaus.plexus" module="plexus-archiver" matcher="exact" rev="2.4.4"/>
+		<override org="org.hornetq" module="hornetq-jms-client" matcher="exact" rev="2.4.7.Final"/>
+		<override org="org.springframework.security" module="spring-security-core" matcher="exact" rev="3.2.7.RELEASE"/>
+		<override org="org.eclipse.jetty" module="jetty-server" matcher="exact" rev="9.2.11.v20150529"/>
+		<override org="org.springframework.integration" module="spring-integration-jdbc" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="org.springframework.boot" module="spring-boot-autoconfigure" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.glassfish.jersey.containers" module="jersey-container-servlet-core" matcher="exact" rev="2.14"/>
+		<override org="org.springframework.cloud" module="spring-cloud-core" matcher="exact" rev="1.1.1.RELEASE"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-security" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.apache.velocity" module="velocity-tools" matcher="exact" rev="2.0"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-data-gemfire" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.glassfish.jersey.core" module="jersey-server" matcher="exact" rev="2.14"/>
+		<override org="org.springframework.integration" module="spring-integration-mqtt" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="org.codehaus.groovy" module="groovy-swing" matcher="exact" rev="2.3.11"/>
+		<override org="org.springframework" module="spring-aop" matcher="exact" rev="4.1.7.RELEASE"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-remote-shell" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.springframework.ws" module="spring-ws-security" matcher="exact" rev="2.2.1.RELEASE"/>
+		<override org="org.springframework" module="spring-aspects" matcher="exact" rev="4.1.7.RELEASE"/>
+		<override org="org.springframework.integration" module="spring-integration-jpa" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="org.springframework.integration" module="spring-integration-sftp" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="org.springframework.boot" module="spring-boot-starter" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.springframework" module="spring-core" matcher="exact" rev="4.1.7.RELEASE"/>
+		<override org="org.springframework" module="spring-jdbc" matcher="exact" rev="4.1.7.RELEASE"/>
+		<override org="org.springframework.amqp" module="spring-amqp" matcher="exact" rev="1.4.5.RELEASE"/>
+		<override org="org.eclipse.jetty" module="jetty-jmx" matcher="exact" rev="9.2.11.v20150529"/>
+		<override org="org.codehaus.groovy" module="groovy-jsr223" matcher="exact" rev="2.3.11"/>
+		<override org="org.springframework.hateoas" module="spring-hateoas" matcher="exact" rev="0.16.0.RELEASE"/>
+		<override org="org.projectreactor.spring" module="reactor-spring-messaging" matcher="exact" rev="1.1.3.RELEASE"/>
+		<override org="org.slf4j" module="slf4j-log4j12" matcher="exact" rev="1.7.12"/>
+		<override org="org.spockframework" module="spock-core" matcher="exact" rev="0.7-groovy-2.0"/>
+		<override org="org.springframework.social" module="spring-social-facebook-web" matcher="exact" rev="2.0.1.RELEASE"/>
+		<override org="org.springframework.cloud" module="spring-cloud-heroku-connector" matcher="exact" rev="1.1.1.RELEASE"/>
+		<override org="org.crashub" module="crash.connectors.telnet" matcher="exact" rev="1.3.1"/>
+		<override org="org.springframework.integration" module="spring-integration-feed" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-velocity" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.springframework.ws" module="spring-ws-core" matcher="exact" rev="2.2.1.RELEASE"/>
+		<override org="org.springframework.security" module="spring-security-openid" matcher="exact" rev="3.2.7.RELEASE"/>
+		<override org="org.codehaus.groovy" module="groovy-templates" matcher="exact" rev="2.3.11"/>
+		<override org="commons-digester" module="commons-digester" matcher="exact" rev="2.1"/>
+		<override org="org.gradle" module="gradle-plugins" matcher="exact" rev="1.6"/>
+		<override org="org.springframework.security" module="spring-security-ldap" matcher="exact" rev="3.2.7.RELEASE"/>
+		<override org="org.apache.activemq" module="activemq-jms-pool" matcher="exact" rev="5.10.2"/>
+		<override org="org.aspectj" module="aspectjweaver" matcher="exact" rev="1.8.6"/>
+		<override org="org.glassfish" module="javax.el" matcher="exact" rev="3.0.0"/>
+		<override org="org.codehaus.groovy" module="groovy-bsf" matcher="exact" rev="2.3.11"/>
+		<override org="org.springframework.data" module="spring-data-solr" matcher="exact" rev="1.3.3.RELEASE"/>
+		<override org="org.springframework.integration" module="spring-integration-stream" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="com.zaxxer" module="HikariCP-java6" matcher="exact" rev="2.2.5"/>
+		<override org="org.springframework.security" module="spring-security-remoting" matcher="exact" rev="3.2.7.RELEASE"/>
+		<override org="org.springframework.data" module="spring-data-couchbase" matcher="exact" rev="1.2.3.RELEASE"/>
+		<override org="org.springframework.integration" module="spring-integration-groovy" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="com.fasterxml.jackson.dataformat" module="jackson-dataformat-xml" matcher="exact" rev="2.4.6"/>
+		<override org="com.zaxxer" module="HikariCP" matcher="exact" rev="2.2.5"/>
+		<override org="org.apache.maven" module="maven-archiver" matcher="exact" rev="2.5"/>
+		<override org="javax.mail" module="javax.mail-api" matcher="exact" rev="1.5.4"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-hateoas" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="com.fasterxml.jackson.core" module="jackson-core" matcher="exact" rev="2.4.6"/>
+		<override org="org.springframework.social" module="spring-social-web" matcher="exact" rev="1.1.2.RELEASE"/>
+		<override org="io.undertow" module="undertow-servlet" matcher="exact" rev="1.1.7.Final"/>
+		<override org="org.zeroturnaround" module="zt-zip" matcher="exact" rev="1.7"/>
+		<override org="org.projectreactor" module="reactor-groovy-extensions" matcher="exact" rev="1.1.6.RELEASE"/>
+		<override org="org.hornetq" module="hornetq-jms-server" matcher="exact" rev="2.4.7.Final"/>
+		<override org="org.springframework" module="springloaded" matcher="exact" rev="1.2.3.RELEASE"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-test" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.crashub" module="crash.plugins.mail" matcher="exact" rev="1.3.1"/>
+		<override org="org.springframework.cloud" module="spring-cloud-cloudfoundry-connector" matcher="exact" rev="1.1.1.RELEASE"/>
+		<override org="mysql" module="mysql-connector-java" matcher="exact" rev="5.1.35"/>
+		<override org="org.eclipse.jetty" module="jetty-servlet" matcher="exact" rev="9.2.11.v20150529"/>
+		<override org="org.spockframework" module="spock-core" matcher="exact" rev="0.7-groovy-2.0"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-tomcat" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="com.fasterxml.jackson.core" module="jackson-annotations" matcher="exact" rev="2.4.6"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-data-rest" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.glassfish.jersey.media" module="jersey-media-json-jackson" matcher="exact" rev="2.14"/>
+		<override org="io.undertow" module="undertow-core" matcher="exact" rev="1.1.7.Final"/>
+		<override org="log4j" module="log4j" matcher="exact" rev="1.2.17"/>
+		<override org="org.apache.maven" module="maven-artifact" matcher="exact" rev="3.1.1"/>
+		<override org="org.apache.tomcat" module="tomcat-jdbc" matcher="exact" rev="8.0.23"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-jdbc" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.springframework.ws" module="spring-ws-core" matcher="exact" rev="2.2.1.RELEASE"/>
+		<override org="org.codehaus.btm" module="btm" matcher="exact" rev="2.1.4"/>
+		<override org="org.apache.solr" module="solr-solrj" matcher="exact" rev="4.7.2"/>
+		<override org="org.eclipse.jetty" module="jetty-deploy" matcher="exact" rev="9.2.11.v20150529"/>
+		<override org="commons-collections" module="commons-collections" matcher="exact" rev="3.2.1"/>
+		<override org="org.apache.maven" module="maven-model" matcher="exact" rev="3.1.1"/>
+		<override org="org.apache.maven" module="maven-aether-provider" matcher="exact" rev="3.2.1"/>
+		<override org="org.springframework.integration" module="spring-integration-security" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="org.springframework.amqp" module="spring-erlang" matcher="exact" rev="1.4.5.RELEASE"/>
+		<override org="org.eclipse.aether" module="aether-api" matcher="exact" rev="0.9.1.v20140329"/>
+		<override org="org.springframework.boot" module="spring-boot-actuator" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.apache.maven" module="maven-settings" matcher="exact" rev="3.1.1"/>
+		<override org="junit" module="junit" matcher="exact" rev="4.12"/>
+		<override org="org.eclipse.jetty" module="jetty-jsp" matcher="exact" rev="9.2.11.v20150529"/>
+		<override org="org.springframework.ws" module="spring-ws-support" matcher="exact" rev="2.2.1.RELEASE"/>
+		<override org="org.apache.tomcat.embed" module="tomcat-embed-websocket" matcher="exact" rev="8.0.23"/>
+		<override org="org.codehaus.groovy" module="groovy-json" matcher="exact" rev="2.3.11"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-mobile" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.hamcrest" module="hamcrest-core" matcher="exact" rev="1.3"/>
+		<override org="org.springframework.social" module="spring-social-config" matcher="exact" rev="1.1.2.RELEASE"/>
+		<override org="org.apache.httpcomponents" module="httpclient" matcher="exact" rev="4.3.6"/>
+		<override org="org.springframework.integration" module="spring-integration-mail" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="org.projectreactor" module="reactor-logback" matcher="exact" rev="1.1.6.RELEASE"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-jta-atomikos" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="javax.servlet" module="jstl" matcher="exact" rev="1.2"/>
+		<override org="com.googlecode.json-simple" module="json-simple" matcher="exact" rev="1.1.1"/>
+		<override org="org.springframework.integration" module="spring-integration-ws" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="org.apache.maven.shared" module="maven-common-artifact-filters" matcher="exact" rev="1.4"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-data-solr" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-test" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.yaml" module="snakeyaml" matcher="exact" rev="1.14"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-aop" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.springframework" module="spring-websocket" matcher="exact" rev="4.1.7.RELEASE"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-mail" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.springframework.security" module="spring-security-web" matcher="exact" rev="3.2.7.RELEASE"/>
+		<override org="org.eclipse.jetty" module="jetty-webapp" matcher="exact" rev="9.2.11.v20150529"/>
+		<override org="org.codehaus.groovy" module="groovy-sql" matcher="exact" rev="2.3.11"/>
+		<override org="org.codehaus.groovy" module="groovy-all" matcher="exact" rev="2.3.11"/>
+		<override org="org.springframework.ws" module="spring-ws-support" matcher="exact" rev="2.2.1.RELEASE"/>
+		<override org="org.slf4j" module="slf4j-api" matcher="exact" rev="1.7.12"/>
+		<override org="com.fasterxml.jackson.datatype" module="jackson-datatype-jsr310" matcher="exact" rev="2.4.6"/>
+		<override org="org.projectreactor" module="reactor-groovy" matcher="exact" rev="1.1.6.RELEASE"/>
+		<override org="org.springframework.integration" module="spring-integration-http" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="org.springframework.batch" module="spring-batch-test" matcher="exact" rev="3.0.4.RELEASE"/>
+		<override org="org.springframework.integration" module="spring-integration-http" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="org.springframework.security" module="spring-security-jwt" matcher="exact" rev="1.0.3.RELEASE"/>
+		<override org="org.springframework" module="spring-beans" matcher="exact" rev="4.1.7.RELEASE"/>
+		<override org="org.eclipse.jetty" module="jetty-servlets" matcher="exact" rev="9.2.11.v20150529"/>
+		<override org="org.codehaus.groovy" module="groovy-groovydoc" matcher="exact" rev="2.3.11"/>
+		<override org="org.springframework" module="spring-expression" matcher="exact" rev="4.1.7.RELEASE"/>
+		<override org="org.springframework.integration" module="spring-integration-rmi" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="org.springframework.data" module="spring-cql" matcher="exact" rev="1.1.3.RELEASE"/>
+		<override org="org.springframework.integration" module="spring-integration-jmx" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="org.hibernate" module="hibernate-validator" matcher="exact" rev="5.1.3.Final"/>
+		<override org="org.springframework.social" module="spring-social-twitter" matcher="exact" rev="1.1.0.RELEASE"/>
+		<override org="org.crashub" module="crash.connectors.ssh" matcher="exact" rev="1.3.1"/>
+		<override org="org.crashub" module="crash.plugins.cron" matcher="exact" rev="1.3.1"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-web" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="org.springframework.data" module="spring-data-mongodb-log4j" matcher="exact" rev="1.6.3.RELEASE"/>
+		<override org="org.springframework.integration" module="spring-integration-mongodb" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="org.springframework.ws" module="spring-ws-test" matcher="exact" rev="2.2.1.RELEASE"/>
+		<override org="io.undertow" module="undertow-websockets-jsr" matcher="exact" rev="1.1.7.Final"/>
+		<override org="com.fasterxml.jackson.datatype" module="jackson-datatype-jdk8" matcher="exact" rev="2.4.6"/>
+		<override org="io.dropwizard.metrics" module="metrics-servlets" matcher="exact" rev="3.1.2"/>
+		<override org="org.springframework.boot" module="spring-boot-dependency-tools" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="com.fasterxml.jackson.core" module="jackson-databind" matcher="exact" rev="2.4.6"/>
+		<override org="org.springframework.boot" module="spring-boot-starter-redis" matcher="exact" rev="1.2.5.RELEASE"/>
+		<override org="com.atomikos" module="transactions-jms" matcher="exact" rev="3.9.3"/>
+		<override org="org.eclipse.aether" module="aether-spi" matcher="exact" rev="0.9.1.v20140329"/>
+		<override org="org.apache.derby" module="derby" matcher="exact" rev="10.10.2.0"/>
+		<override org="org.jolokia" module="jolokia-core" matcher="exact" rev="1.2.3"/>
+		<override org="org.springframework.integration" module="spring-integration-amqp" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="org.springframework.integration" module="spring-integration-redis" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="org.codehaus.groovy" module="groovy-ant" matcher="exact" rev="2.3.11"/>
+		<override org="org.springframework.mobile" module="spring-mobile-device" matcher="exact" rev="1.1.4.RELEASE"/>
+		<override org="commons-pool" module="commons-pool" matcher="exact" rev="1.6"/>
+		<override org="org.apache.logging.log4j" module="log4j-slf4j-impl" matcher="exact" rev="2.1"/>
+	</dependencies>
+</ivy-module>
