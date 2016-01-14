@@ -64,6 +64,9 @@ dependencies {
     compile "org.grails.plugins:scaffolding"
 
     compile 'org.grails.plugins:spring-security-core:3.0.3'
+//    compile "org.grails.plugins:spring-security-acl:2.0.1"
+//    compile "org.grails.plugins:spring-security-ui:1.0-RC3"
+    compile "org.grails.plugins:spring-security-ui:3.0.0.M1"
     runtime "org.grails.plugins:asset-pipeline"
 
     testCompile "org.grails:grails-plugin-testing"
