@@ -6,6 +6,7 @@ grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'com.llqing.Use
 grails.plugin.springsecurity.authority.className = 'com.llqing.Role'
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	[pattern: '/',               access: ['permitAll']],
+	[pattern: '/frontpage/*',      access: ['permitAll']],
 	[pattern: '/error',          access: ['permitAll']],
 	[pattern: '/index',          access: ['permitAll']],
 	[pattern: '/index.gsp',      access: ['permitAll']],
