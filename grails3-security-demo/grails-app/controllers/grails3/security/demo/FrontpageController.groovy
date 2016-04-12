@@ -6,6 +6,6 @@ class FrontpageController {
 
 //   @Secured('ROLE_ADMIN')
     def index() {
-		render "frontpage"
+		//render "frontpage"
 	}
 }
