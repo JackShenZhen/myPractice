@@ -4,6 +4,7 @@
    
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
  
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
@@ -14,17 +15,20 @@
 
     <!-- Bootstrap core CSS -->
 
-	<g:external dir="stylesheets" file="bootstrap.min.css"/>
+
+	<asset:stylesheet href="bootstrap.min.css"/>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
   
-	<g:external dir="stylesheets" file="ie10-viewport-bug-workaround.css"/>
+
+	<asset:stylesheet href="ie10-viewport-bug-workaround.css"/>
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
    
 	
-	<g:javascript src="ie-emulation-modes-warning.js"/>
+
+	<asset:javascript src="ie-emulation-modes-warning.js"/>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -34,7 +38,8 @@
 
     <!-- Custom styles for this template -->
 
-	<g:external dir="stylesheets" file="carousel.css"/>
+
+	<asset:stylesheet href="carousel.css"/>
 
 
     </head>
@@ -215,12 +220,14 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
+	<asset:javascript src="jquery-2.1.3.js"/>
+
+	<asset:javascript src="bootstrap.min.js"/>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="../../assets/js/vendor/holder.min.js"></script>
+
+	<asset:javascript src="holder.min.js"/>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+	<asset:javascript src="ie10-viewport-bug-workaround.js"/>
   </body>
 </html>
