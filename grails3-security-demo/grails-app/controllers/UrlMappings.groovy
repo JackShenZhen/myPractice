@@ -12,6 +12,13 @@ class UrlMappings {
         controller = "frontpage"
     }
 	
+	"/people"(view:"/people")
+	"/animal"(view:"/animal")
+	"/environment"(view:"/environment")
+	"/dating"(view:"/dating")
+	"/shopping"(view:"/shopping")
+	"/knowledge"(view:"/knowledge")
+	
         "500"(view:'/error')
         "404"(view:'/notFound')
     }

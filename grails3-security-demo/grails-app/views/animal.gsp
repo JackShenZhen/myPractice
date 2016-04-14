@@ -11,7 +11,7 @@
     <meta name="author" content="">
 
 
-    <title>慈善缘--怀善心，做善事，结善缘</title>
+    <title>慈善缘--助人为乐</title>
 
     <!-- Bootstrap core CSS -->
 
@@ -53,8 +53,20 @@
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li class="active"><a href="#">首页</a></li>
+				<li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">发布求助 <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">收养</a></li>
+                    <li><a href="#">助医</a></li>
+                    <li><a href="#">助食</a></li>
+					<li><a href="#">配偶</a></li>
+
+
+                  </ul>
+                </li>
+                <li><a href="#contact">慈善榜</a></li>
                 <li><a href="#about">关于我们</a></li>
-                <li><a href="#contact">注册/登录</a></li>
+                <li><a href="#contact">注册/登录</a></li>				
 
               </ul>
             </div>
