@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.grails.plugins</groupId>
+  <artifactId>asynchronous-mail</artifactId>
+  <version>2.0.0.RC2</version>
+  <dependencies>
+    <dependency>
+      <groupId>org.grails.plugins</groupId>
+      <artifactId>mail</artifactId>
+      <version>2.0.0.RC6</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.grails.plugins</groupId>
+      <artifactId>quartz</artifactId>
+      <version>2.0.8</version>
+      <scope>runtime</scope>
+    </dependency>
+  </dependencies>
+  <name>Grails Asynchronous Mail plugin</name>
+  <description>The plugin realises asynchronous mail sending. It stores messages in a DB and sends them asynchronously by a quartz job.</description>
+  <url>https://grails.org/plugin/asynchronous-mail</url>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <scm>
+    <url>https://github.com/kefirfromperm/grails-asynchronous-mail.git</url>
+    <connection>scm:https://github.com/kefirfromperm/grails-asynchronous-mail.git</connection>
+    <developerConnection>scm:https://github.com/kefirfromperm/grails-asynchronous-mail.git</developerConnection>
+  </scm>
+  <issueManagement>
+    <system>Issue Tracker</system>
+    <url>https://github.com/kefirfromperm/grails-asynchronous-mail/issues</url>
+  </issueManagement>
+  <developers>
+    <developer>
+      <id>kefirfromperm</id>
+      <name>Vitalii Samolovskikh</name>
+    </developer>
+    <developer>
+      <id>stokito</id>
+      <name>Sergey Ponomarev</name>
+    </developer>
+    <developer>
+      <id>ilopmar</id>
+      <name>Iván López</name>
+    </developer>
+    <developer>
+      <id>burtbeckwith</id>
+      <name>Burt Beckwith</name>
+    </developer>
+    <developer>
+      <id>puneetbehl</id>
+      <name>Puneet Behl</name>
+    </developer>
+    <developer>
+      <id>aberbenni</id>
+      <name>Alessandro Berbenni</name>
+    </developer>
+    <developer>
+      <id>dpcasady</id>
+      <name>Danny Casady</name>
+    </developer>
+    <developer>
+      <id>SAgrawal14</id>
+      <name>Shashank Agrawal</name>
+    </developer>
+    <developer>
+      <id>visheshd</id>
+      <name>Vishesh</name>
+    </developer>
+    <developer>
+      <id>micke-a</id>
+      <name>Mikael Andersson</name>
+    </developer>
+  </developers>
+</project>
