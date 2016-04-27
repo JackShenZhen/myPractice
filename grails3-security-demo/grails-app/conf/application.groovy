@@ -7,14 +7,16 @@ grails.plugin.springsecurity.authority.className = 'com.llqing.Role'
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	[pattern: '/',               access: ['permitAll']],
 	[pattern: '/frontpage/*',      access: ['permitAll']],
+	[pattern: '/frontpage',      access: ['permitAll']],	
+	
 	[pattern: '/people/*',      access: ['permitAll']],
 	[pattern: '/people',      access: ['permitAll']],
 	[pattern: '/animal/*',      access: ['permitAll']],
 	[pattern: '/animal',      access: ['permitAll']],
 	[pattern: '/environment/*',      access: ['permitAll']],
 	[pattern: '/environment',      access: ['permitAll']],
-	[pattern: '/dating/*',      access: ['permitAll']],
-	[pattern: '/dating',      access: ['permitAll']],
+	[pattern: '/friends/*',      access: ['permitAll']],
+	[pattern: '/friends',      access: ['permitAll']],
 	[pattern: '/shopping/*',      access: ['permitAll']],
 	[pattern: '/shopping',      access: ['permitAll']],	
 	[pattern: '/knowledge/*',      access: ['permitAll']],

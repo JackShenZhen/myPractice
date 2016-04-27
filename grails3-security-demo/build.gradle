@@ -77,6 +77,8 @@ dependencies {
 //    compile "org.grails.plugins:twitter-bootstrap:3.3.5"
 //	compile "org.grails.plugins:asset-pipeline:2.7.4"
     compile "org.grails.plugins:fields:2.1.2"
+//	compile "org.grails.plugins:standalone:9.0.0.M4"
+//    compile "org.grails.plugins:tomcat:9.0.0.M4"
 
     runtime "org.grails.plugins:asset-pipeline"
 

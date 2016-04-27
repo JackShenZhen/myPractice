@@ -1,6 +1,7 @@
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="layout" content="main"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
    
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,29 +45,9 @@
 
     </head>
   <body>
-    <div class="navbar-wrapper">
-      <div class="container">
 
-        <nav class="navbar navbar-inverse navbar-static-top">
-          <div class="container">
-            
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">首页</a></li>
-                <li><a href="#about">关于我们</a></li>
-                <li><a href="#contact">注册/登录</a></li>
-
-              </ul>
-            </div>
-          </div>
-        </nav>
-
-      </div>
-    </div>
     
-	<div class="container">
-    <p>本站正在建设中，请不要推广及注册</p>
-	</div>
+
     <!-- Carousel
     ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">

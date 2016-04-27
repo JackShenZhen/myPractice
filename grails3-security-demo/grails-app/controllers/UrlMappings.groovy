@@ -7,10 +7,10 @@ class UrlMappings {
             }
         }
 
-//        "/"(view:"/index")
-        "/" {
-        controller = "frontpage"
-    }
+        "/"(view:"/frontpage")
+//        "/" {
+//        controller = "frontpage"
+//    }
 	
 	"/people"(view:"/people")
 	"/animal"(view:"/animal")
