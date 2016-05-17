@@ -1,0 +1,1690 @@
+22:11:07.428 [INFO] [org.gradle.launcher.daemon.server.Daemon] start() called on daemon - DefaultDaemonContext[uid=c0709691-fc72-4d45-86c2-ecde13732130,javaHome=/home/jack/github/myPractice/jdk1.8.0_51,daemonRegistryDir=/home/jack/github/myPractice/gradleRepo/.gradle/daemon,pid=14286,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+22:11:07.434 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] updating lastActivityAt to 1463461867434
+22:11:07.443 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding IP addresses for network interface eth0
+22:11:07.444 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Is this a loopback interface? false
+22:11:07.444 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Is this a multicast interface? true
+22:11:07.445 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding remote address /fe80:0:0:0:20c:29ff:fe8b:427%eth0
+22:11:07.446 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding remote address /192.168.10.109
+22:11:07.447 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding remote multicast interface eth0
+22:11:07.447 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding IP addresses for network interface lo
+22:11:07.449 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Is this a loopback interface? true
+22:11:07.450 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Is this a multicast interface? false
+22:11:07.450 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding loopback address /0:0:0:0:0:0:0:1%lo
+22:11:07.451 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding loopback address /127.0.0.1
+22:11:07.474 [DEBUG] [org.gradle.messaging.remote.internal.inet.TcpIncomingConnector] Listening on [5e557da2-ed8b-4421-8b50-c19fe06e5524 port:35731, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]].
+22:11:07.480 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] Daemon starting at: Mon May 16 22:11:07 PDT 2016, with address: [5e557da2-ed8b-4421-8b50-c19fe06e5524 port:35731, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]]
+22:11:07.482 [INFO] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Advertising the daemon address to the clients: [5e557da2-ed8b-4421-8b50-c19fe06e5524 port:35731, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]]
+22:11:07.483 [DEBUG] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Advertised daemon context: DefaultDaemonContext[uid=c0709691-fc72-4d45-86c2-ecde13732130,javaHome=/home/jack/github/myPractice/jdk1.8.0_51,daemonRegistryDir=/home/jack/github/myPractice/gradleRepo/.gradle/daemon,pid=14286,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+22:11:07.483 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Storing daemon address: [5e557da2-ed8b-4421-8b50-c19fe06e5524 port:35731, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]], context: DefaultDaemonContext[uid=c0709691-fc72-4d45-86c2-ecde13732130,javaHome=/home/jack/github/myPractice/jdk1.8.0_51,daemonRegistryDir=/home/jack/github/myPractice/gradleRepo/.gradle/daemon,pid=14286,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+22:11:07.495 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+22:11:07.497 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+22:11:07.531 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+22:11:07.532 [LIFECYCLE] [org.gradle.launcher.daemon.server.Daemon] Daemon server started.
+22:11:07.543 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonStartupCommunication] Completed writing the daemon greeting. Closing streams...
+22:11:07.546 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] requestStopOnIdleTimeout(10800000 MILLISECONDS) called on daemon
+22:11:07.547 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Idle timeout: waiting for daemon to stop or be idle for 10800000ms
+22:11:07.549 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is idle, sleeping until state change or idle timeout at Tue May 17 01:11:07 PDT 2016
+22:11:07.562 [DEBUG] [org.gradle.messaging.remote.internal.inet.TcpIncomingConnector] Accepted connection from /0:0:0:0:0:0:0:1:38663 to /0:0:0:0:0:0:0:1:35731.
+22:11:07.675 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 13: received class org.gradle.launcher.daemon.protocol.Build
+22:11:07.675 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received non-IO message from client: Build{id=f713f9de-cbce-450e-93ab-7ca3904cd629.1, currentDir=/home/jack/github/myPractice/grails3-security-demo}
+22:11:07.682 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=f713f9de-cbce-450e-93ab-7ca3904cd629.1, currentDir=/home/jack/github/myPractice/grails3-security-demo}.
+22:11:07.683 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=f713f9de-cbce-450e-93ab-7ca3904cd629.1, currentDir=/home/jack/github/myPractice/grails3-security-demo} with connection: socket connection from /0:0:0:0:0:0:0:1:35731 to /0:0:0:0:0:0:0:1:38663.
+22:11:07.699 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=f713f9de-cbce-450e-93ab-7ca3904cd629.1, currentDir=/home/jack/github/myPractice/grails3-security-demo}, connection = org.gradle.launcher.daemon.server.DefaultDaemonConnection@7dc70109] after 0.0 minutes of idle
+22:11:07.700 [INFO] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Marking the daemon as busy, address: [5e557da2-ed8b-4421-8b50-c19fe06e5524 port:35731, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]]
+22:11:07.701 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [5e557da2-ed8b-4421-8b50-c19fe06e5524 port:35731, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]]
+22:11:07.703 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+22:11:07.703 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+22:11:07.708 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+22:11:07.711 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] updating lastActivityAt to 1463461867711
+22:11:07.711 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is busy, sleeping until state changes.
+22:11:07.717 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=f713f9de-cbce-450e-93ab-7ca3904cd629.1, currentDir=/home/jack/github/myPractice/grails3-security-demo}. Dispatching build started information...
+22:11:07.722 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 15: dispatching class org.gradle.launcher.daemon.protocol.BuildStarted
+22:11:07.733 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: {PATH=/home/jack/github/myPractice/gradle-2.10/bin:/home/jack/github/myPractice/jdk1.8.0_51/bin:/home/jack/github/myPractice/jdk1.8.0_51/jre/bin:/home/jack/github/myPractice/grails-3.0.11/bin:/home/jack/github/myPractice/gradle-2.10/bin:/home/jack/github/myPractice/jdk1.8.0_51/bin:/home/jack/github/myPractice/jdk1.8.0_51/jre/bin:/home/jack/github/myPractice/grails-3.0.11/bin:/home/jack/.rvm/gems/ruby-2.2.0/bin:/home/jack/.rvm/gems/ruby-2.2.0@global/bin:/home/jack/.rvm/rubies/ruby-2.2.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/jack/.rvm/bin:/home/jack/.rvm/bin:/home/jack/.rvm/bin, IRBRC=/home/jack/.rvm/rubies/ruby-2.2.0/.irbrc, XAUTHORITY=/home/jack/.Xauthority, XMODIFIERS=@im=ibus, XDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/, GDMSESSION=ubuntu, MANDATORY_PATH=/usr/share/gconf/ubuntu.mandatory.path, GRAILS_HOME=/home/jack/github/myPractice/grails-3.0.11, TEXTDOMAINDIR=/usr/share/locale/, GTK_IM_MODULE=ibus, DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-0LTYM5B6pe, DEFAULTS_PATH=/usr/share/gconf/ubuntu.default.path, XDG_CURRENT_DESKTOP=Unity, SSH_AGENT_PID=2556, COLORTERM=gnome-terminal, QT4_IM_MODULE=xim, UPSTART_SESSION=unix:abstract=/com/ubuntu/upstart-session/1001/2491, SESSION_MANAGER=local/ubuntu:@/tmp/.ICE-unix/2617,unix/ubuntu:/tmp/.ICE-unix/2617, LOGNAME=jack, rvm_version=1.26.10 (latest), JOB=dbus, PWD=/home/jack/github/myPractice/grails3-security-demo, IM_CONFIG_PHASE=1, LANGUAGE=en_US, WINDOWID=62914571, LESSOPEN=| /usr/bin/lesspipe %s, SHELL=/bin/bash, INSTANCE=, MY_RUBY_HOME=/home/jack/.rvm/rubies/ruby-2.2.0, OLDPWD=/home/jack/github/myPractice/grails-3.0.11, GEM_HOME=/home/jack/.rvm/gems/ruby-2.2.0, rvm_path=/home/jack/.rvm, GNOME_DESKTOP_SESSION_ID=this-is-deprecated, GTK_MODULES=overlay-scrollbar:unity-gtk-module, RUBY_VERSION=ruby-2.2.0, CLUTTER_IM_MODULE=xim, _system_name=Ubuntu, TEXTDOMAIN=im-config, XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0, COMPIZ_BIN_PATH=/usr/bin/, SESSIONTYPE=gnome-session, LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:, SSH_AGENT_LAUNCHER=upstart, SHLVL=1, LESSCLOSE=/usr/bin/lesspipe %s %s, _system_arch=x86_64, COMPIZ_CONFIG_PROFILE=ubuntu, rvm_bin_path=/home/jack/.rvm/bin, QT_IM_MODULE=ibus, JAVA_HOME=/home/jack/github/myPractice/jdk1.8.0_51, TERM=xterm, XFILESEARCHPATH=/usr/dt/app-defaults/%L/Dt, rvm_prefix=/home/jack, XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg, LANG=en_US.UTF-8, XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0, GNOME_KEYRING_CONTROL=/run/user/1001/keyring-urzDI6, XDG_SESSION_ID=c2, SELINUX_INIT=YES, DISPLAY=:0, GDM_LANG=en_US, UBUNTU_MENUPROXY=1, _system_type=Linux, XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/jack, CATALINA_HOME=/home/jack/github/myPractice/apache-tomcat-8.0.33, DESKTOP_SESSION=ubuntu, GPG_AGENT_INFO=/run/user/1001/keyring-urzDI6/gpg:0:1, SESSION=ubuntu, _system_version=14.04, USER=jack, CLASSPATH=/home/jack/github/myPractice/grails-3.0.11/dist/grails-shell-3.0.11.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.codehaus.groovy/groovy/jars/groovy-2.4.5.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.slf4j/slf4j-api/jars/slf4j-api-1.7.10.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.10.jar:/home/jack/github/myPractice/grails-3.0.11/dist/grails-bootstrap-3.0.11.jar:/home/jack/github/myPractice/grails-3.0.11/dist/grails-gradle-model-3.0.11.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.apache.ant/ant/jars/ant-1.9.4.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.codehaus.groovy/groovy-ant/jars/groovy-ant-2.4.5.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.codehaus.groovy/groovy-json/jars/groovy-json-2.4.5.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.codehaus.groovy/groovy-jmx/jars/groovy-jmx-2.4.5.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.fusesource.jansi/jansi/jars/jansi-1.11.jar:/home/jack/github/myPractice/grails-3.0.11/lib/jline/jline/jars/jline-2.12.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.eclipse.jgit/org.eclipse.jgit/jars/org.eclipse.jgit-3.5.2.201411120430-r.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.gradle/gradle-tooling-api/jars/gradle-tooling-api-2.3.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.springframework.boot/spring-boot-cli/jars/spring-boot-cli-1.2.7.RELEASE.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.slf4j/slf4j-simple/jars/slf4j-simple-1.7.10.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.codehaus.plexus/plexus-component-api/jars/plexus-component-api-1.0-alpha-33.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.codehaus.groovy/groovy-xml/jars/groovy-xml-2.4.5.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.yaml/snakeyaml/jars/snakeyaml-1.14.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.apache.ant/ant-launcher/jars/ant-launcher-1.9.4.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.apache.ant/ant-antlr/jars/ant-antlr-1.9.4.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.codehaus.groovy/groovy-groovydoc/jars/groovy-groovydoc-2.4.5.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.apache.ant/ant-junit/jars/ant-junit-1.9.4.jar:/home/jack/github/myPractice/grails-3.0.11/lib/com.jcraft/jsch/jars/jsch-0.1.50.jar:/home/jack/github/myPractice/grails-3.0.11/lib/com.googlecode.javaewah/JavaEWAH/jars/JavaEWAH-0.7.9.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.springframework.boot/spring-boot-dependency-tools/jars/spring-boot-dependency-tools-1.2.7.RELEASE.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.springframework.boot/spring-boot-loader-tools/jars/spring-boot-loader-tools-1.2.7.RELEASE.jar:/home/jack/github/myPractice/grails-3.0.11/lib/net.sf.jopt-simple/jopt-simple/jars/jopt-simple-4.6.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.springframework/spring-core/jars/spring-core-4.1.8.RELEASE.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.json/json/jars/json-20140107.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.apache.maven/maven-aether-provider/jars/maven-aether-provider-3.2.1.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.apache.maven/maven-settings-builder/jars/maven-settings-builder-3.1.1.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.eclipse.aether/aether-api/jars/aether-api-0.9.1.v20140329.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.eclipse.aether/aether-connector-basic/jars/aether-connector-basic-0.9.1.v20140329.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.eclipse.aether/aether-impl/jars/aether-impl-0.9.1.v20140329.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.eclipse.aether/aether-spi/jars/aether-spi-0.9.1.v20140329.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.eclipse.aether/aether-transport-file/jars/aether-transport-file-0.9.1.v20140329.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.eclipse.aether/aether-transport-http/jars/aether-transport-http-0.9.1.v20140329.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.eclipse.aether/aether-util/jars/aether-util-0.9.1.v20140329.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.codehaus.plexus/plexus-classworlds/jars/plexus-classworlds-1.2-alpha-10.jar:/home/jack/github/myPractice/grails-3.0.11/lib/junit/junit/jars/junit-3.8.1.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.codehaus.groovy/groovy-templates/jars/groovy-templates-2.4.5.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.apache.maven/maven-model/jars/maven-model-3.2.1.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.apache.maven/maven-model-builder/jars/maven-model-builder-3.2.1.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.apache.maven/maven-repository-metadata/jars/maven-repository-metadata-3.2.1.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.codehaus.plexus/plexus-component-annotations/jars/plexus-component-annotations-1.5.5.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.codehaus.plexus/plexus-utils/jars/plexus-utils-3.0.17.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.codehaus.plexus/plexus-interpolation/jars/plexus-interpolation-1.19.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.apache.maven/maven-settings/jars/maven-settings-3.1.1.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.sonatype.plexus/plexus-sec-dispatcher/jars/plexus-sec-dispatcher-1.3.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.sonatype.plexus/plexus-cipher/jars/plexus-cipher-1.4.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.apache.httpcomponents/httpclient/jars/httpclient-4.2.6.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.apache.httpcomponents/httpcore/jars/httpcore-4.2.5.jar:/home/jack/github/myPractice/grails-3.0.11/lib/commons-codec/commons-codec/jars/commons-codec-1.6.jar, XDG_MENU_PREFIX=gnome-, VTE_VERSION=3409, XDG_SEAT=seat0, SSH_AUTH_SOCK=/tmp/ssh-z3C2X0LEBRud/agent.2551, GEM_PATH=/home/jack/.rvm/gems/ruby-2.2.0:/home/jack/.rvm/gems/ruby-2.2.0@global, NLSPATH=/usr/dt/lib/nls/msg/%L/%N.cat, QT_QPA_PLATFORMTHEME=appmenu-qt5, XDG_RUNTIME_DIR=/run/user/1001, XDG_VTNR=7, HOME=/home/jack, GNOME_KEYRING_PID=2478}
+22:11:07.742 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 13: received class org.gradle.launcher.daemon.protocol.CloseInput
+22:11:07.742 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received IO message from client: CloseInput[id=f713f9de-cbce-450e-93ab-7ca3904cd629.2]
+22:11:07.760 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+22:11:07.761 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 14286). The daemon log file: /home/jack/github/myPractice/gradleRepo/.gradle/daemon/2.3/daemon-14286.out.log
+22:11:07.775 [INFO] [org.gradle.launcher.daemon.server.health.DaemonHealthTracker] Starting build in new daemon [memory: 1.0 GB]
+22:11:07.779 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+22:11:07.787 [INFO] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=c0709691-fc72-4d45-86c2-ecde13732130,javaHome=/home/jack/github/myPractice/jdk1.8.0_51,daemonRegistryDir=/home/jack/github/myPractice/gradleRepo/.gradle/daemon,pid=14286,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+22:11:07.779 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] Closing daemon's stdin at end of input.
+22:11:07.793 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] The daemon will no longer process any standard input.
+22:11:08.536 [INFO] [org.gradle.tooling.internal.provider.DefaultPayloadClassLoaderRegistry] Creating ClassLoader 4cc622e9-c6bd-402c-9f06-b6b21f195535 from [Spec classpath:[file:/home/jack/github/myPractice/grails-3.0.11/lib/org.gradle/gradle-tooling-api/jars/gradle-tooling-api-2.3.jar, file:/home/jack/github/myPractice/grails-3.0.11/dist/grails-shell-3.0.11.jar, file:/home/jack/github/myPractice/grails-3.0.11/lib/org.codehaus.groovy/groovy/jars/groovy-2.4.5.jar, file:/home/jack/github/myPractice/grails-3.0.11/dist/grails-gradle-model-3.0.11.jar]] and [org.gradle.internal.classloader.FilteringClassLoader@7751db93].
+22:11:08.538 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on jars (/home/jack/github/myPractice/gradleRepo/.gradle/caches/jars-1).
+22:11:08.538 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+22:11:08.547 [DEBUG] [org.gradle.cache.internal.locklistener.DefaultFileLockContentionHandler] Starting file lock listener thread.
+Download https://repo.grails.org/grails/core/org/asciidoctor/asciidoctor-gradle-plugin/1.5.2/asciidoctor-gradle-plugin-1.5.2.pom
+Download https://repo.grails.org/grails/core/org/asciidoctor/asciidoctorj-epub3/1.5.0-alpha.4/asciidoctorj-epub3-1.5.0-alpha.4.pom
+Download https://repo.grails.org/grails/core/org/asciidoctor/asciidoctorj-pdf/1.5.0-alpha.9/asciidoctorj-pdf-1.5.0-alpha.9.pom
+Download https://repo.grails.org/grails/core/com/jfrog/bintray/gradle/gradle-bintray-plugin/1.2/gradle-bintray-plugin-1.2.pom
+Download https://repo.grails.org/grails/core/org/asciidoctor/asciidoctorj/1.5.2/asciidoctorj-1.5.2.pom
+Download https://repo.grails.org/grails/core/org/codehaus/groovy/modules/http-builder/http-builder/0.7.2/http-builder-0.7.2.pom
+Download https://repo.grails.org/grails/core/org/jruby/jruby-complete/1.7.16.1/jruby-complete-1.7.16.1.pom
+Download https://repo.grails.org/grails/core/org/jruby/jruby-artifacts/1.7.16.1/jruby-artifacts-1.7.16.1.pom
+Download https://repo.grails.org/grails/core/org/jruby/jruby-parent/1.7.16.1/jruby-parent-1.7.16.1.pom
+Download https://repo.grails.org/grails/core/com/beust/jcommander/1.35/jcommander-1.35.pom
+Download https://repo.grails.org/grails/core/org/sonatype/oss/oss-parent/3/oss-parent-3.pom
+Download https://repo.grails.org/grails/core/org/apache/httpcomponents/httpclient/4.2.1/httpclient-4.2.1.pom
+Download https://repo.grails.org/grails/core/org/apache/httpcomponents/httpcomponents-client/4.2.1/httpcomponents-client-4.2.1.pom
+Download https://repo.grails.org/grails/core/org/apache/httpcomponents/project/6/project-6.pom
+Download https://repo.grails.org/grails/core/net/sf/json-lib/json-lib/2.3/json-lib-2.3.pom
+Download https://repo.grails.org/grails/core/net/sourceforge/nekohtml/nekohtml/1.9.16/nekohtml-1.9.16.pom
+Download https://repo.grails.org/grails/core/xml-resolver/xml-resolver/1.2/xml-resolver-1.2.pom
+Download https://repo.grails.org/grails/core/org/apache/apache/3/apache-3.pom
+Download https://repo.grails.org/grails/core/org/apache/httpcomponents/httpcore/4.2.1/httpcore-4.2.1.pom
+Download https://repo.grails.org/grails/core/org/apache/httpcomponents/httpcomponents-core/4.2.1/httpcomponents-core-4.2.1.pom
+Download https://repo.grails.org/grails/core/commons-beanutils/commons-beanutils/1.8.0/commons-beanutils-1.8.0.pom
+Download https://repo.grails.org/grails/core/org/apache/commons/commons-parent/11/commons-parent-11.pom
+Download https://repo.grails.org/grails/core/commons-lang/commons-lang/2.4/commons-lang-2.4.pom
+Download https://repo.grails.org/grails/core/net/sf/ezmorph/ezmorph/1.0.6/ezmorph-1.0.6.pom
+Download https://repo.grails.org/grails/core/xerces/xercesImpl/2.9.1/xercesImpl-2.9.1.pom
+Download https://repo.grails.org/grails/core/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04.pom
+Download https://repo.grails.org/grails/core/org/asciidoctor/asciidoctor-gradle-plugin/1.5.2/asciidoctor-gradle-plugin-1.5.2.jar
+Download https://repo.grails.org/grails/core/org/asciidoctor/asciidoctorj-epub3/1.5.0-alpha.4/asciidoctorj-epub3-1.5.0-alpha.4.jar
+Download https://repo.grails.org/grails/core/org/asciidoctor/asciidoctorj-pdf/1.5.0-alpha.9/asciidoctorj-pdf-1.5.0-alpha.9.jar
+Download https://repo.grails.org/grails/core/com/jfrog/bintray/gradle/gradle-bintray-plugin/1.2/gradle-bintray-plugin-1.2.jar
+Download https://repo.grails.org/grails/core/org/asciidoctor/asciidoctorj/1.5.2/asciidoctorj-1.5.2.jar
+Download https://repo.grails.org/grails/core/org/codehaus/groovy/modules/http-builder/http-builder/0.7.2/http-builder-0.7.2.jar
+Download https://repo.grails.org/grails/core/org/jruby/jruby-complete/1.7.16.1/jruby-complete-1.7.16.1.jar
+Download https://repo.grails.org/grails/core/com/beust/jcommander/1.35/jcommander-1.35.jar
+Download https://repo.grails.org/grails/core/org/apache/httpcomponents/httpclient/4.2.1/httpclient-4.2.1.jar
+Download https://repo.grails.org/grails/core/net/sf/json-lib/json-lib/2.3/json-lib-2.3-jdk15.jar
+Download https://repo.grails.org/grails/core/net/sourceforge/nekohtml/nekohtml/1.9.16/nekohtml-1.9.16.jar
+Download https://repo.grails.org/grails/core/xml-resolver/xml-resolver/1.2/xml-resolver-1.2.jar
+Download https://repo.grails.org/grails/core/org/apache/httpcomponents/httpcore/4.2.1/httpcore-4.2.1.jar
+Download https://repo.grails.org/grails/core/commons-beanutils/commons-beanutils/1.8.0/commons-beanutils-1.8.0.jar
+Download https://repo.grails.org/grails/core/commons-lang/commons-lang/2.4/commons-lang-2.4.jar
+Download https://repo.grails.org/grails/core/net/sf/ezmorph/ezmorph/1.0.6/ezmorph-1.0.6.jar
+Download https://repo.grails.org/grails/core/xerces/xercesImpl/2.9.1/xercesImpl-2.9.1.jar
+Download https://repo.grails.org/grails/core/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04.jar
+
+BUILD SUCCESSFUL
+
+Total time: 10 mins 22.398 secs
+22:21:29.418 [DEBUG] [org.gradle.api.internal.tasks.compile.daemon.CompilerDaemonManager] Stopping 0 compiler daemon(s).
+22:21:29.418 [INFO] [org.gradle.api.internal.tasks.compile.daemon.CompilerDaemonManager] Stopped 0 compiler daemon(s).
+22:21:29.422 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache plugin-use-metadata.bin (/home/jack/github/myPractice/gradleRepo/.gradle/caches/2.3/plugin-resolution/plugin-use-metadata.bin)
+22:21:29.422 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on Plugin Resolution Cache (/home/jack/github/myPractice/gradleRepo/.gradle/caches/2.3/plugin-resolution).
+22:21:29.428 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache module-metadata.bin (/home/jack/github/myPractice/gradleRepo/.gradle/caches/modules-2/metadata-2.14/module-metadata.bin)
+22:21:29.428 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache module-artifacts.bin (/home/jack/github/myPractice/gradleRepo/.gradle/caches/modules-2/metadata-2.14/module-artifacts.bin)
+22:21:29.429 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache artifact-at-repository.bin (/home/jack/github/myPractice/gradleRepo/.gradle/caches/modules-2/metadata-2.14/artifact-at-repository.bin)
+22:21:29.429 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache artifact-at-url.bin (/home/jack/github/myPractice/gradleRepo/.gradle/caches/modules-2/metadata-2.14/artifact-at-url.bin)
+22:21:29.429 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on artifact cache (/home/jack/github/myPractice/gradleRepo/.gradle/caches/modules-2).
+22:21:29.429 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on jars (/home/jack/github/myPractice/gradleRepo/.gradle/caches/jars-1).
+22:21:29.430 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on buildscript class cache for settings file '/home/jack/github/myPractice/settings.gradle' (/home/jack/github/myPractice/gradleRepo/.gradle/caches/2.3/scripts/settings_eq3dzlh7ci6l3ppridna30eu0/SettingsScript/buildscript).
+22:21:29.430 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on no_buildscript class cache for settings file '/home/jack/github/myPractice/settings.gradle' (/home/jack/github/myPractice/gradleRepo/.gradle/caches/2.3/scripts/settings_eq3dzlh7ci6l3ppridna30eu0/SettingsScript/no_buildscript).
+22:21:29.430 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on buildscript class cache for build file '/home/jack/github/myPractice/grails-spring-security-ui/build.gradle' (/home/jack/github/myPractice/gradleRepo/.gradle/caches/2.3/scripts/build_2zibfp9xymhjwfl076k769l7v/ProjectScript/buildscript).
+22:21:29.431 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on no_buildscript class cache for build file '/home/jack/github/myPractice/grails-spring-security-ui/build.gradle' (/home/jack/github/myPractice/gradleRepo/.gradle/caches/2.3/scripts/build_2zibfp9xymhjwfl076k769l7v/ProjectScript/no_buildscript).
+22:21:29.432 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on buildscript class cache for script '/home/jack/github/myPractice/grails-spring-security-ui/gradle/plugin.gradle' (/home/jack/github/myPractice/gradleRepo/.gradle/caches/2.3/scripts/plugin_ehezvg6ihef5phwpw4dmz372m/DefaultScript/buildscript).
+22:21:29.432 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on no_buildscript class cache for script '/home/jack/github/myPractice/grails-spring-security-ui/gradle/plugin.gradle' (/home/jack/github/myPractice/gradleRepo/.gradle/caches/2.3/scripts/plugin_ehezvg6ihef5phwpw4dmz372m/DefaultScript/no_buildscript).
+22:21:29.432 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on buildscript class cache for script '/home/jack/github/myPractice/grails-spring-security-ui/gradle/common.gradle' (/home/jack/github/myPractice/gradleRepo/.gradle/caches/2.3/scripts/common_3m7z6qo3o0f9b4pjnoj8xm2bo/DefaultScript/buildscript).
+22:21:29.433 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on no_buildscript class cache for script '/home/jack/github/myPractice/grails-spring-security-ui/gradle/common.gradle' (/home/jack/github/myPractice/gradleRepo/.gradle/caches/2.3/scripts/common_3m7z6qo3o0f9b4pjnoj8xm2bo/DefaultScript/no_buildscript).
+22:21:29.433 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on buildscript class cache for script 'https://raw.githubusercontent.com/grails/grails-profile-repository/master/profiles/plugin/templates/grailsCentralPublishing.gradle' (/home/jack/github/myPractice/gradleRepo/.gradle/caches/2.3/scripts/grailsCentralPublishing_d3qkwx5kd6fx04tt5f7l8u7dk/DefaultScript/buildscript).
+22:21:29.433 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on no_buildscript class cache for script 'https://raw.githubusercontent.com/grails/grails-profile-repository/master/profiles/plugin/templates/grailsCentralPublishing.gradle' (/home/jack/github/myPractice/gradleRepo/.gradle/caches/2.3/scripts/grailsCentralPublishing_d3qkwx5kd6fx04tt5f7l8u7dk/DefaultScript/no_buildscript).
+22:21:29.433 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on buildscript class cache for script 'https://raw.githubusercontent.com/grails/grails-profile-repository/master/profiles/plugin/templates/bintrayPublishing.gradle' (/home/jack/github/myPractice/gradleRepo/.gradle/caches/2.3/scripts/bintrayPublishing_5hk626f78vi1vldz7smpu61or/DefaultScript/buildscript).
+22:21:29.433 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on no_buildscript class cache for script 'https://raw.githubusercontent.com/grails/grails-profile-repository/master/profiles/plugin/templates/bintrayPublishing.gradle' (/home/jack/github/myPractice/gradleRepo/.gradle/caches/2.3/scripts/bintrayPublishing_5hk626f78vi1vldz7smpu61or/DefaultScript/no_buildscript).
+22:21:29.436 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on buildscript class cache for build file '/home/jack/github/myPractice/grails3-security-demo/build.gradle' (/home/jack/github/myPractice/gradleRepo/.gradle/caches/2.3/scripts/build_cbxzeaquvdayjxgfwg7sa9fwb/ProjectScript/buildscript).
+22:21:29.436 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on no_buildscript class cache for build file '/home/jack/github/myPractice/grails3-security-demo/build.gradle' (/home/jack/github/myPractice/gradleRepo/.gradle/caches/2.3/scripts/build_cbxzeaquvdayjxgfwg7sa9fwb/ProjectScript/no_buildscript).
+22:21:29.450 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.memcache.InMemoryCachedRepositoryFactory] In-memory dependency metadata cache closed. Repos cached: 27, cache instances: 6, modules served from cache: 153, artifacts: 68
+22:21:29.455 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.CachedStoreFactory] Resolution result cache closed. Cache reads: 0, disk reads: 0 (avg: 0.0 secs, total: 0.0 secs)
+22:21:29.459 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.CachedStoreFactory] Resolved configuration cache closed. Cache reads: 0, disk reads: 0 (avg: 0.0 secs, total: 0.0 secs)
+22:21:29.459 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.ResolutionResultsStoreFactory] Deleted 2 resolution results binary files in 0.009 secs
+22:21:29.459 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+22:21:29.829 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is busy, sleeping until state changes.
+22:21:29.829 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=f713f9de-cbce-450e-93ab-7ca3904cd629.1, currentDir=/home/jack/github/myPractice/grails3-security-demo}, connection = org.gradle.launcher.daemon.server.DefaultDaemonConnection@7dc70109]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@5e35c368 with state Running
+22:21:29.829 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=f713f9de-cbce-450e-93ab-7ca3904cd629.1, currentDir=/home/jack/github/myPractice/grails3-security-demo}, connection = org.gradle.launcher.daemon.server.DefaultDaemonConnection@7dc70109]
+22:21:29.829 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] updating lastActivityAt to 1463462489829
+22:21:29.830 [INFO] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Marking the daemon as idle, address: [5e557da2-ed8b-4421-8b50-c19fe06e5524 port:35731, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]]
+22:21:29.830 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking idle by address: [5e557da2-ed8b-4421-8b50-c19fe06e5524 port:35731, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]]
+22:21:29.830 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+22:21:29.831 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+22:21:29.834 [DEBUG] [org.apache.http.impl.conn.PoolingClientConnectionManager] Connection manager is shutting down
+22:21:29.834 [DEBUG] [org.apache.http.impl.conn.DefaultClientConnection] Connection 0.0.0.0:38294<->199.27.79.209:443 closed
+22:21:29.834 [DEBUG] [org.apache.http.impl.conn.DefaultClientConnection] Connection 0.0.0.0:38294<->199.27.79.209:443 closed
+22:21:29.834 [DEBUG] [org.apache.http.impl.conn.PoolingClientConnectionManager] Connection manager shut down
+22:21:29.835 [DEBUG] [org.apache.http.impl.conn.PoolingClientConnectionManager] Connection manager is shutting down
+22:21:29.835 [DEBUG] [org.apache.http.impl.conn.DefaultClientConnection] Connection 0.0.0.0:46821<->52.203.89.118:443 closed
+22:21:29.835 [DEBUG] [org.apache.http.impl.conn.DefaultClientConnection] Connection 0.0.0.0:46821<->52.203.89.118:443 closed
+22:21:29.835 [DEBUG] [org.apache.http.impl.conn.PoolingClientConnectionManager] Connection manager shut down
+22:21:29.839 [DEBUG] [org.apache.http.impl.conn.PoolingClientConnectionManager] Connection manager is shutting down
+22:21:29.839 [DEBUG] [org.apache.http.impl.conn.DefaultClientConnection] Connection 0.0.0.0:53046<->104.25.173.23:443 closed
+22:21:29.839 [DEBUG] [org.apache.http.impl.conn.DefaultClientConnection] Connection 0.0.0.0:53046<->104.25.173.23:443 closed
+22:21:29.839 [DEBUG] [org.apache.http.impl.conn.PoolingClientConnectionManager] Connection manager shut down
+22:21:29.841 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+22:21:29.844 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is idle, sleeping until state change or idle timeout at Tue May 17 01:21:29 PDT 2016
+22:21:29.844 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: DaemonCommandResult[type=Success, value=org.gradle.tooling.internal.provider.BuildActionResult@5ef59817]
+22:21:29.844 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 12: dispatching class org.gradle.launcher.daemon.protocol.Success
+22:21:29.877 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=f713f9de-cbce-450e-93ab-7ca3904cd629.1, currentDir=/home/jack/github/myPractice/grails3-security-demo}
+22:21:29.922 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 13: received class org.gradle.launcher.daemon.protocol.Finished
+22:21:29.922 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@bba4d69
+22:21:29.922 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: org.gradle.launcher.daemon.protocol.Finished@bba4d69
+22:21:29.922 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 12: stopping connection
+22:21:29.923 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 13: received null
+22:21:29.923 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received end-of-input from client.
+22:21:29.923 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 12: stopping connection
+22:21:48.503 [DEBUG] [org.gradle.messaging.remote.internal.inet.TcpIncomingConnector] Accepted connection from /0:0:0:0:0:0:0:1:38726 to /0:0:0:0:0:0:0:1:35731.
+22:21:48.518 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 21: received class org.gradle.launcher.daemon.protocol.Build
+22:21:48.518 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received non-IO message from client: Build{id=22a15295-13b2-4c2d-9135-48d465c85b94.1, currentDir=/home/jack/github/myPractice/grails3-security-demo}
+22:21:48.531 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=22a15295-13b2-4c2d-9135-48d465c85b94.1, currentDir=/home/jack/github/myPractice/grails3-security-demo}.
+22:21:48.532 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=22a15295-13b2-4c2d-9135-48d465c85b94.1, currentDir=/home/jack/github/myPractice/grails3-security-demo} with connection: socket connection from /0:0:0:0:0:0:0:1:35731 to /0:0:0:0:0:0:0:1:38726.
+22:21:48.537 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=22a15295-13b2-4c2d-9135-48d465c85b94.1, currentDir=/home/jack/github/myPractice/grails3-security-demo}, connection = org.gradle.launcher.daemon.server.DefaultDaemonConnection@74fdf98f] after 0.0 minutes of idle
+22:21:48.538 [INFO] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Marking the daemon as busy, address: [5e557da2-ed8b-4421-8b50-c19fe06e5524 port:35731, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]]
+22:21:48.538 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [5e557da2-ed8b-4421-8b50-c19fe06e5524 port:35731, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]]
+22:21:48.538 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+22:21:48.538 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+22:21:48.540 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+22:21:48.540 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] updating lastActivityAt to 1463462508540
+22:21:48.540 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is busy, sleeping until state changes.
+22:21:48.540 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=22a15295-13b2-4c2d-9135-48d465c85b94.1, currentDir=/home/jack/github/myPractice/grails3-security-demo}. Dispatching build started information...
+22:21:48.540 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 15: dispatching class org.gradle.launcher.daemon.protocol.BuildStarted
+22:21:48.544 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: {PATH=/home/jack/github/myPractice/gradle-2.10/bin:/home/jack/github/myPractice/jdk1.8.0_51/bin:/home/jack/github/myPractice/jdk1.8.0_51/jre/bin:/home/jack/github/myPractice/grails-3.0.11/bin:/home/jack/github/myPractice/gradle-2.10/bin:/home/jack/github/myPractice/jdk1.8.0_51/bin:/home/jack/github/myPractice/jdk1.8.0_51/jre/bin:/home/jack/github/myPractice/grails-3.0.11/bin:/home/jack/.rvm/gems/ruby-2.2.0/bin:/home/jack/.rvm/gems/ruby-2.2.0@global/bin:/home/jack/.rvm/rubies/ruby-2.2.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/jack/.rvm/bin:/home/jack/.rvm/bin:/home/jack/.rvm/bin, IRBRC=/home/jack/.rvm/rubies/ruby-2.2.0/.irbrc, XAUTHORITY=/home/jack/.Xauthority, XMODIFIERS=@im=ibus, XDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/, GDMSESSION=ubuntu, MANDATORY_PATH=/usr/share/gconf/ubuntu.mandatory.path, GRAILS_HOME=/home/jack/github/myPractice/grails-3.0.11, TEXTDOMAINDIR=/usr/share/locale/, GTK_IM_MODULE=ibus, DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-0LTYM5B6pe, DEFAULTS_PATH=/usr/share/gconf/ubuntu.default.path, XDG_CURRENT_DESKTOP=Unity, SSH_AGENT_PID=2556, COLORTERM=gnome-terminal, QT4_IM_MODULE=xim, UPSTART_SESSION=unix:abstract=/com/ubuntu/upstart-session/1001/2491, SESSION_MANAGER=local/ubuntu:@/tmp/.ICE-unix/2617,unix/ubuntu:/tmp/.ICE-unix/2617, LOGNAME=jack, rvm_version=1.26.10 (latest), JOB=dbus, PWD=/home/jack/github/myPractice/grails3-security-demo, IM_CONFIG_PHASE=1, LANGUAGE=en_US, WINDOWID=62914571, LESSOPEN=| /usr/bin/lesspipe %s, SHELL=/bin/bash, INSTANCE=, MY_RUBY_HOME=/home/jack/.rvm/rubies/ruby-2.2.0, OLDPWD=/home/jack/github/myPractice/grails-3.0.11, GEM_HOME=/home/jack/.rvm/gems/ruby-2.2.0, rvm_path=/home/jack/.rvm, GNOME_DESKTOP_SESSION_ID=this-is-deprecated, GTK_MODULES=overlay-scrollbar:unity-gtk-module, RUBY_VERSION=ruby-2.2.0, CLUTTER_IM_MODULE=xim, _system_name=Ubuntu, TEXTDOMAIN=im-config, XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0, COMPIZ_BIN_PATH=/usr/bin/, SESSIONTYPE=gnome-session, LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:, SSH_AGENT_LAUNCHER=upstart, SHLVL=1, LESSCLOSE=/usr/bin/lesspipe %s %s, _system_arch=x86_64, COMPIZ_CONFIG_PROFILE=ubuntu, rvm_bin_path=/home/jack/.rvm/bin, QT_IM_MODULE=ibus, JAVA_HOME=/home/jack/github/myPractice/jdk1.8.0_51, TERM=xterm, XFILESEARCHPATH=/usr/dt/app-defaults/%L/Dt, rvm_prefix=/home/jack, XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg, LANG=en_US.UTF-8, XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0, GNOME_KEYRING_CONTROL=/run/user/1001/keyring-urzDI6, XDG_SESSION_ID=c2, SELINUX_INIT=YES, DISPLAY=:0, GDM_LANG=en_US, UBUNTU_MENUPROXY=1, _system_type=Linux, XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/jack, CATALINA_HOME=/home/jack/github/myPractice/apache-tomcat-8.0.33, DESKTOP_SESSION=ubuntu, GPG_AGENT_INFO=/run/user/1001/keyring-urzDI6/gpg:0:1, SESSION=ubuntu, _system_version=14.04, USER=jack, CLASSPATH=/home/jack/github/myPractice/grails-3.0.11/dist/grails-shell-3.0.11.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.codehaus.groovy/groovy/jars/groovy-2.4.5.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.slf4j/slf4j-api/jars/slf4j-api-1.7.10.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.10.jar:/home/jack/github/myPractice/grails-3.0.11/dist/grails-bootstrap-3.0.11.jar:/home/jack/github/myPractice/grails-3.0.11/dist/grails-gradle-model-3.0.11.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.apache.ant/ant/jars/ant-1.9.4.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.codehaus.groovy/groovy-ant/jars/groovy-ant-2.4.5.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.codehaus.groovy/groovy-json/jars/groovy-json-2.4.5.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.codehaus.groovy/groovy-jmx/jars/groovy-jmx-2.4.5.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.fusesource.jansi/jansi/jars/jansi-1.11.jar:/home/jack/github/myPractice/grails-3.0.11/lib/jline/jline/jars/jline-2.12.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.eclipse.jgit/org.eclipse.jgit/jars/org.eclipse.jgit-3.5.2.201411120430-r.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.gradle/gradle-tooling-api/jars/gradle-tooling-api-2.3.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.springframework.boot/spring-boot-cli/jars/spring-boot-cli-1.2.7.RELEASE.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.slf4j/slf4j-simple/jars/slf4j-simple-1.7.10.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.codehaus.plexus/plexus-component-api/jars/plexus-component-api-1.0-alpha-33.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.codehaus.groovy/groovy-xml/jars/groovy-xml-2.4.5.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.yaml/snakeyaml/jars/snakeyaml-1.14.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.apache.ant/ant-launcher/jars/ant-launcher-1.9.4.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.apache.ant/ant-antlr/jars/ant-antlr-1.9.4.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.codehaus.groovy/groovy-groovydoc/jars/groovy-groovydoc-2.4.5.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.apache.ant/ant-junit/jars/ant-junit-1.9.4.jar:/home/jack/github/myPractice/grails-3.0.11/lib/com.jcraft/jsch/jars/jsch-0.1.50.jar:/home/jack/github/myPractice/grails-3.0.11/lib/com.googlecode.javaewah/JavaEWAH/jars/JavaEWAH-0.7.9.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.springframework.boot/spring-boot-dependency-tools/jars/spring-boot-dependency-tools-1.2.7.RELEASE.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.springframework.boot/spring-boot-loader-tools/jars/spring-boot-loader-tools-1.2.7.RELEASE.jar:/home/jack/github/myPractice/grails-3.0.11/lib/net.sf.jopt-simple/jopt-simple/jars/jopt-simple-4.6.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.springframework/spring-core/jars/spring-core-4.1.8.RELEASE.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.json/json/jars/json-20140107.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.apache.maven/maven-aether-provider/jars/maven-aether-provider-3.2.1.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.apache.maven/maven-settings-builder/jars/maven-settings-builder-3.1.1.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.eclipse.aether/aether-api/jars/aether-api-0.9.1.v20140329.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.eclipse.aether/aether-connector-basic/jars/aether-connector-basic-0.9.1.v20140329.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.eclipse.aether/aether-impl/jars/aether-impl-0.9.1.v20140329.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.eclipse.aether/aether-spi/jars/aether-spi-0.9.1.v20140329.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.eclipse.aether/aether-transport-file/jars/aether-transport-file-0.9.1.v20140329.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.eclipse.aether/aether-transport-http/jars/aether-transport-http-0.9.1.v20140329.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.eclipse.aether/aether-util/jars/aether-util-0.9.1.v20140329.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.codehaus.plexus/plexus-classworlds/jars/plexus-classworlds-1.2-alpha-10.jar:/home/jack/github/myPractice/grails-3.0.11/lib/junit/junit/jars/junit-3.8.1.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.codehaus.groovy/groovy-templates/jars/groovy-templates-2.4.5.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.apache.maven/maven-model/jars/maven-model-3.2.1.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.apache.maven/maven-model-builder/jars/maven-model-builder-3.2.1.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.apache.maven/maven-repository-metadata/jars/maven-repository-metadata-3.2.1.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.codehaus.plexus/plexus-component-annotations/jars/plexus-component-annotations-1.5.5.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.codehaus.plexus/plexus-utils/jars/plexus-utils-3.0.17.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.codehaus.plexus/plexus-interpolation/jars/plexus-interpolation-1.19.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.apache.maven/maven-settings/jars/maven-settings-3.1.1.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.sonatype.plexus/plexus-sec-dispatcher/jars/plexus-sec-dispatcher-1.3.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.sonatype.plexus/plexus-cipher/jars/plexus-cipher-1.4.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.apache.httpcomponents/httpclient/jars/httpclient-4.2.6.jar:/home/jack/github/myPractice/grails-3.0.11/lib/org.apache.httpcomponents/httpcore/jars/httpcore-4.2.5.jar:/home/jack/github/myPractice/grails-3.0.11/lib/commons-codec/commons-codec/jars/commons-codec-1.6.jar, XDG_MENU_PREFIX=gnome-, VTE_VERSION=3409, XDG_SEAT=seat0, SSH_AUTH_SOCK=/tmp/ssh-z3C2X0LEBRud/agent.2551, GEM_PATH=/home/jack/.rvm/gems/ruby-2.2.0:/home/jack/.rvm/gems/ruby-2.2.0@global, NLSPATH=/usr/dt/lib/nls/msg/%L/%N.cat, QT_QPA_PLATFORMTHEME=appmenu-qt5, XDG_RUNTIME_DIR=/run/user/1001, XDG_VTNR=7, HOME=/home/jack, GNOME_KEYRING_PID=2478}
+22:21:48.545 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+22:21:48.545 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 14286). The daemon log file: /home/jack/github/myPractice/gradleRepo/.gradle/daemon/2.3/daemon-14286.out.log
+22:21:48.545 [INFO] [org.gradle.launcher.daemon.server.health.DaemonHealthTracker] Starting 2nd build in daemon [uptime: 10 mins 41.119 secs, performance: 100%, memory: 13% of 1.0 GB]
+22:21:48.547 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+22:21:48.548 [INFO] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=c0709691-fc72-4d45-86c2-ecde13732130,javaHome=/home/jack/github/myPractice/jdk1.8.0_51,daemonRegistryDir=/home/jack/github/myPractice/gradleRepo/.gradle/daemon,pid=14286,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+22:21:48.559 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 21: received class org.gradle.launcher.daemon.protocol.CloseInput
+22:21:48.559 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received IO message from client: CloseInput[id=22a15295-13b2-4c2d-9135-48d465c85b94.2]
+22:21:48.560 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] Closing daemon's stdin at end of input.
+22:21:48.560 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] The daemon will no longer process any standard input.
+:grails-spring-security-ui:compileAstJava UP-TO-DATE
+:grails-spring-security-ui:compileAstGroovy UP-TO-DATE
+:grails-spring-security-ui:processAstResources UP-TO-DATE
+:grails-spring-security-ui:astClasses UP-TO-DATE
+:grails-spring-security-ui:compileJava UP-TO-DATE
+:grails-spring-security-ui:configScript
+:grails-spring-security-ui:compileGroovy
+Download https://repo.grails.org/grails/core/org/grails/plugins/spring-security-core/3.0.0/spring-security-core-3.0.0.pom
+Download https://repo.grails.org/grails/core/org/grails/plugins/asset-pipeline/3.0.15/asset-pipeline-3.0.15.pom
+Download https://repo1.maven.org/maven2/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.pom
+Download https://repo1.maven.org/maven2/net/java/jvnet-parent/3/jvnet-parent-3.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-web-boot/3.0.11/grails-web-boot-3.0.11.pom
+Download https://repo1.maven.org/maven2/org/springframework/boot/spring-boot-parent/1.2.7.RELEASE/spring-boot-parent-1.2.7.RELEASE.pom
+Download https://repo1.maven.org/maven2/net/sf/ehcache/ehcache/2.9.0/ehcache-2.9.0.pom
+Download https://repo1.maven.org/maven2/net/sf/ehcache/ehcache-root/2.9.0/ehcache-root-2.9.0.pom
+Download https://repo1.maven.org/maven2/net/sf/ehcache/ehcache-parent/2.16/ehcache-parent-2.16.pom
+Download https://repo1.maven.org/maven2/org/sonatype/oss/oss-parent/7/oss-parent-7.pom
+Download https://repo1.maven.org/maven2/com/bertramlabs/plugins/asset-pipeline-core/2.6.7/asset-pipeline-core-2.6.7.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-bootstrap/3.0.11/grails-bootstrap-3.0.11.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-plugin-rest/3.0.11/grails-plugin-rest-3.0.11.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-plugin-databinding/3.0.11/grails-plugin-databinding-3.0.11.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-plugin-i18n/3.0.11/grails-plugin-i18n-3.0.11.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-plugin-filters/3.0.11/grails-plugin-filters-3.0.11.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-plugin-gsp/3.0.11/grails-plugin-gsp-3.0.11.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-plugin-services/3.0.11/grails-plugin-services-3.0.11.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-plugin-url-mappings/3.0.11/grails-plugin-url-mappings-3.0.11.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-plugin-interceptors/3.0.11/grails-plugin-interceptors-3.0.11.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-plugin-async/3.0.11/grails-plugin-async-3.0.11.pom
+Download https://repo1.maven.org/maven2/org/slf4j/slf4j-parent/1.7.10/slf4j-parent-1.7.10.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-web-common/3.0.11/grails-web-common-3.0.11.pom
+Download https://repo1.maven.org/maven2/org/slf4j/slf4j-parent/1.7.12/slf4j-parent-1.7.12.pom
+Download https://repo1.maven.org/maven2/org/sonatype/oss/oss-parent/9/oss-parent-9.pom
+Download https://repo1.maven.org/maven2/org/apache/apache/4/apache-4.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-plugin-controllers/3.0.11/grails-plugin-controllers-3.0.11.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-web/3.0.11/grails-web-3.0.11.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-plugin-datasource/3.0.11/grails-plugin-datasource-3.0.11.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-core/3.0.11/grails-core-3.0.11.pom
+Download https://repo1.maven.org/maven2/org/apache/apache/7/apache-7.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-plugin-codecs/3.0.11/grails-plugin-codecs-3.0.11.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-web-gsp-taglib/3.0.11/grails-web-gsp-taglib-3.0.11.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-logging/3.0.11/grails-logging-3.0.11.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-plugin-events/3.0.11/grails-plugin-events-3.0.11.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-validation/3.0.11/grails-validation-3.0.11.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-databinding/3.0.11/grails-databinding-3.0.11.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-gsp/3.0.11/grails-gsp-3.0.11.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-encoder/3.0.11/grails-encoder-3.0.11.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-plugin-domain-class/3.0.11/grails-plugin-domain-class-3.0.11.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-async/3.0.11/grails-async-3.0.11.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-plugin-mimetypes/3.0.11/grails-plugin-mimetypes-3.0.11.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-plugin-validation/3.0.11/grails-plugin-validation-3.0.11.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-plugin-converters/3.0.11/grails-plugin-converters-3.0.11.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-web-sitemesh/3.0.11/grails-web-sitemesh-3.0.11.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-web-gsp/3.0.11/grails-web-gsp-3.0.11.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-web-jsp/3.0.11/grails-web-jsp-3.0.11.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-web-url-mappings/3.0.11/grails-web-url-mappings-3.0.11.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-web-fileupload/3.0.11/grails-web-fileupload-3.0.11.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-web-databinding/3.0.11/grails-web-databinding-3.0.11.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-web-mvc/3.0.11/grails-web-mvc-3.0.11.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-spring/3.0.11/grails-spring-3.0.11.pom
+Download https://repo1.maven.org/maven2/org/apache/apache/9/apache-9.pom
+Download https://repo1.maven.org/maven2/org/apache/apache/15/apache-15.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-taglib/3.0.11/grails-taglib-3.0.11.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-datastore-gorm/4.0.7.RELEASE/grails-datastore-gorm-4.0.7.RELEASE.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-datastore-simple/4.0.7.RELEASE/grails-datastore-simple-4.0.7.RELEASE.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-datastore-core/4.0.7.RELEASE/grails-datastore-core-4.0.7.RELEASE.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-web-taglib/3.0.11/grails-web-taglib-3.0.11.pom
+Download https://repo1.maven.org/maven2/commons-fileupload/commons-fileupload/1.3.1/commons-fileupload-1.3.1.pom
+Download https://repo1.maven.org/maven2/org/apache/apache/13/apache-13.pom
+Download https://repo1.maven.org/maven2/commons-io/commons-io/2.2/commons-io-2.2.pom
+Download https://repo1.maven.org/maven2/org/apache/commons/commons-parent/24/commons-parent-24.pom
+Download https://repo.grails.org/grails/core/org/grails/plugins/spring-security-core/3.0.0/spring-security-core-3.0.0.jar
+Download https://repo.grails.org/grails/core/org/grails/plugins/asset-pipeline/3.0.15/asset-pipeline-3.0.15.jar
+Download https://repo1.maven.org/maven2/com/bertramlabs/plugins/asset-pipeline-core/2.6.7/asset-pipeline-core-2.6.7.jar
+Download https://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar
+Download https://repo1.maven.org/maven2/org/grails/grails-web-fileupload/3.0.11/grails-web-fileupload-3.0.11.jar
+Download https://repo1.maven.org/maven2/commons-fileupload/commons-fileupload/1.3.1/commons-fileupload-1.3.1.jar
+Download https://repo1.maven.org/maven2/commons-io/commons-io/2.2/commons-io-2.2.jar
+:grails-spring-security-ui:copyAstClasses UP-TO-DATE
+:grails-spring-security-ui:copyAssets
+:grails-spring-security-ui:copyCommands
+:grails-spring-security-ui:copyTemplates
+:grails-spring-security-ui:processResources
+:grails-spring-security-ui:classes
+:grails-spring-security-ui:compileTestJava UP-TO-DATE
+:grails-spring-security-ui:compileTestGroovy
+Download https://repo1.maven.org/maven2/org/grails/grails-plugin-testing/3.0.11/grails-plugin-testing-3.0.11.pom
+Download https://repo1.maven.org/maven2/org/grails/grails-test/3.0.11/grails-test-3.0.11.pom
+:grails-spring-security-ui:compileWebappGroovyPages UP-TO-DATE
+:grails-spring-security-ui:compileGroovyPages
+:grails-spring-security-ui:jar
+:grails3-security-demo:assetCompile
+Processing File 1 of 150 - devices.png
+Processing File 2 of 150 - grails_logo.bak.png
+Processing File 3 of 150 - expo-riot.jpg
+Processing File 4 of 150 - expo-vogue.jpg
+Processing File 5 of 150 - apple-touch-icon.png
+Processing File 6 of 150 - expo-lyft.jpg
+Processing File 7 of 150 - grails_logo.png
+Processing File 8 of 150 - components.png
+Processing File 9 of 150 - apple-touch-icon-retina.png
+Processing File 10 of 150 - spinner.gif
+Processing File 11 of 150 - skin/database_save.png
+Processing File 12 of 150 - skin/shadow.jpg
+Processing File 13 of 150 - skin/database_delete.png
+Processing File 14 of 150 - skin/database_table.png
+Processing File 15 of 150 - skin/exclamation.png
+Processing File 16 of 150 - skin/database_edit.png
+Processing File 17 of 150 - skin/database_add.png
+Processing File 18 of 150 - skin/house.png
+Processing File 19 of 150 - skin/information.png
+Processing File 20 of 150 - skin/sorted_desc.gif
+Processing File 21 of 150 - skin/sorted_asc.gif
+Processing File 22 of 150 - sass-less.png
+Processing File 23 of 150 - favicon.ico
+Processing File 24 of 150 - expo-newsweek.jpg
+Processing File 25 of 150 - sticky-footer-navbar.css
+Processing File 26 of 150 - justified-nav.css
+Processing File 27 of 150 - offcanvas.css
+Processing File 28 of 150 - blog.css
+Processing File 29 of 150 - cover.css
+Processing File 30 of 150 - bootstrap-theme.min.css
+Processing File 31 of 150 - bootstrap-theme.css
+Processing File 32 of 150 - docs.min.css
+Processing File 33 of 150 - navbar-static-top.css
+Processing File 34 of 150 - bootstrap-theme.css.map
+Processing File 35 of 150 - errors.css
+Processing File 36 of 150 - jumbotron.css
+Processing File 37 of 150 - signin.css
+Processing File 38 of 150 - starter-template.css
+Processing File 39 of 150 - theme.css
+Processing File 40 of 150 - bootstrap.min.css
+Processing File 41 of 150 - ie10-viewport-bug-workaround.css
+Processing File 42 of 150 - bootstrap.css
+Processing File 43 of 150 - mobile.css
+Processing File 44 of 150 - application.css
+Processing File 45 of 150 - navbar.css
+Processing File 46 of 150 - carousel.css
+Processing File 47 of 150 - jumbotron-narrow.css
+Processing File 48 of 150 - grid.css
+Processing File 49 of 150 - sticky-footer.css
+Processing File 50 of 150 - bootstrap-theme.min.css.map
+Processing File 51 of 150 - src/pygments-manni.css
+Processing File 52 of 150 - src/docs.css
+Processing File 53 of 150 - navbar-fixed-top.css
+Processing File 54 of 150 - tooltip-viewport.css
+Processing File 55 of 150 - docs.min.css.map
+Processing File 56 of 150 - bootstrap.min.css.map
+Processing File 57 of 150 - main.css
+Processing File 58 of 150 - bootstrap.css.map
+Processing File 59 of 150 - non-responsive.css
+Processing File 60 of 150 - npm.js
+Processing File 61 of 150 - jquery-2.1.3.js
+Processing File 62 of 150 - raw-files.min.js
+Processing File 63 of 150 - vendor/uglify.min.js
+Processing File 64 of 150 - vendor/FileSaver.js
+Processing File 65 of 150 - vendor/autoprefixer.js
+Processing File 66 of 150 - vendor/ZeroClipboard.min.js
+Processing File 67 of 150 - vendor/Blob.js
+Processing File 68 of 150 - vendor/holder.min.js
+Processing File 69 of 150 - vendor/jquery.min.js
+Processing File 70 of 150 - vendor/anchor.js
+Processing File 71 of 150 - vendor/less.min.js
+Processing File 72 of 150 - vendor/jszip.min.js
+Processing File 73 of 150 - bootstrap.js
+Processing File 74 of 150 - customize.min.js
+Processing File 75 of 150 - offcanvas.js
+Processing File 76 of 150 - docs.min.js
+Processing File 77 of 150 - ie8-responsive-file-warning.js
+Processing File 78 of 150 - ie-emulation-modes-warning.js
+Processing File 79 of 150 - src/customizer.js
+Processing File 80 of 150 - src/application.js
+Processing File 81 of 150 - ie10-viewport-bug-workaround.js
+Processing File 82 of 150 - tooltip-viewport.js
+Processing File 83 of 150 - bootstrap.min.js
+Processing File 84 of 150 - application.js
+Processing File 85 of 150 - ZeroClipboard.swf
+Processing File 86 of 150 - glyphicons-halflings-regular.ttf
+Processing File 87 of 150 - glyphicons-halflings-regular.eot
+Processing File 88 of 150 - glyphicons-halflings-regular.woff2
+Processing File 89 of 150 - glyphicons-halflings-regular.woff
+Processing File 90 of 150 - glyphicons-halflings-regular.svg
+Processing File 91 of 150 - spring-security-ui-auth.css
+Processing File 92 of 150 - gradient-vertical.png
+Processing File 93 of 150 - spring-security-ui.js
+Error Processing GString Template Engine groovy.lang.MissingPropertyException: No such property: grails for class: groovy.lang.Binding
+Error Processing GString Template Engine
+groovy.lang.MissingPropertyException: No such property: grails for class: groovy.lang.Binding
+	at groovy.lang.Binding.getVariable(Binding.java:56)
+	at groovy.lang.Binding.getProperty(Binding.java:103)
+	at org.codehaus.groovy.runtime.InvokerHelper.getProperty(InvokerHelper.java:168)
+	at groovy.lang.Closure.getPropertyTryThese(Closure.java:321)
+	at groovy.lang.Closure.getPropertyDelegateFirst(Closure.java:311)
+	at groovy.lang.Closure.getProperty(Closure.java:296)
+	at org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:231)
+	at groovy.tmp.templates.GStringTemplateScript1$_getTemplate_closure1.doCall(GStringTemplateScript1.groovy:2)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:278)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1016)
+	at groovy.lang.Closure.call(Closure.java:423)
+	at groovy.lang.Closure$WritableClosure.writeTo(Closure.java:853)
+	at groovy.lang.Closure$WritableClosure.toString(Closure.java:979)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:207)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.call(PogoMetaMethodSite.java:68)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
+	at asset.pipeline.DirectiveProcessor.directiveArgumentsFromGString(DirectiveProcessor.groovy:176)
+	at asset.pipeline.DirectiveProcessor.findDirectives(DirectiveProcessor.groovy:160)
+	at asset.pipeline.DirectiveProcessor.getDependencyTree(DirectiveProcessor.groovy:134)
+	at sun.reflect.GeneratedMethodAccessor297.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:207)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:141)
+	at asset.pipeline.DirectiveProcessor.requireFileDirective(DirectiveProcessor.groovy:266)
+	at asset.pipeline.DirectiveProcessor$requireFileDirective$1.callCurrent(Unknown Source)
+	at asset.pipeline.DirectiveProcessor.requireFileDirective(DirectiveProcessor.groovy:271)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1207)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnCurrentN(ScriptBytecodeAdapter.java:80)
+	at asset.pipeline.DirectiveProcessor.callDirective(DirectiveProcessor.groovy:185)
+	at asset.pipeline.DirectiveProcessor.findDirectives(DirectiveProcessor.groovy:164)
+	at asset.pipeline.DirectiveProcessor.getDependencyTree(DirectiveProcessor.groovy:134)
+	at asset.pipeline.DirectiveProcessor.compile(DirectiveProcessor.groovy:58)
+	at asset.pipeline.DirectiveProcessor$compile.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at asset.pipeline.DirectiveProcessor$compile.call(Unknown Source)
+	at asset.pipeline.AssetCompiler.compile(AssetCompiler.groovy:128)
+	at asset.pipeline.AssetCompiler$compile.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
+	at asset.pipeline.gradle.AssetCompile.compile(AssetCompile.groovy:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:218)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:585)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:568)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:306)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.tooling.internal.provider.BuildModelAction.run(BuildModelAction.java:43)
+	at org.gradle.tooling.internal.provider.BuildModelAction.run(BuildModelAction.java:30)
+	at org.gradle.tooling.internal.provider.ConfiguringBuildAction.run(ConfiguringBuildAction.java:119)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.daemon.server.exec.ExecuteBuild.doBuild(ExecuteBuild.java:48)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.WatchForDisconnection.execute(WatchForDisconnection.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.ResetDeprecationLogger.execute(ResetDeprecationLogger.java:26)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.RequestStopIfSingleUsedDaemon.execute(RequestStopIfSingleUsedDaemon.java:34)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:74)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:72)
+	at org.gradle.util.Swapper.swap(Swapper.java:38)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput.execute(ForwardClientInput.java:72)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.health.DaemonHealthTracker.execute(DaemonHealthTracker.java:47)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.LogToClient.doBuild(LogToClient.java:60)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment.doBuild(EstablishBuildEnvironment.java:71)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.health.HintGCAfterBuild.execute(HintGCAfterBuild.java:41)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy$1.run(StartBuildOrRespondWithBusy.java:50)
+	at org.gradle.launcher.daemon.server.DaemonStateCoordinator$1.run(DaemonStateCoordinator.java:246)
+	at org.gradle.internal.concurrent.DefaultExecutorFactory$StoppableExecutorImpl$1.run(DefaultExecutorFactory.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Unable to Locate Asset: /e
+Error Processing GString Template Engine groovy.lang.MissingPropertyException: No such property: grails for class: groovy.lang.Binding
+Error Processing GString Template Engine
+groovy.lang.MissingPropertyException: No such property: grails for class: groovy.lang.Binding
+	at groovy.lang.Binding.getVariable(Binding.java:56)
+	at groovy.lang.Binding.getProperty(Binding.java:103)
+	at org.codehaus.groovy.runtime.InvokerHelper.getProperty(InvokerHelper.java:168)
+	at groovy.lang.Closure.getPropertyTryThese(Closure.java:321)
+	at groovy.lang.Closure.getPropertyDelegateFirst(Closure.java:311)
+	at groovy.lang.Closure.getProperty(Closure.java:296)
+	at org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:231)
+	at groovy.tmp.templates.GStringTemplateScript2$_getTemplate_closure1.doCall(GStringTemplateScript2.groovy:2)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:278)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1016)
+	at groovy.lang.Closure.call(Closure.java:423)
+	at groovy.lang.Closure$WritableClosure.writeTo(Closure.java:853)
+	at groovy.lang.Closure$WritableClosure.toString(Closure.java:979)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:207)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.call(PogoMetaMethodSite.java:68)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
+	at asset.pipeline.DirectiveProcessor.directiveArgumentsFromGString(DirectiveProcessor.groovy:176)
+	at asset.pipeline.DirectiveProcessor.findDirectives(DirectiveProcessor.groovy:160)
+	at asset.pipeline.DirectiveProcessor.getDependencyTree(DirectiveProcessor.groovy:134)
+	at sun.reflect.GeneratedMethodAccessor297.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:207)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:141)
+	at asset.pipeline.DirectiveProcessor.requireFileDirective(DirectiveProcessor.groovy:266)
+	at asset.pipeline.DirectiveProcessor$requireFileDirective$1.callCurrent(Unknown Source)
+	at asset.pipeline.DirectiveProcessor.requireFileDirective(DirectiveProcessor.groovy:271)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1207)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnCurrentN(ScriptBytecodeAdapter.java:80)
+	at asset.pipeline.DirectiveProcessor.callDirective(DirectiveProcessor.groovy:185)
+	at asset.pipeline.DirectiveProcessor.findDirectives(DirectiveProcessor.groovy:164)
+	at asset.pipeline.DirectiveProcessor.getDependencyTree(DirectiveProcessor.groovy:134)
+	at asset.pipeline.DirectiveProcessor.compile(DirectiveProcessor.groovy:58)
+	at asset.pipeline.DirectiveProcessor$compile.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at asset.pipeline.DirectiveProcessor$compile.call(Unknown Source)
+	at asset.pipeline.AssetCompiler.compile(AssetCompiler.groovy:128)
+	at asset.pipeline.AssetCompiler$compile.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
+	at asset.pipeline.gradle.AssetCompile.compile(AssetCompile.groovy:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:218)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:585)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:568)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:306)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.tooling.internal.provider.BuildModelAction.run(BuildModelAction.java:43)
+	at org.gradle.tooling.internal.provider.BuildModelAction.run(BuildModelAction.java:30)
+	at org.gradle.tooling.internal.provider.ConfiguringBuildAction.run(ConfiguringBuildAction.java:119)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.daemon.server.exec.ExecuteBuild.doBuild(ExecuteBuild.java:48)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.WatchForDisconnection.execute(WatchForDisconnection.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.ResetDeprecationLogger.execute(ResetDeprecationLogger.java:26)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.RequestStopIfSingleUsedDaemon.execute(RequestStopIfSingleUsedDaemon.java:34)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:74)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:72)
+	at org.gradle.util.Swapper.swap(Swapper.java:38)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput.execute(ForwardClientInput.java:72)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.health.DaemonHealthTracker.execute(DaemonHealthTracker.java:47)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.LogToClient.doBuild(LogToClient.java:60)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment.doBuild(EstablishBuildEnvironment.java:71)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.health.HintGCAfterBuild.execute(HintGCAfterBuild.java:41)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy$1.run(StartBuildOrRespondWithBusy.java:50)
+	at org.gradle.launcher.daemon.server.DaemonStateCoordinator$1.run(DaemonStateCoordinator.java:246)
+	at org.gradle.internal.concurrent.DefaultExecutorFactory$StoppableExecutorImpl$1.run(DefaultExecutorFactory.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Unable to Locate Asset: /e
+Processing File 94 of 150 - spring-security-ui-common.css
+Minifying File 94 of 150 - spring-security-ui-common
+Compressing File 94 of 150 - spring-security-ui-common
+Processing File 95 of 150 - gradient.png
+Processing File 96 of 150 - jquery.jdMenu.css
+Processing File 97 of 150 - sort_both.png
+Processing File 98 of 150 - jquery.js
+Error Processing GString Template Engine groovy.lang.MissingPropertyException: No such property: grails for class: groovy.lang.Binding
+Error Processing GString Template Engine
+groovy.lang.MissingPropertyException: No such property: grails for class: groovy.lang.Binding
+	at groovy.lang.Binding.getVariable(Binding.java:56)
+	at groovy.lang.Binding.getProperty(Binding.java:103)
+	at org.codehaus.groovy.runtime.InvokerHelper.getProperty(InvokerHelper.java:168)
+	at groovy.lang.Closure.getPropertyTryThese(Closure.java:321)
+	at groovy.lang.Closure.getPropertyDelegateFirst(Closure.java:311)
+	at groovy.lang.Closure.getProperty(Closure.java:296)
+	at org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:231)
+	at groovy.tmp.templates.GStringTemplateScript3$_getTemplate_closure1.doCall(GStringTemplateScript3.groovy:2)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:278)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1016)
+	at groovy.lang.Closure.call(Closure.java:423)
+	at groovy.lang.Closure$WritableClosure.writeTo(Closure.java:853)
+	at groovy.lang.Closure$WritableClosure.toString(Closure.java:979)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:207)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.call(PogoMetaMethodSite.java:68)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
+	at asset.pipeline.DirectiveProcessor.directiveArgumentsFromGString(DirectiveProcessor.groovy:176)
+	at asset.pipeline.DirectiveProcessor.findDirectives(DirectiveProcessor.groovy:160)
+	at asset.pipeline.DirectiveProcessor.getDependencyTree(DirectiveProcessor.groovy:134)
+	at asset.pipeline.DirectiveProcessor.compile(DirectiveProcessor.groovy:58)
+	at asset.pipeline.DirectiveProcessor$compile.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at asset.pipeline.DirectiveProcessor$compile.call(Unknown Source)
+	at asset.pipeline.AssetCompiler.compile(AssetCompiler.groovy:128)
+	at asset.pipeline.AssetCompiler$compile.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
+	at asset.pipeline.gradle.AssetCompile.compile(AssetCompile.groovy:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:218)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:585)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:568)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:306)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.tooling.internal.provider.BuildModelAction.run(BuildModelAction.java:43)
+	at org.gradle.tooling.internal.provider.BuildModelAction.run(BuildModelAction.java:30)
+	at org.gradle.tooling.internal.provider.ConfiguringBuildAction.run(ConfiguringBuildAction.java:119)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.daemon.server.exec.ExecuteBuild.doBuild(ExecuteBuild.java:48)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.WatchForDisconnection.execute(WatchForDisconnection.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.ResetDeprecationLogger.execute(ResetDeprecationLogger.java:26)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.RequestStopIfSingleUsedDaemon.execute(RequestStopIfSingleUsedDaemon.java:34)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:74)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:72)
+	at org.gradle.util.Swapper.swap(Swapper.java:38)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput.execute(ForwardClientInput.java:72)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.health.DaemonHealthTracker.execute(DaemonHealthTracker.java:47)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.LogToClient.doBuild(LogToClient.java:60)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment.doBuild(EstablishBuildEnvironment.java:71)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.health.HintGCAfterBuild.execute(HintGCAfterBuild.java:41)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy$1.run(StartBuildOrRespondWithBusy.java:50)
+	at org.gradle.launcher.daemon.server.DaemonStateCoordinator$1.run(DaemonStateCoordinator.java:246)
+	at org.gradle.internal.concurrent.DefaultExecutorFactory$StoppableExecutorImpl$1.run(DefaultExecutorFactory.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Unable to Locate Asset: /e
+Processing File 99 of 150 - jquery-ui.js
+Error Processing GString Template Engine groovy.lang.MissingPropertyException: No such property: grails for class: groovy.lang.Binding
+Error Processing GString Template Engine
+groovy.lang.MissingPropertyException: No such property: grails for class: groovy.lang.Binding
+	at groovy.lang.Binding.getVariable(Binding.java:56)
+	at groovy.lang.Binding.getProperty(Binding.java:103)
+	at org.codehaus.groovy.runtime.InvokerHelper.getProperty(InvokerHelper.java:168)
+	at groovy.lang.Closure.getPropertyTryThese(Closure.java:321)
+	at groovy.lang.Closure.getPropertyDelegateFirst(Closure.java:311)
+	at groovy.lang.Closure.getProperty(Closure.java:296)
+	at org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:231)
+	at groovy.tmp.templates.GStringTemplateScript4$_getTemplate_closure1.doCall(GStringTemplateScript4.groovy:2)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:278)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1016)
+	at groovy.lang.Closure.call(Closure.java:423)
+	at groovy.lang.Closure$WritableClosure.writeTo(Closure.java:853)
+	at groovy.lang.Closure$WritableClosure.toString(Closure.java:979)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:207)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.call(PogoMetaMethodSite.java:68)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
+	at asset.pipeline.DirectiveProcessor.directiveArgumentsFromGString(DirectiveProcessor.groovy:176)
+	at asset.pipeline.DirectiveProcessor.findDirectives(DirectiveProcessor.groovy:160)
+	at asset.pipeline.DirectiveProcessor.getDependencyTree(DirectiveProcessor.groovy:134)
+	at asset.pipeline.DirectiveProcessor.compile(DirectiveProcessor.groovy:58)
+	at asset.pipeline.DirectiveProcessor$compile.call(Unknown Source)
+	at asset.pipeline.AssetCompiler.compile(AssetCompiler.groovy:128)
+	at asset.pipeline.AssetCompiler$compile.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
+	at asset.pipeline.gradle.AssetCompile.compile(AssetCompile.groovy:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:218)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:585)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:568)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:306)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.tooling.internal.provider.BuildModelAction.run(BuildModelAction.java:43)
+	at org.gradle.tooling.internal.provider.BuildModelAction.run(BuildModelAction.java:30)
+	at org.gradle.tooling.internal.provider.ConfiguringBuildAction.run(ConfiguringBuildAction.java:119)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.daemon.server.exec.ExecuteBuild.doBuild(ExecuteBuild.java:48)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.WatchForDisconnection.execute(WatchForDisconnection.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.ResetDeprecationLogger.execute(ResetDeprecationLogger.java:26)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.RequestStopIfSingleUsedDaemon.execute(RequestStopIfSingleUsedDaemon.java:34)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:74)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:72)
+	at org.gradle.util.Swapper.swap(Swapper.java:38)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput.execute(ForwardClientInput.java:72)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.health.DaemonHealthTracker.execute(DaemonHealthTracker.java:47)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.LogToClient.doBuild(LogToClient.java:60)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment.doBuild(EstablishBuildEnvironment.java:71)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.health.HintGCAfterBuild.execute(HintGCAfterBuild.java:41)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy$1.run(StartBuildOrRespondWithBusy.java:50)
+	at org.gradle.launcher.daemon.server.DaemonStateCoordinator$1.run(DaemonStateCoordinator.java:246)
+	at org.gradle.internal.concurrent.DefaultExecutorFactory$StoppableExecutorImpl$1.run(DefaultExecutorFactory.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Unable to Locate Asset: /e
+Processing File 100 of 150 - jquery-ui.css
+Error Processing GString Template Engine groovy.lang.MissingPropertyException: No such property: grails for class: groovy.lang.Binding
+Error Processing GString Template Engine
+groovy.lang.MissingPropertyException: No such property: grails for class: groovy.lang.Binding
+	at groovy.lang.Binding.getVariable(Binding.java:56)
+	at groovy.lang.Binding.getProperty(Binding.java:103)
+	at org.codehaus.groovy.runtime.InvokerHelper.getProperty(InvokerHelper.java:168)
+	at groovy.lang.Closure.getPropertyTryThese(Closure.java:321)
+	at groovy.lang.Closure.getPropertyDelegateFirst(Closure.java:311)
+	at groovy.lang.Closure.getProperty(Closure.java:296)
+	at org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:231)
+	at groovy.tmp.templates.GStringTemplateScript5$_getTemplate_closure1.doCall(GStringTemplateScript5.groovy:2)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:278)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1016)
+	at groovy.lang.Closure.call(Closure.java:423)
+	at groovy.lang.Closure$WritableClosure.writeTo(Closure.java:853)
+	at groovy.lang.Closure$WritableClosure.toString(Closure.java:979)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:207)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.call(PogoMetaMethodSite.java:68)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
+	at asset.pipeline.DirectiveProcessor.directiveArgumentsFromGString(DirectiveProcessor.groovy:176)
+	at asset.pipeline.DirectiveProcessor.findDirectives(DirectiveProcessor.groovy:160)
+	at asset.pipeline.DirectiveProcessor.getDependencyTree(DirectiveProcessor.groovy:134)
+	at asset.pipeline.DirectiveProcessor.compile(DirectiveProcessor.groovy:58)
+	at asset.pipeline.DirectiveProcessor$compile.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at asset.pipeline.DirectiveProcessor$compile.call(Unknown Source)
+	at asset.pipeline.AssetCompiler.compile(AssetCompiler.groovy:128)
+	at asset.pipeline.AssetCompiler$compile.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
+	at asset.pipeline.gradle.AssetCompile.compile(AssetCompile.groovy:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:218)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:585)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:568)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:306)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.tooling.internal.provider.BuildModelAction.run(BuildModelAction.java:43)
+	at org.gradle.tooling.internal.provider.BuildModelAction.run(BuildModelAction.java:30)
+	at org.gradle.tooling.internal.provider.ConfiguringBuildAction.run(ConfiguringBuildAction.java:119)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.daemon.server.exec.ExecuteBuild.doBuild(ExecuteBuild.java:48)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.WatchForDisconnection.execute(WatchForDisconnection.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.ResetDeprecationLogger.execute(ResetDeprecationLogger.java:26)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.RequestStopIfSingleUsedDaemon.execute(RequestStopIfSingleUsedDaemon.java:34)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:74)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:72)
+	at org.gradle.util.Swapper.swap(Swapper.java:38)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput.execute(ForwardClientInput.java:72)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.health.DaemonHealthTracker.execute(DaemonHealthTracker.java:47)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.LogToClient.doBuild(LogToClient.java:60)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment.doBuild(EstablishBuildEnvironment.java:71)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.health.HintGCAfterBuild.execute(HintGCAfterBuild.java:41)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy$1.run(StartBuildOrRespondWithBusy.java:50)
+	at org.gradle.launcher.daemon.server.DaemonStateCoordinator$1.run(DaemonStateCoordinator.java:246)
+	at org.gradle.internal.concurrent.DefaultExecutorFactory$StoppableExecutorImpl$1.run(DefaultExecutorFactory.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Unable to Locate Asset: /e
+Minifying File 100 of 150 - jquery-ui
+Compressing File 100 of 150 - jquery-ui
+Processing File 101 of 150 - sort_asc_disabled.png
+Processing File 102 of 150 - spring-security-ui.css
+Error Processing GString Template Engine groovy.lang.MissingPropertyException: No such property: grails for class: groovy.lang.Binding
+Error Processing GString Template Engine
+groovy.lang.MissingPropertyException: No such property: grails for class: groovy.lang.Binding
+	at groovy.lang.Binding.getVariable(Binding.java:56)
+	at groovy.lang.Binding.getProperty(Binding.java:103)
+	at org.codehaus.groovy.runtime.InvokerHelper.getProperty(InvokerHelper.java:168)
+	at groovy.lang.Closure.getPropertyTryThese(Closure.java:321)
+	at groovy.lang.Closure.getPropertyDelegateFirst(Closure.java:311)
+	at groovy.lang.Closure.getProperty(Closure.java:296)
+	at org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:231)
+	at groovy.tmp.templates.GStringTemplateScript6$_getTemplate_closure1.doCall(GStringTemplateScript6.groovy:2)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:278)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1016)
+	at groovy.lang.Closure.call(Closure.java:423)
+	at groovy.lang.Closure$WritableClosure.writeTo(Closure.java:853)
+	at groovy.lang.Closure$WritableClosure.toString(Closure.java:979)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:207)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.call(PogoMetaMethodSite.java:68)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
+	at asset.pipeline.DirectiveProcessor.directiveArgumentsFromGString(DirectiveProcessor.groovy:176)
+	at asset.pipeline.DirectiveProcessor.findDirectives(DirectiveProcessor.groovy:160)
+	at asset.pipeline.DirectiveProcessor.getDependencyTree(DirectiveProcessor.groovy:134)
+	at sun.reflect.GeneratedMethodAccessor297.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:207)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:141)
+	at asset.pipeline.DirectiveProcessor.requireFileDirective(DirectiveProcessor.groovy:266)
+	at asset.pipeline.DirectiveProcessor$requireFileDirective$1.callCurrent(Unknown Source)
+	at asset.pipeline.DirectiveProcessor.requireFileDirective(DirectiveProcessor.groovy:271)
+	at sun.reflect.GeneratedMethodAccessor306.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1207)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnCurrentN(ScriptBytecodeAdapter.java:80)
+	at asset.pipeline.DirectiveProcessor.callDirective(DirectiveProcessor.groovy:185)
+	at asset.pipeline.DirectiveProcessor.findDirectives(DirectiveProcessor.groovy:164)
+	at asset.pipeline.DirectiveProcessor.getDependencyTree(DirectiveProcessor.groovy:134)
+	at asset.pipeline.DirectiveProcessor.compile(DirectiveProcessor.groovy:58)
+	at asset.pipeline.DirectiveProcessor$compile.call(Unknown Source)
+	at asset.pipeline.AssetCompiler.compile(AssetCompiler.groovy:128)
+	at asset.pipeline.AssetCompiler$compile.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
+	at asset.pipeline.gradle.AssetCompile.compile(AssetCompile.groovy:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:218)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:585)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:568)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:306)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.tooling.internal.provider.BuildModelAction.run(BuildModelAction.java:43)
+	at org.gradle.tooling.internal.provider.BuildModelAction.run(BuildModelAction.java:30)
+	at org.gradle.tooling.internal.provider.ConfiguringBuildAction.run(ConfiguringBuildAction.java:119)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.daemon.server.exec.ExecuteBuild.doBuild(ExecuteBuild.java:48)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.WatchForDisconnection.execute(WatchForDisconnection.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.ResetDeprecationLogger.execute(ResetDeprecationLogger.java:26)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.RequestStopIfSingleUsedDaemon.execute(RequestStopIfSingleUsedDaemon.java:34)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:74)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:72)
+	at org.gradle.util.Swapper.swap(Swapper.java:38)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput.execute(ForwardClientInput.java:72)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.health.DaemonHealthTracker.execute(DaemonHealthTracker.java:47)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.LogToClient.doBuild(LogToClient.java:60)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment.doBuild(EstablishBuildEnvironment.java:71)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.health.HintGCAfterBuild.execute(HintGCAfterBuild.java:41)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy$1.run(StartBuildOrRespondWithBusy.java:50)
+	at org.gradle.launcher.daemon.server.DaemonStateCoordinator$1.run(DaemonStateCoordinator.java:246)
+	at org.gradle.internal.concurrent.DefaultExecutorFactory$StoppableExecutorImpl$1.run(DefaultExecutorFactory.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Unable to Locate Asset: /e
+Minifying File 102 of 150 - spring-security-ui
+Compressing File 102 of 150 - spring-security-ui
+Processing File 103 of 150 - sort_desc_disabled.png
+Processing File 104 of 150 - sort_desc.png
+Processing File 105 of 150 - gradient-alt.png
+Processing File 106 of 150 - jquery.dataTables.css
+Processing File 107 of 150 - spring-security-ui-ajaxLogin.js
+Processing File 108 of 150 - spring-security-ui-register.css
+Error Processing GString Template Engine groovy.lang.MissingPropertyException: No such property: grails for class: groovy.lang.Binding
+Error Processing GString Template Engine
+groovy.lang.MissingPropertyException: No such property: grails for class: groovy.lang.Binding
+	at groovy.lang.Binding.getVariable(Binding.java:56)
+	at groovy.lang.Binding.getProperty(Binding.java:103)
+	at org.codehaus.groovy.runtime.InvokerHelper.getProperty(InvokerHelper.java:168)
+	at groovy.lang.Closure.getPropertyTryThese(Closure.java:321)
+	at groovy.lang.Closure.getPropertyDelegateFirst(Closure.java:311)
+	at groovy.lang.Closure.getProperty(Closure.java:296)
+	at org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:231)
+	at groovy.tmp.templates.GStringTemplateScript7$_getTemplate_closure1.doCall(GStringTemplateScript7.groovy:2)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:278)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1016)
+	at groovy.lang.Closure.call(Closure.java:423)
+	at groovy.lang.Closure$WritableClosure.writeTo(Closure.java:853)
+	at groovy.lang.Closure$WritableClosure.toString(Closure.java:979)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:207)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.call(PogoMetaMethodSite.java:68)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
+	at asset.pipeline.DirectiveProcessor.directiveArgumentsFromGString(DirectiveProcessor.groovy:176)
+	at asset.pipeline.DirectiveProcessor.findDirectives(DirectiveProcessor.groovy:160)
+	at asset.pipeline.DirectiveProcessor.getDependencyTree(DirectiveProcessor.groovy:134)
+	at sun.reflect.GeneratedMethodAccessor297.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:207)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:141)
+	at asset.pipeline.DirectiveProcessor.requireFileDirective(DirectiveProcessor.groovy:266)
+	at asset.pipeline.DirectiveProcessor$requireFileDirective$1.callCurrent(Unknown Source)
+	at asset.pipeline.DirectiveProcessor.requireFileDirective(DirectiveProcessor.groovy:271)
+	at sun.reflect.GeneratedMethodAccessor306.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1207)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnCurrentN(ScriptBytecodeAdapter.java:80)
+	at asset.pipeline.DirectiveProcessor.callDirective(DirectiveProcessor.groovy:185)
+	at asset.pipeline.DirectiveProcessor.findDirectives(DirectiveProcessor.groovy:164)
+	at asset.pipeline.DirectiveProcessor.getDependencyTree(DirectiveProcessor.groovy:134)
+	at asset.pipeline.DirectiveProcessor.compile(DirectiveProcessor.groovy:58)
+	at asset.pipeline.DirectiveProcessor$compile.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at asset.pipeline.DirectiveProcessor$compile.call(Unknown Source)
+	at asset.pipeline.AssetCompiler.compile(AssetCompiler.groovy:128)
+	at asset.pipeline.AssetCompiler$compile.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
+	at asset.pipeline.gradle.AssetCompile.compile(AssetCompile.groovy:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:218)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:585)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:568)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:306)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.tooling.internal.provider.BuildModelAction.run(BuildModelAction.java:43)
+	at org.gradle.tooling.internal.provider.BuildModelAction.run(BuildModelAction.java:30)
+	at org.gradle.tooling.internal.provider.ConfiguringBuildAction.run(ConfiguringBuildAction.java:119)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.daemon.server.exec.ExecuteBuild.doBuild(ExecuteBuild.java:48)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.WatchForDisconnection.execute(WatchForDisconnection.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.ResetDeprecationLogger.execute(ResetDeprecationLogger.java:26)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.RequestStopIfSingleUsedDaemon.execute(RequestStopIfSingleUsedDaemon.java:34)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:74)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:72)
+	at org.gradle.util.Swapper.swap(Swapper.java:38)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput.execute(ForwardClientInput.java:72)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.health.DaemonHealthTracker.execute(DaemonHealthTracker.java:47)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.LogToClient.doBuild(LogToClient.java:60)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment.doBuild(EstablishBuildEnvironment.java:71)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.health.HintGCAfterBuild.execute(HintGCAfterBuild.java:41)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy$1.run(StartBuildOrRespondWithBusy.java:50)
+	at org.gradle.launcher.daemon.server.DaemonStateCoordinator$1.run(DaemonStateCoordinator.java:246)
+	at org.gradle.internal.concurrent.DefaultExecutorFactory$StoppableExecutorImpl$1.run(DefaultExecutorFactory.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Unable to Locate Asset: /e
+Minifying File 108 of 150 - spring-security-ui-register
+Compressing File 108 of 150 - spring-security-ui-register
+Processing File 109 of 150 - jquery.jgrowl.css
+Processing File 110 of 150 - jquery.jdMenu.slate.css
+Processing File 111 of 150 - reset.css
+Processing File 112 of 150 - spring-security-ui-register.js
+Error Processing GString Template Engine groovy.lang.MissingPropertyException: No such property: grails for class: groovy.lang.Binding
+Error Processing GString Template Engine
+groovy.lang.MissingPropertyException: No such property: grails for class: groovy.lang.Binding
+	at groovy.lang.Binding.getVariable(Binding.java:56)
+	at groovy.lang.Binding.getProperty(Binding.java:103)
+	at org.codehaus.groovy.runtime.InvokerHelper.getProperty(InvokerHelper.java:168)
+	at groovy.lang.Closure.getPropertyTryThese(Closure.java:321)
+	at groovy.lang.Closure.getPropertyDelegateFirst(Closure.java:311)
+	at groovy.lang.Closure.getProperty(Closure.java:296)
+	at org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:231)
+	at groovy.tmp.templates.GStringTemplateScript8$_getTemplate_closure1.doCall(GStringTemplateScript8.groovy:2)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:278)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1016)
+	at groovy.lang.Closure.call(Closure.java:423)
+	at groovy.lang.Closure$WritableClosure.writeTo(Closure.java:853)
+	at groovy.lang.Closure$WritableClosure.toString(Closure.java:979)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:207)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.call(PogoMetaMethodSite.java:68)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
+	at asset.pipeline.DirectiveProcessor.directiveArgumentsFromGString(DirectiveProcessor.groovy:176)
+	at asset.pipeline.DirectiveProcessor.findDirectives(DirectiveProcessor.groovy:160)
+	at asset.pipeline.DirectiveProcessor.getDependencyTree(DirectiveProcessor.groovy:134)
+	at sun.reflect.GeneratedMethodAccessor297.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:207)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:141)
+	at asset.pipeline.DirectiveProcessor.requireFileDirective(DirectiveProcessor.groovy:266)
+	at asset.pipeline.DirectiveProcessor$requireFileDirective$1.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at asset.pipeline.DirectiveProcessor$requireFileDirective$1.callCurrent(Unknown Source)
+	at asset.pipeline.DirectiveProcessor.requireFileDirective(DirectiveProcessor.groovy:271)
+	at sun.reflect.GeneratedMethodAccessor306.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1207)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnCurrentN(ScriptBytecodeAdapter.java:80)
+	at asset.pipeline.DirectiveProcessor.callDirective(DirectiveProcessor.groovy:185)
+	at asset.pipeline.DirectiveProcessor.findDirectives(DirectiveProcessor.groovy:164)
+	at asset.pipeline.DirectiveProcessor.getDependencyTree(DirectiveProcessor.groovy:134)
+	at asset.pipeline.DirectiveProcessor.compile(DirectiveProcessor.groovy:58)
+	at asset.pipeline.DirectiveProcessor$compile.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at asset.pipeline.DirectiveProcessor$compile.call(Unknown Source)
+	at asset.pipeline.AssetCompiler.compile(AssetCompiler.groovy:128)
+	at asset.pipeline.AssetCompiler$compile.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
+	at asset.pipeline.gradle.AssetCompile.compile(AssetCompile.groovy:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:218)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:585)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:568)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:306)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.tooling.internal.provider.BuildModelAction.run(BuildModelAction.java:43)
+	at org.gradle.tooling.internal.provider.BuildModelAction.run(BuildModelAction.java:30)
+	at org.gradle.tooling.internal.provider.ConfiguringBuildAction.run(ConfiguringBuildAction.java:119)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.daemon.server.exec.ExecuteBuild.doBuild(ExecuteBuild.java:48)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.WatchForDisconnection.execute(WatchForDisconnection.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.ResetDeprecationLogger.execute(ResetDeprecationLogger.java:26)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.RequestStopIfSingleUsedDaemon.execute(RequestStopIfSingleUsedDaemon.java:34)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:74)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:72)
+	at org.gradle.util.Swapper.swap(Swapper.java:38)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput.execute(ForwardClientInput.java:72)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.health.DaemonHealthTracker.execute(DaemonHealthTracker.java:47)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.LogToClient.doBuild(LogToClient.java:60)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment.doBuild(EstablishBuildEnvironment.java:71)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.health.HintGCAfterBuild.execute(HintGCAfterBuild.java:41)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy$1.run(StartBuildOrRespondWithBusy.java:50)
+	at org.gradle.launcher.daemon.server.DaemonStateCoordinator$1.run(DaemonStateCoordinator.java:246)
+	at org.gradle.internal.concurrent.DefaultExecutorFactory$StoppableExecutorImpl$1.run(DefaultExecutorFactory.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Unable to Locate Asset: /e
+Error Processing GString Template Engine groovy.lang.MissingPropertyException: No such property: grails for class: groovy.lang.Binding
+Error Processing GString Template Engine
+groovy.lang.MissingPropertyException: No such property: grails for class: groovy.lang.Binding
+	at groovy.lang.Binding.getVariable(Binding.java:56)
+	at groovy.lang.Binding.getProperty(Binding.java:103)
+	at org.codehaus.groovy.runtime.InvokerHelper.getProperty(InvokerHelper.java:168)
+	at groovy.lang.Closure.getPropertyTryThese(Closure.java:321)
+	at groovy.lang.Closure.getPropertyDelegateFirst(Closure.java:311)
+	at groovy.lang.Closure.getProperty(Closure.java:296)
+	at org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:231)
+	at groovy.tmp.templates.GStringTemplateScript9$_getTemplate_closure1.doCall(GStringTemplateScript9.groovy:2)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:278)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1016)
+	at groovy.lang.Closure.call(Closure.java:423)
+	at groovy.lang.Closure$WritableClosure.writeTo(Closure.java:853)
+	at groovy.lang.Closure$WritableClosure.toString(Closure.java:979)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:207)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.call(PogoMetaMethodSite.java:68)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
+	at asset.pipeline.DirectiveProcessor.directiveArgumentsFromGString(DirectiveProcessor.groovy:176)
+	at asset.pipeline.DirectiveProcessor.findDirectives(DirectiveProcessor.groovy:160)
+	at asset.pipeline.DirectiveProcessor.getDependencyTree(DirectiveProcessor.groovy:134)
+	at sun.reflect.GeneratedMethodAccessor297.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:207)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:141)
+	at asset.pipeline.DirectiveProcessor.requireFileDirective(DirectiveProcessor.groovy:266)
+	at asset.pipeline.DirectiveProcessor$requireFileDirective$1.callCurrent(Unknown Source)
+	at asset.pipeline.DirectiveProcessor.requireFileDirective(DirectiveProcessor.groovy:271)
+	at sun.reflect.GeneratedMethodAccessor306.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1207)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnCurrentN(ScriptBytecodeAdapter.java:80)
+	at asset.pipeline.DirectiveProcessor.callDirective(DirectiveProcessor.groovy:185)
+	at asset.pipeline.DirectiveProcessor.findDirectives(DirectiveProcessor.groovy:164)
+	at asset.pipeline.DirectiveProcessor.getDependencyTree(DirectiveProcessor.groovy:134)
+	at asset.pipeline.DirectiveProcessor.compile(DirectiveProcessor.groovy:58)
+	at asset.pipeline.DirectiveProcessor$compile.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at asset.pipeline.DirectiveProcessor$compile.call(Unknown Source)
+	at asset.pipeline.AssetCompiler.compile(AssetCompiler.groovy:128)
+	at asset.pipeline.AssetCompiler$compile.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
+	at asset.pipeline.gradle.AssetCompile.compile(AssetCompile.groovy:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:218)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:585)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:568)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:306)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.tooling.internal.provider.BuildModelAction.run(BuildModelAction.java:43)
+	at org.gradle.tooling.internal.provider.BuildModelAction.run(BuildModelAction.java:30)
+	at org.gradle.tooling.internal.provider.ConfiguringBuildAction.run(ConfiguringBuildAction.java:119)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.daemon.server.exec.ExecuteBuild.doBuild(ExecuteBuild.java:48)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.WatchForDisconnection.execute(WatchForDisconnection.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.ResetDeprecationLogger.execute(ResetDeprecationLogger.java:26)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.RequestStopIfSingleUsedDaemon.execute(RequestStopIfSingleUsedDaemon.java:34)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:74)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:72)
+	at org.gradle.util.Swapper.swap(Swapper.java:38)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput.execute(ForwardClientInput.java:72)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.health.DaemonHealthTracker.execute(DaemonHealthTracker.java:47)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.LogToClient.doBuild(LogToClient.java:60)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment.doBuild(EstablishBuildEnvironment.java:71)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.health.HintGCAfterBuild.execute(HintGCAfterBuild.java:41)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy$1.run(StartBuildOrRespondWithBusy.java:50)
+	at org.gradle.launcher.daemon.server.DaemonStateCoordinator$1.run(DaemonStateCoordinator.java:246)
+	at org.gradle.internal.concurrent.DefaultExecutorFactory$StoppableExecutorImpl$1.run(DefaultExecutorFactory.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Unable to Locate Asset: /e
+Processing File 113 of 150 - sort_asc.png
+Processing File 114 of 150 - jquery/jquery.form.js
+Processing File 115 of 150 - jquery/jquery.positionBy.js
+Processing File 116 of 150 - jquery/jquery.jgrowl.js
+Processing File 117 of 150 - jquery/jquery.jdMenu.js
+Processing File 118 of 150 - jquery/jquery.dataTables.js
+Processing File 119 of 150 - jquery/jquery-2.1.4.js
+Processing File 120 of 150 - jquery/jquery.bgiframe.js
+Processing File 121 of 150 - famfamfam/lock.png
+Processing File 122 of 150 - famfamfam/exclamation.png
+Processing File 123 of 150 - famfamfam/user.png
+Processing File 124 of 150 - famfamfam/information.png
+Processing File 125 of 150 - famfamfam/group.png
+Processing File 126 of 150 - jquery-ui/jquery-ui-1.10.3.custom.js
+Processing File 127 of 150 - elements/btn_right.gif
+Processing File 128 of 150 - elements/btn_left.gif
+Processing File 129 of 150 - elements/input.gif
+Processing File 130 of 150 - elements/checkbox.gif
+Processing File 131 of 150 - elements/select_right.gif
+Processing File 132 of 150 - elements/input_left.gif
+Processing File 133 of 150 - elements/input_right.gif
+Processing File 134 of 150 - elements/radio.gif
+Processing File 135 of 150 - smoothness/jquery-ui-1.10.3.custom.css
+Processing File 136 of 150 - smoothness/images/ui-icons_cd0a0a_256x240.png
+Processing File 137 of 150 - smoothness/images/ui-bg_flat_75_ffffff_40x100.png
+Processing File 138 of 150 - smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png
+Processing File 139 of 150 - smoothness/images/ui-bg_glass_55_fbf9ee_1x400.png
+Processing File 140 of 150 - smoothness/images/ui-icons_2e83ff_256x240.png
+Processing File 141 of 150 - smoothness/images/animated-overlay.gif
+Processing File 142 of 150 - smoothness/images/ui-bg_glass_65_ffffff_1x400.png
+Processing File 143 of 150 - smoothness/images/ui-bg_glass_75_dadada_1x400.png
+Processing File 144 of 150 - smoothness/images/ui-icons_888888_256x240.png
+Processing File 145 of 150 - smoothness/images/ui-bg_glass_95_fef1ec_1x400.png
+Processing File 146 of 150 - smoothness/images/ui-icons_222222_256x240.png
+Processing File 147 of 150 - smoothness/images/ui-anim_basic_16x16.gif
+Processing File 148 of 150 - smoothness/images/ui-bg_highlight-soft_75_cccccc_1x100.png
+Processing File 149 of 150 - smoothness/images/ui-icons_454545_256x240.png
+Processing File 150 of 150 - smoothness/images/ui-bg_flat_0_aaaaaa_40x100.png
+Finished Precompiling Assets
+:grails3-security-demo:buildProperties
+:grails3-security-demo:compileJava UP-TO-DATE
+:grails3-security-demo:compileGroovy
+:grails3-security-demo:processResources
+:grails3-security-demo:classes
+:grails3-security-demo:compileTestJava UP-TO-DATE
+:grails3-security-demo:compileTestGroovy
+:grails3-security-demo:compileWebappGroovyPages UP-TO-DATE
+:grails3-security-demo:compileGroovyPages
+:grails3-security-demo:jar
+:grails3-security-demo:findMainClass
+:grails3-security-demo:startScripts
+:grails3-security-demo:distTar
+:grails3-security-demo:distZip
+:grails3-security-demo:war
+:grails3-security-demo:bootRepackage
+:grails3-security-demo:assemble
+
+BUILD SUCCESSFUL
+
+Total time: 7 mins 52.895 secs
+22:29:41.380 [DEBUG] [org.gradle.api.internal.tasks.compile.daemon.CompilerDaemonManager] Stopping 1 compiler daemon(s).
+22:29:41.428 [DEBUG] [org.gradle.process.internal.DefaultExecHandle] Changing state to: SUCCEEDED
+22:29:41.429 [DEBUG] [org.gradle.process.internal.DefaultExecHandle] Process 'Gradle Compiler Daemon 1' finished with exit value 0 (state: SUCCEEDED)
+22:29:41.430 [INFO] [org.gradle.api.internal.tasks.compile.daemon.CompilerDaemonManager] Stopped 1 compiler daemon(s).
+22:29:41.430 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on buildscript class cache for settings file '/home/jack/github/myPractice/settings.gradle' (/home/jack/github/myPractice/gradleRepo/.gradle/caches/2.3/scripts/settings_eq3dzlh7ci6l3ppridna30eu0/SettingsScript/buildscript).
+22:29:41.430 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on no_buildscript class cache for settings file '/home/jack/github/myPractice/settings.gradle' (/home/jack/github/myPractice/gradleRepo/.gradle/caches/2.3/scripts/settings_eq3dzlh7ci6l3ppridna30eu0/SettingsScript/no_buildscript).
+22:29:41.430 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on buildscript class cache for build file '/home/jack/github/myPractice/grails-spring-security-ui/build.gradle' (/home/jack/github/myPractice/gradleRepo/.gradle/caches/2.3/scripts/build_2zibfp9xymhjwfl076k769l7v/ProjectScript/buildscript).
+22:29:41.430 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on no_buildscript class cache for build file '/home/jack/github/myPractice/grails-spring-security-ui/build.gradle' (/home/jack/github/myPractice/gradleRepo/.gradle/caches/2.3/scripts/build_2zibfp9xymhjwfl076k769l7v/ProjectScript/no_buildscript).
+22:29:41.430 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on buildscript class cache for script '/home/jack/github/myPractice/grails-spring-security-ui/gradle/plugin.gradle' (/home/jack/github/myPractice/gradleRepo/.gradle/caches/2.3/scripts/plugin_ehezvg6ihef5phwpw4dmz372m/DefaultScript/buildscript).
+22:29:41.430 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on no_buildscript class cache for script '/home/jack/github/myPractice/grails-spring-security-ui/gradle/plugin.gradle' (/home/jack/github/myPractice/gradleRepo/.gradle/caches/2.3/scripts/plugin_ehezvg6ihef5phwpw4dmz372m/DefaultScript/no_buildscript).
+22:29:41.430 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on buildscript class cache for script '/home/jack/github/myPractice/grails-spring-security-ui/gradle/common.gradle' (/home/jack/github/myPractice/gradleRepo/.gradle/caches/2.3/scripts/common_3m7z6qo3o0f9b4pjnoj8xm2bo/DefaultScript/buildscript).
+22:29:41.430 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on no_buildscript class cache for script '/home/jack/github/myPractice/grails-spring-security-ui/gradle/common.gradle' (/home/jack/github/myPractice/gradleRepo/.gradle/caches/2.3/scripts/common_3m7z6qo3o0f9b4pjnoj8xm2bo/DefaultScript/no_buildscript).
+22:29:41.431 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on buildscript class cache for script 'https://raw.githubusercontent.com/grails/grails-profile-repository/master/profiles/plugin/templates/grailsCentralPublishing.gradle' (/home/jack/github/myPractice/gradleRepo/.gradle/caches/2.3/scripts/grailsCentralPublishing_d3qkwx5kd6fx04tt5f7l8u7dk/DefaultScript/buildscript).
+22:29:41.431 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on no_buildscript class cache for script 'https://raw.githubusercontent.com/grails/grails-profile-repository/master/profiles/plugin/templates/grailsCentralPublishing.gradle' (/home/jack/github/myPractice/gradleRepo/.gradle/caches/2.3/scripts/grailsCentralPublishing_d3qkwx5kd6fx04tt5f7l8u7dk/DefaultScript/no_buildscript).
+22:29:41.431 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on buildscript class cache for script 'https://raw.githubusercontent.com/grails/grails-profile-repository/master/profiles/plugin/templates/bintrayPublishing.gradle' (/home/jack/github/myPractice/gradleRepo/.gradle/caches/2.3/scripts/bintrayPublishing_5hk626f78vi1vldz7smpu61or/DefaultScript/buildscript).
+22:29:41.431 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on no_buildscript class cache for script 'https://raw.githubusercontent.com/grails/grails-profile-repository/master/profiles/plugin/templates/bintrayPublishing.gradle' (/home/jack/github/myPractice/gradleRepo/.gradle/caches/2.3/scripts/bintrayPublishing_5hk626f78vi1vldz7smpu61or/DefaultScript/no_buildscript).
+22:29:41.431 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on buildscript class cache for build file '/home/jack/github/myPractice/grails3-security-demo/build.gradle' (/home/jack/github/myPractice/gradleRepo/.gradle/caches/2.3/scripts/build_cbxzeaquvdayjxgfwg7sa9fwb/ProjectScript/buildscript).
+22:29:41.431 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on no_buildscript class cache for build file '/home/jack/github/myPractice/grails3-security-demo/build.gradle' (/home/jack/github/myPractice/gradleRepo/.gradle/caches/2.3/scripts/build_cbxzeaquvdayjxgfwg7sa9fwb/ProjectScript/no_buildscript).
+22:29:41.432 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache module-artifacts.bin (/home/jack/github/myPractice/gradleRepo/.gradle/caches/modules-2/metadata-2.14/module-artifacts.bin)
+22:29:41.432 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache artifact-at-url.bin (/home/jack/github/myPractice/gradleRepo/.gradle/caches/modules-2/metadata-2.14/artifact-at-url.bin)
+22:29:41.432 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache module-metadata.bin (/home/jack/github/myPractice/gradleRepo/.gradle/caches/modules-2/metadata-2.14/module-metadata.bin)
+22:29:41.432 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache artifact-at-repository.bin (/home/jack/github/myPractice/gradleRepo/.gradle/caches/modules-2/metadata-2.14/artifact-at-repository.bin)
+22:29:41.432 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on artifact cache (/home/jack/github/myPractice/gradleRepo/.gradle/caches/modules-2).
+22:29:41.432 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Cache jars (/home/jack/github/myPractice/gradleRepo/.gradle/caches/jars-1) was closed 0 times.
+22:29:41.432 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache plugin-use-metadata.bin (/home/jack/github/myPractice/gradleRepo/.gradle/caches/2.3/plugin-resolution/plugin-use-metadata.bin)
+22:29:41.432 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on Plugin Resolution Cache (/home/jack/github/myPractice/gradleRepo/.gradle/caches/2.3/plugin-resolution).
+22:29:41.433 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache taskArtifacts.bin (/home/jack/github/myPractice/.gradle/2.3/taskArtifacts/taskArtifacts.bin)
+22:29:41.434 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache fileHashes.bin (/home/jack/github/myPractice/.gradle/2.3/taskArtifacts/fileHashes.bin)
+22:29:41.434 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache fileSnapshots.bin (/home/jack/github/myPractice/.gradle/2.3/taskArtifacts/fileSnapshots.bin)
+22:29:41.434 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache outputFileStates.bin (/home/jack/github/myPractice/.gradle/2.3/taskArtifacts/outputFileStates.bin)
+22:29:41.434 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on task history cache (/home/jack/github/myPractice/.gradle/2.3/taskArtifacts).
+22:29:41.434 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.memcache.InMemoryCachedRepositoryFactory] In-memory dependency metadata cache closed. Repos cached: 91, cache instances: 6, modules served from cache: 1358, artifacts: 525
+22:29:41.435 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.CachedStoreFactory] Resolution result cache closed. Cache reads: 0, disk reads: 0 (avg: 0.0 secs, total: 0.0 secs)
+22:29:41.436 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.CachedStoreFactory] Resolved configuration cache closed. Cache reads: 0, disk reads: 0 (avg: 0.0 secs, total: 0.0 secs)
+22:29:41.436 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.ResolutionResultsStoreFactory] Deleted 2 resolution results binary files in 0.002 secs
+22:29:41.436 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+22:29:41.665 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is busy, sleeping until state changes.
+22:29:41.666 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=22a15295-13b2-4c2d-9135-48d465c85b94.1, currentDir=/home/jack/github/myPractice/grails3-security-demo}, connection = org.gradle.launcher.daemon.server.DefaultDaemonConnection@74fdf98f]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@5e35c368 with state Running
+22:29:41.667 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=22a15295-13b2-4c2d-9135-48d465c85b94.1, currentDir=/home/jack/github/myPractice/grails3-security-demo}, connection = org.gradle.launcher.daemon.server.DefaultDaemonConnection@74fdf98f]
+22:29:41.667 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] updating lastActivityAt to 1463462981667
+22:29:41.667 [INFO] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Marking the daemon as idle, address: [5e557da2-ed8b-4421-8b50-c19fe06e5524 port:35731, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]]
+22:29:41.667 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking idle by address: [5e557da2-ed8b-4421-8b50-c19fe06e5524 port:35731, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]]
+22:29:41.667 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+22:29:41.667 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+22:29:41.668 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+22:29:41.666 [DEBUG] [org.apache.http.impl.conn.PoolingClientConnectionManager] Connection manager is shutting down
+22:29:41.673 [DEBUG] [org.apache.http.impl.conn.DefaultClientConnection] Connection 0.0.0.0:38321<->199.27.79.209:443 closed
+22:29:41.673 [DEBUG] [org.apache.http.impl.conn.DefaultClientConnection] Connection 0.0.0.0:38321<->199.27.79.209:443 closed
+22:29:41.673 [DEBUG] [org.apache.http.impl.conn.PoolingClientConnectionManager] Connection manager shut down
+22:29:41.674 [DEBUG] [org.apache.http.impl.conn.PoolingClientConnectionManager] Connection manager is shutting down
+22:29:41.674 [DEBUG] [org.apache.http.impl.conn.DefaultClientConnection] Connection 0.0.0.0:41321<->54.210.230.115:443 closed
+22:29:41.674 [DEBUG] [org.apache.http.impl.conn.DefaultClientConnection] Connection 0.0.0.0:41321<->54.210.230.115:443 closed
+22:29:41.674 [DEBUG] [org.apache.http.impl.conn.PoolingClientConnectionManager] Connection manager shut down
+22:29:41.674 [DEBUG] [org.apache.http.impl.conn.PoolingClientConnectionManager] Connection manager is shutting down
+22:29:41.674 [DEBUG] [org.apache.http.impl.conn.DefaultClientConnection] Connection 0.0.0.0:38302<->199.27.79.209:443 closed
+22:29:41.674 [DEBUG] [org.apache.http.impl.conn.DefaultClientConnection] Connection 0.0.0.0:38302<->199.27.79.209:443 closed
+22:29:41.674 [DEBUG] [org.apache.http.impl.conn.PoolingClientConnectionManager] Connection manager shut down
+22:29:41.674 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is idle, sleeping until state change or idle timeout at Tue May 17 01:29:41 PDT 2016
+22:29:41.675 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: DaemonCommandResult[type=Success, value=org.gradle.tooling.internal.provider.BuildActionResult@20ff4976]
+22:29:41.675 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 12: dispatching class org.gradle.launcher.daemon.protocol.Success
+22:29:41.676 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 21: received class org.gradle.launcher.daemon.protocol.Finished
+22:29:41.676 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@7825e02e
+22:29:41.676 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 21: received null
+22:29:41.676 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received end-of-input from client.
+22:29:41.682 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=22a15295-13b2-4c2d-9135-48d465c85b94.1, currentDir=/home/jack/github/myPractice/grails3-security-demo}
+22:29:41.682 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: null
+22:29:41.682 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 12: stopping connection
+22:29:41.686 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 12: stopping connection

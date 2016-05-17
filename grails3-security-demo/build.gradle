@@ -15,7 +15,10 @@ buildscript {
 
 plugins {
     id "io.spring.dependency-management" version "0.5.4.RELEASE"
+
 }
+
+
 
 version "0.1"
 group "grails3.security.demo"
@@ -72,13 +75,14 @@ dependencies {
 
     compile 'org.grails.plugins:spring-security-core:3.0.3'
     compile "org.grails.plugins:spring-security-acl:3.0.1"
-    compile "org.grails.plugins:spring-security-ui:3.0.0.M1"
+//test    compile "org.grails.plugins:spring-security-ui:3.0.0.M1"
 
 //    compile "org.grails.plugins:twitter-bootstrap:3.3.5"
 //	compile "org.grails.plugins:asset-pipeline:2.7.4"
     compile "org.grails.plugins:fields:2.1.2"
 //	compile "org.grails.plugins:standalone:9.0.0.M4"
 //    compile "org.grails.plugins:tomcat:9.0.0.M4"
+       compile project(':grails-spring-security-ui')
 
     runtime "org.grails.plugins:asset-pipeline"
 
@@ -94,3 +98,5 @@ dependencies {
 task wrapper(type: Wrapper) {
     gradleVersion = gradleWrapperVersion
 }
+
+ 
