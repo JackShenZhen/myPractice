@@ -142,6 +142,11 @@
     <WatchedResource>WEB-INF/web.xml</WatchedResource>
 </Context>
 
+<Context path="ROOT" docBase="ROOT">
+     <!-- Default set of monitored resources -->
+     <WatchedResource>WEB-INF/web.xml</WatchedResource>
+</Context>
+
       </Host>
     </Engine>
   </Service>
