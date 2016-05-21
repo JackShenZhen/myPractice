@@ -136,6 +136,12 @@
                prefix="localhost_access_log" suffix=".txt"
                pattern="%h %l %u %t &quot;%r&quot; %s %b" />
 
+
+<Context path="/" docBase="grails3">
+    <!-- Default set of monitored resources -->
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+</Context>
+
       </Host>
     </Engine>
   </Service>
