@@ -46,3 +46,19 @@ grails.plugin.springsecurity.filterChain.chainMap = [
 ]
 
 grails.plugin.springsecurity.logout.postOnly = false
+
+
+grails.plugin.springsecurity.ui.register.emailFrom = 'administrator@sheanyi.com'
+
+grails {
+    mail {
+        host = "smtp.sheanyi.com"
+        port = 465
+        username = "administrator@sheanyi.com"
+        password = "Cishanyuan123"
+        props = ["mail.smtp.auth":"true",
+                "mail.smtp.socketFactory.port":"465",
+                "mail.smtp.socketFactory.class":"javax.net.ssl.SSLSocketFactory",
+                "mail.smtp.socketFactory.fallback":"false"]
+    }
+}
